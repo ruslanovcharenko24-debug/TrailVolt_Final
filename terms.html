@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Privacy — TrailVolt</title>
+  <meta name="description" content="TrailVolt Privacy Policy, Terms of Service, Cookie Policy, and Returns Policy." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Announce Bar ── -->
+  <div class="announce-bar" role="banner">
+    <span>Free EU shipping on orders over €100 · Use <strong>BASECAMP10</strong> for 10% off your first order</span>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Page Header ── -->
+    <section style="background:var(--color-glacier);padding:var(--space-16) 0;" aria-labelledby="terms-hero-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="terms.label">Legal</div>
+        <h1 id="terms-hero-heading" data-i18n="terms.title" style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-navy);margin-bottom:var(--space-4);">Terms &amp; Policies</h1>
+        <p style="font-size:var(--text-base);color:var(--color-grey-500);"><span data-i18n="terms.updated">Last updated: 17 March 2026</span>. Questions? <a href="contact.html" style="color:var(--color-navy);font-weight:600;text-decoration:underline;">Contact us.</a></p>
+      </div>
+    </section>
+
+    <!-- ── Tab Navigation ── -->
+    <section class="section-pad" aria-label="Legal documents">
+      <div class="container">
+
+        <!-- Tabs -->
+        <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-10);border-bottom:2px solid var(--color-grey-200);flex-wrap:wrap;" role="tablist" aria-label="Policy sections">
+          <button class="terms-tab active" role="tab" aria-selected="true"  aria-controls="tab-privacy" id="btn-privacy" onclick="switchTermsTab('privacy')" data-i18n="terms.tab.privacy">Privacy Policy</button>
+          <button class="terms-tab"        role="tab" aria-selected="false" aria-controls="tab-terms"   id="btn-terms"   onclick="switchTermsTab('terms')" data-i18n="terms.tab.terms">Terms of Service</button>
+          <button class="terms-tab"        role="tab" aria-selected="false" aria-controls="tab-cookies" id="btn-cookies" onclick="switchTermsTab('cookies')" data-i18n="terms.tab.cookies">Cookie Policy</button>
+          <button class="terms-tab"        role="tab" aria-selected="false" aria-controls="tab-returns" id="btn-returns" onclick="switchTermsTab('returns')" data-i18n="terms.tab.returns">Returns Policy</button>
+        </div>
+
+        <!-- Privacy Policy -->
+        <div id="tab-privacy" role="tabpanel" aria-labelledby="btn-privacy" class="terms-panel">
+          <div style="max-width:760px;" class="legal-content">
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.privacy.h1">1. What Data We Collect</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">TrailVolt is committed to protecting your personal data in accordance with the EU General Data Protection Regulation (GDPR) and the Irish Data Protection Acts 1988–2018. We are the data controller for personal data collected through this website.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">The data we collect includes: your name, email address, shipping address, telephone number (optional), and payment information (processed by Stripe — we never store card details). When you subscribe to Basecamp, we collect your email address and first name. When you contact us, we collect the information you provide in the contact form.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">We also collect technical data via cookies and analytics tools including your IP address, browser type, pages visited, and time spent on site. See our Cookie Policy for full details.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.privacy.h2">2. How We Use Your Data</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">We process your personal data only for the following purposes: order fulfilment and delivery (legal basis: contractual necessity), customer support and warranty claims (legal basis: contractual necessity / legitimate interest), fraud prevention (legal basis: legitimate interest), and marketing communications where you have given explicit consent.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">We share data with essential service providers: Stripe (payment processing), DPD/DHL (shipping), and Mailchimp (email marketing). All processors are bound by data processing agreements and GDPR-compliant. We retain order data for 7 years in compliance with Irish Revenue requirements. Marketing data is retained until you unsubscribe.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">We do not sell, rent, or share your personal data with third parties for their marketing purposes.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.privacy.h3">3. Cookies</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">We use cookies to improve your experience on our website, including remembering your cart, your session, and your preferences. We also use analytics cookies (Google Analytics) to understand how visitors use our site. By continuing to use the site, you consent to essential cookies. See our full Cookie Policy for details on how to opt out of analytics cookies.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.privacy.h4">4. Your Rights</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">Under GDPR, you have the right to: access your personal data (right of access), correct inaccurate data (right to rectification), delete your data (right to erasure), restrict how we process your data (right to restriction), receive your data in a portable format (right to portability), and object to processing based on legitimate interest.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">To exercise any of these rights, email hello@trailvolt.com. We will respond within 30 days. You have the right to lodge a complaint with the Irish Data Protection Commission (www.dataprotection.ie).</p>
+            </section>
+
+            <section>
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.privacy.h5">5. Contact</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Data controller: TrailVolt Ltd, Dublin, Ireland. Email: <a href="mailto:hello@trailvolt.com" style="color:var(--color-navy);font-weight:600;">hello@trailvolt.com</a>. For all privacy enquiries, please use this address and include "Privacy" in the subject line.</p>
+            </section>
+
+          </div>
+        </div>
+
+        <!-- Terms of Service -->
+        <div id="tab-terms" role="tabpanel" aria-labelledby="btn-terms" class="terms-panel" style="display:none;">
+          <div style="max-width:760px;" class="legal-content">
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.tos.h1">1. Purchase Terms</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">By placing an order on trailvolt.com, you are making an offer to purchase the listed products at the stated price. A contract is formed when we confirm your order by email. We reserve the right to decline any order for any reason, including product unavailability, pricing errors, or suspected fraud.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">All prices are displayed in Euros (€) and include Irish VAT (23%) unless otherwise stated. Payment is due at the time of order placement. We accept Visa, Mastercard, American Express, Apple Pay, Google Pay, and PayPal. All payments are processed securely through Stripe.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Orders may be modified or cancelled within two hours of placement by contacting hello@trailvolt.com. After this window, orders enter fulfilment and cannot be modified. Custom Build orders cannot be cancelled once production has begun.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.tos.h2">2. Intellectual Property</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">All content on the TrailVolt website — including text, images, logos, product descriptions, design elements, graphics, and software — is the intellectual property of TrailVolt Ltd or its licensors and is protected by Irish and international copyright and trademark law.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">You may not reproduce, copy, distribute, or use any TrailVolt content for commercial purposes without our prior written consent. The TrailVolt name, logo, and snap-lock module system are proprietary to TrailVolt Ltd. Personal, non-commercial sharing is permitted provided TrailVolt is credited.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.tos.h3">3. Limitation of Liability</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">To the maximum extent permitted by law, TrailVolt's total liability in connection with any order shall not exceed the total amount paid by you for the products in question. We are not liable for indirect, incidental, consequential, or punitive damages arising from the use of our products or services.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Nothing in these Terms limits or excludes our liability for death or personal injury caused by our negligence, or for any liability that cannot be excluded under Irish law. Consumer rights under EU law are not affected.</p>
+            </section>
+
+            <section>
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.tos.h4">4. Governing Law &amp; Disputes</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">These Terms are governed by the laws of the Republic of Ireland. You agree to submit to the exclusive jurisdiction of the courts of Ireland for any disputes arising from these Terms.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">EU consumers may also submit complaints to an alternative dispute resolution body. The European Commission's Online Dispute Resolution platform is available at ec.europa.eu/consumers/odr.</p>
+            </section>
+
+          </div>
+        </div>
+
+        <!-- Cookie Policy -->
+        <div id="tab-cookies" role="tabpanel" aria-labelledby="btn-cookies" class="terms-panel" style="display:none;">
+          <div style="max-width:760px;" class="legal-content">
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.cookies.h1">1. What Are Cookies</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">Cookies are small text files placed on your device by websites you visit. They allow the website to remember your preferences, keep you logged in, and understand how you use the site. We use first-party cookies (set by trailvolt.com) and third-party cookies (set by services like Google Analytics).</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Under GDPR and the ePrivacy Directive, we require your consent for non-essential cookies. Essential cookies (required for the website to function) do not require consent.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.cookies.h2">2. Cookies We Use</h2>
+              <div style="border:1px solid var(--color-grey-200);border-radius:var(--radius-xl);overflow:hidden;margin-bottom:var(--space-4);">
+                <table style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
+                  <thead style="background:var(--color-glacier);">
+                    <tr>
+                      <th style="text-align:left;padding:var(--space-3) var(--space-4);font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);">Cookie</th>
+                      <th style="text-align:left;padding:var(--space-3) var(--space-4);font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);">Type</th>
+                      <th style="text-align:left;padding:var(--space-3) var(--space-4);font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);">Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-top:1px solid var(--color-grey-200);">
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-navy);font-weight:600;">tv_cart</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Essential</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Stores cart contents in localStorage</td>
+                    </tr>
+                    <tr style="border-top:1px solid var(--color-grey-200);">
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-navy);font-weight:600;">tv_promo</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Essential</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Stores applied promo code during session</td>
+                    </tr>
+                    <tr style="border-top:1px solid var(--color-grey-200);">
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-navy);font-weight:600;">_ga, _gid</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Analytics</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Google Analytics — tracks page views and user behaviour</td>
+                    </tr>
+                    <tr style="border-top:1px solid var(--color-grey-200);">
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-navy);font-weight:600;">_fbp</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Marketing</td>
+                      <td style="padding:var(--space-3) var(--space-4);color:var(--color-grey-500);">Meta Pixel — tracks ad conversions (only if consented)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.cookies.h3">3. How to Opt Out</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">You can opt out of analytics and marketing cookies at any time by clicking "Cookie Settings" in the site footer (coming soon) or by adjusting your browser settings to block or delete cookies. Blocking essential cookies may affect the functionality of the cart and checkout.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">For Google Analytics opt-out, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--color-navy);font-weight:600;">Google Analytics Opt-out Browser Add-on</a>. To contact us about cookie preferences, email hello@trailvolt.com.</p>
+            </section>
+
+          </div>
+        </div>
+
+        <!-- Returns Policy -->
+        <div id="tab-returns" role="tabpanel" aria-labelledby="btn-returns" class="terms-panel" style="display:none;">
+          <div style="max-width:760px;" class="legal-content">
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.returns.h1">1. 60-Day Returns</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">TrailVolt offers a 60-day hassle-free returns policy on all standard products. If you are not completely satisfied with your purchase, return it within 60 days of delivery in its original, unused condition with all original packaging and tags attached, for a full refund to your original payment method.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">This policy extends the EU Consumer Rights Directive's 14-day cooling-off period as a commercial commitment. EU statutory rights are not diminished by this policy.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.returns.h2">2. How to Return</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">To initiate a return: email hello@trailvolt.com with your order number and reason for return. We will respond within 1 business day with a prepaid return label (EU orders) or return instructions (international orders). Do not return items without contacting us first — unannounced returns may cause delays.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Once we receive and inspect the return, we will process your refund within 5–7 business days. Refunds are issued to the original payment method. If the original payment method is no longer valid, we will contact you to arrange an alternative.</p>
+            </section>
+
+            <section style="margin-bottom:var(--space-10);">
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.returns.h3">3. Module Returns</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">Individual modules are fully returnable within 60 days of purchase in unused condition. Modules that show signs of use (attachment marks, wear on connector) may be subject to a 15% restocking fee to cover refurbishment costs. Modules purchased as part of a pack bundle must be returned together with the pack for a full refund.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Custom Build orders — where a bespoke colourway has been produced for you specifically — are non-returnable unless there is a manufacturing defect. If you are unsure whether your order qualifies as custom, please contact us before ordering.</p>
+            </section>
+
+            <section>
+              <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-5);" data-i18n="terms.returns.h4">4. Warranty Returns</h2>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-4);">Products returned under warranty are handled separately from the standard returns process. To make a warranty claim, email hello@trailvolt.com with your order number, description of the defect, and photographs. We cover return shipping for valid warranty claims within the EU.</p>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;">Beyond the 2-year warranty period, TrailVolt offers a lifetime repair programme. Contact us to arrange a repair assessment. You pay only for parts and labour at cost price.</p>
+            </section>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="nl-terms-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="nl-terms-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <style>
+    .terms-tab {
+      padding: var(--space-3) var(--space-5);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      font-family: var(--font-accent);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-grey-500);
+      cursor: pointer;
+      margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+    .terms-tab.active, .terms-tab[aria-selected="true"] {
+      color: var(--color-navy);
+      border-bottom-color: var(--color-mint);
+    }
+    .terms-tab:hover { color: var(--color-navy); }
+  </style>
+  <script>
+    function switchTermsTab(tab) {
+      document.querySelectorAll('.terms-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.terms-tab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.getElementById('tab-' + tab).style.display = 'block';
+      document.getElementById('btn-' + tab).classList.add('active');
+      document.getElementById('btn-' + tab).setAttribute('aria-selected','true');
+    }
+
+    // Handle hash anchors for direct linking
+    document.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#','');
+      const valid = ['privacy','terms','cookies','returns'];
+      if (valid.includes(hash)) switchTermsTab(hash);
+    });
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+</body>
+</html>

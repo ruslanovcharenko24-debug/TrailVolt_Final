@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — TrailVolt</title>
+  <meta name="description" content="Frequently asked questions about TrailVolt packs, modules, shipping, returns, and warranty." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Announce Bar ── -->
+  <div class="announce-bar" role="banner">
+    <span>Free EU shipping on orders over €100 · Use <strong>BASECAMP10</strong> for 10% off your first order</span>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules" data-i18n="faq.tab.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Hero ── -->
+    <section style="background:var(--color-glacier);padding:var(--space-16) 0;" aria-labelledby="faq-hero-heading">
+      <div class="container" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;margin:0 auto var(--space-4);" data-i18n="faq.label">Help</div>
+        <h1 id="faq-hero-heading" data-i18n="faq.title" style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-navy);margin-bottom:var(--space-4);">Frequently Asked Questions</h1>
+        <p style="font-size:var(--text-lg);color:var(--color-grey-500);max-width:520px;margin:0 auto;" data-i18n="faq.hero.sub">Everything you need to know about TrailVolt packs, modules, and policies. Can't find your answer? <a href="contact.html" style="color:var(--color-navy);font-weight:600;text-decoration:underline;">Contact us directly.</a></p>
+      </div>
+    </section>
+
+    <!-- ── Tab Navigation ── -->
+    <section class="section-pad" aria-label="FAQ Categories">
+      <div class="container">
+
+        <!-- Tab Buttons -->
+        <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-10);border-bottom:2px solid var(--color-grey-200);flex-wrap:wrap;" role="tablist" aria-label="FAQ categories">
+          <button class="faq-tab active" role="tab" aria-selected="true"  aria-controls="tab-pack"     id="btn-pack"     onclick="switchTab('pack')" data-i18n="faq.tab.pack">The Pack</button>
+          <button class="faq-tab"        role="tab" aria-selected="false" aria-controls="tab-modules"  id="btn-modules"  onclick="switchTab('modules')" data-i18n="faq.tab.modules">Modules</button>
+          <button class="faq-tab"        role="tab" aria-selected="false" aria-controls="tab-shipping" id="btn-shipping" onclick="switchTab('shipping')" data-i18n="faq.tab.shipping">Shipping &amp; Returns</button>
+          <button class="faq-tab"        role="tab" aria-selected="false" aria-controls="tab-warranty" id="btn-warranty" onclick="switchTab('warranty')" data-i18n="faq.tab.warranty">Warranty</button>
+        </div>
+
+        <!-- Tab: The Pack -->
+        <div id="tab-pack" role="tabpanel" aria-labelledby="btn-pack" class="faq-panel">
+          <div class="faq-grid">
+
+            <div class="accordion-item" id="p1">
+              <button class="accordion-header" aria-expanded="false" aria-controls="p1-body"><span data-i18n="faq.p1.q">Are all modules compatible with all three pack lines?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="p1-body" role="region"><div class="accordion-body-inner" data-i18n="faq.p1.a">Yes — 100%. All eight modules use the same snap-lock connector and are designed to work with the Everyday, Travel, and Trail lines without any adaptation. If you own multiple packs, your modules work across all of them. This compatibility is maintained across all current and future releases.</div></div>
+            </div>
+
+            <div class="accordion-item" id="p2">
+              <button class="accordion-header" aria-expanded="false" aria-controls="p2-body"><span data-i18n="faq.p2.q">How do I choose the right size?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="p2-body" role="region"><div class="accordion-body-inner" data-i18n="faq.p2.a">The Everyday 22L is ideal for daily commutes, day trips, and short city breaks. The Travel 30L is built for 3–7 day trips and frequent flyers who carry a laptop and clothes. The Trail 28L is optimised for hiking, with load distribution and weatherproofing as priorities. If you're between two sizes, go larger — you can always leave space empty.</div></div>
+            </div>
+
+            <div class="accordion-item" id="p3">
+              <button class="accordion-header" aria-expanded="false" aria-controls="p3-body"><span data-i18n="faq.p3.q">What materials are the packs made from?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="p3-body" role="region"><div class="accordion-body-inner" data-i18n="faq.p3.a">The Everyday 22L uses 600D ballistic nylon for the main shell with a YKK #10 zip system. The Travel 30L uses 420D recycled ripstop nylon with a DWR coating and aluminium hardware. The Trail 28L uses 500D Cordura with waterproof YKK AquaGuard zips and a dual-density foam back panel. All fabrics are bluesign certified and sourced from European mills.</div></div>
+            </div>
+
+            <div class="accordion-item" id="p4">
+              <button class="accordion-header" aria-expanded="false" aria-controls="p4-body"><span data-i18n="faq.p4.q">What laptop sizes fit in the pack?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="p4-body" role="region"><div class="accordion-body-inner" data-i18n="faq.p4.a">All three TrailVolt lines feature a padded laptop sleeve (38 × 27 cm) accommodating laptops up to 16 inches — including MacBook Pro 16", Dell XPS 15", and HP Spectre 16". The sleeve has 2cm of foam padding on all sides. Always use the dedicated sleeve, not the main compartment, for laptop carry.</div></div>
+            </div>
+
+            <div class="accordion-item" id="p5">
+              <button class="accordion-header" aria-expanded="false" aria-controls="p5-body"><span data-i18n="faq.p5.q">Do TrailVolt packs fit in airline overhead bins?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="p5-body" role="region"><div class="accordion-body-inner" data-i18n="faq.p5.a">Yes. All three lines comply with IATA standard cabin baggage dimensions. The Everyday 22L (47×30×16cm) fits as a personal item on most airlines including Ryanair and easyJet. The Travel 30L (54×34×20cm) is designed to meet IATA carry-on standards. Always check your specific airline's current policy before flying.</div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab: Modules -->
+        <div id="tab-modules" role="tabpanel" aria-labelledby="btn-modules" class="faq-panel" style="display:none;">
+          <div class="faq-grid">
+
+            <div class="accordion-item" id="m1">
+              <button class="accordion-header" aria-expanded="false" aria-controls="m1-body"><span data-i18n="faq.m1.q">How do modules attach to the pack?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="m1-body" role="region"><div class="accordion-body-inner" data-i18n="faq.m1.a">Modules use our patented snap-lock connector system. Align the module's mounting plate with the front connector panel of the pack, push until you hear a click, and it's secure. To remove, press the release tab on the bottom of the module and slide up. No tools required. The whole process takes under 3 seconds.</div></div>
+            </div>
+
+            <div class="accordion-item" id="m2">
+              <button class="accordion-header" aria-expanded="false" aria-controls="m2-body"><span data-i18n="faq.m2.q">Which packs are all 8 modules compatible with?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="m2-body" role="region"><div class="accordion-body-inner" data-i18n="faq.m2.a">All 8 modules — Chest Phone (€29), Tech Organizer (€35), Power Bank (€39), Shoe (€32), Clothing Cube (€25), Hidden Document (€19), Bottle Holder (€18), and Rain Cover (€22) — are fully compatible with all three pack lines. Compatibility is guaranteed for the lifetime of any pack we have ever sold.</div></div>
+            </div>
+
+            <div class="accordion-item" id="m3">
+              <button class="accordion-header" aria-expanded="false" aria-controls="m3-body"><span data-i18n="faq.m3.q">Can I mix and match modules from different sets?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="m3-body" role="region"><div class="accordion-body-inner" data-i18n="faq.m3.a">Absolutely — that's the entire point of the system. Build the exact configuration you need for each trip or daily use case. Swap a Tech Organizer for a Rain Cover on hiking days, or add a Power Bank for a long travel day. Your module collection is fully interchangeable across any combination.</div></div>
+            </div>
+
+            <div class="accordion-item" id="m4">
+              <button class="accordion-header" aria-expanded="false" aria-controls="m4-body"><span data-i18n="faq.m4.q">How many modules can I attach at once?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="m4-body" role="region"><div class="accordion-body-inner" data-i18n="faq.m4.a">You can attach up to four modules simultaneously, depending on size and configuration. The Shoe Module attaches to the base, not the front face, so it can always be added in addition to front modules. Slimmer modules like the Chest Phone, Bottle Holder, and Hidden Document Sleeve can stack alongside larger ones.</div></div>
+            </div>
+
+            <div class="accordion-item" id="m5">
+              <button class="accordion-header" aria-expanded="false" aria-controls="m5-body"><span data-i18n="faq.m5.q">Will future modules be compatible with my current pack?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="m5-body" role="region"><div class="accordion-body-inner" data-i18n="faq.m5.a">Yes, always. We have committed to maintaining backward compatibility for the module connector system for the lifetime of any pack ever sold. Any module released in 2026 or beyond will work with packs purchased today. If we ever had to change the connector for technical reasons, existing pack owners would receive a free adapter.</div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab: Shipping & Returns -->
+        <div id="tab-shipping" role="tabpanel" aria-labelledby="btn-shipping" class="faq-panel" style="display:none;">
+          <div class="faq-grid">
+
+            <div class="accordion-item" id="s1">
+              <button class="accordion-header" aria-expanded="false" aria-controls="s1-body"><span data-i18n="faq.s1.q">Is EU shipping free?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="s1-body" role="region"><div class="accordion-body-inner" data-i18n="faq.s1.a">Yes. Standard shipping is free on all EU orders over €100. Since every Core Pack starts at €159, most orders qualify automatically. Orders under €100 (typically standalone module orders) carry a €5.99 standard shipping fee. Express shipping is €12.99 regardless of order value.</div></div>
+            </div>
+
+            <div class="accordion-item" id="s2">
+              <button class="accordion-header" aria-expanded="false" aria-controls="s2-body"><span data-i18n="faq.s2.q">How much is shipping to the UK?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="s2-body" role="region"><div class="accordion-body-inner" data-i18n="faq.s2.a">UK standard shipping is €9.99, with a delivery estimate of 3–7 business days. UK orders may be subject to customs checks on arrival. Please note that import duties and VAT for UK orders are not included in the TrailVolt price and are the responsibility of the recipient. Check with UK customs before ordering for the latest rates.</div></div>
+            </div>
+
+            <div class="accordion-item" id="s3">
+              <button class="accordion-header" aria-expanded="false" aria-controls="s3-body"><span data-i18n="faq.s3.q">Do you ship internationally?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="s3-body" role="region"><div class="accordion-body-inner" data-i18n="faq.s3.a">Yes, we ship globally. Common international rates: USA/Canada €19.99 (5–10 days), Australia/NZ €24.99 (7–14 days). Exact rates are shown at checkout. International orders may be subject to local customs duties — these are the responsibility of the recipient. We ship with DPD for EU and DHL for international.</div></div>
+            </div>
+
+            <div class="accordion-item" id="s4">
+              <button class="accordion-header" aria-expanded="false" aria-controls="s4-body"><span data-i18n="faq.s4.q">Can I get express shipping?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="s4-body" role="region"><div class="accordion-body-inner" data-i18n="faq.s4.a">Yes. Express shipping is available within Ireland and the EU for €12.99, with an estimated delivery of 1–2 business days via DPD Priority. Express orders placed before 1pm IST on a business day will dispatch same day. Summit tier Basecamp members receive free express shipping on all orders.</div></div>
+            </div>
+
+            <div class="accordion-item" id="s5">
+              <button class="accordion-header" aria-expanded="false" aria-controls="s5-body"><span data-i18n="faq.s5.q">What is your returns policy?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="s5-body" role="region"><div class="accordion-body-inner" data-i18n="faq.s5.a">We offer 60-day hassle-free returns. Return the item in its original, unused condition with original packaging within 60 days of delivery for a full refund to your original payment method. We provide prepaid return labels for EU returns. Email hello@trailvolt.com with your order number to start a return.</div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab: Warranty -->
+        <div id="tab-warranty" role="tabpanel" aria-labelledby="btn-warranty" class="faq-panel" style="display:none;">
+          <div class="faq-grid">
+
+            <div class="accordion-item" id="w1">
+              <button class="accordion-header" aria-expanded="false" aria-controls="w1-body"><span data-i18n="faq.w1.q">What does the 2-year warranty cover?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="w1-body" role="region"><div class="accordion-body-inner" data-i18n="faq.w1.a">The TrailVolt 2-year limited warranty covers material defects and manufacturing faults under normal use. This includes: zipper failure not caused by misuse, seam separation, delamination of DWR coating, strap failure, module connector defects, and hardware breakage not caused by impact. It does not cover normal wear and tear, accidental damage, cosmetic damage, or damage from misuse.</div></div>
+            </div>
+
+            <div class="accordion-item" id="w2">
+              <button class="accordion-header" aria-expanded="false" aria-controls="w2-body"><span data-i18n="faq.w2.q">What is covered if something breaks after 2 years?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="w2-body" role="region"><div class="accordion-body-inner" data-i18n="faq.w2.a">Beyond the warranty period, TrailVolt offers a lifetime repair programme. Send your pack back and we'll repair it for the cost of parts and labour at cost price — not retail. Our goal is that you never need to replace a pack just because something broke. Contact hello@trailvolt.com to start a repair assessment.</div></div>
+            </div>
+
+            <div class="accordion-item" id="w3">
+              <button class="accordion-header" aria-expanded="false" aria-controls="w3-body"><span data-i18n="faq.w3.q">How do I make a warranty claim?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="w3-body" role="region"><div class="accordion-body-inner" data-i18n="faq.w3.a">Email hello@trailvolt.com with your order number, a description of the defect, and photos where possible. We respond within 2 business days with a resolution. Depending on the issue, we'll repair, replace, or offer a refund. We cover return shipping for valid warranty claims within the EU.</div></div>
+            </div>
+
+            <div class="accordion-item" id="w4">
+              <button class="accordion-header" aria-expanded="false" aria-controls="w4-body"><span data-i18n="faq.w4.q">Do modules have their own warranty?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="w4-body" role="region"><div class="accordion-body-inner" data-i18n="faq.w4.a">Yes. All modules carry the same 2-year warranty against manufacturing defects and material failures. The Power Bank Module's battery is warranted against defective capacity degradation (below 80% capacity) within 2 years of purchase under normal use. Module connector failures are always covered within warranty.</div></div>
+            </div>
+
+            <div class="accordion-item" id="w5">
+              <button class="accordion-header" aria-expanded="false" aria-controls="w5-body"><span data-i18n="faq.w5.q">Does the warranty transfer if I give the pack away?</span><div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></button>
+              <div class="accordion-body" id="w5-body" role="region"><div class="accordion-body-inner" data-i18n="faq.w5.a">Yes. The TrailVolt warranty is attached to the product, not the original purchaser. If you give or sell your pack, the remaining warranty period transfers. The new owner will need to contact us with the original order number or proof of purchase to register a warranty claim.</div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div style="background:var(--color-navy);border-radius:var(--radius-2xl);padding:var(--space-10);text-align:center;margin-top:var(--space-16);">
+          <h2 style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:800;color:var(--color-white);margin-bottom:var(--space-4);" data-i18n="faq.contact.title">Still Have a Question?</h2>
+          <p style="font-size:var(--text-base);color:rgba(255,255,255,0.6);max-width:460px;margin:0 auto var(--space-8);line-height:1.7;" data-i18n="faq.contact.sub">We reply to every email within 24 hours on business days. Reach us at <a href="mailto:hello@trailvolt.com" style="color:var(--color-mint);">hello@trailvolt.com</a> or use the contact form.</p>
+          <a href="contact.html" class="btn btn--primary btn--lg" data-i18n="faq.contact.btn">Get in Touch</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="nl-faq-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="nl-faq-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <style>
+    .faq-tab {
+      padding: var(--space-3) var(--space-5);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      font-family: var(--font-accent);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-grey-500);
+      cursor: pointer;
+      margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .faq-tab.active, .faq-tab[aria-selected="true"] {
+      color: var(--color-navy);
+      border-bottom-color: var(--color-mint);
+    }
+    .faq-tab:hover { color: var(--color-navy); }
+  </style>
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.faq-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.faq-tab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.getElementById('tab-' + tab).style.display = 'block';
+      document.getElementById('btn-' + tab).classList.add('active');
+      document.getElementById('btn-' + tab).setAttribute('aria-selected','true');
+    }
+
+    // Accordion
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item  = btn.closest('.accordion-item');
+        const body  = item.querySelector('.accordion-body');
+        const isOpen = item.classList.contains('open');
+        item.classList.toggle('open', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        body.style.maxHeight = isOpen ? '0' : body.scrollHeight + 'px';
+      });
+    });
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+</body>
+</html>

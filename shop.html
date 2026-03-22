@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — TrailVolt</title>
+  <meta name="description" content="Shop the full TrailVolt system. Three pack lines and eight modular accessories for every journey." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link active" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero">
+      <div class="container page-hero__content">
+        <div class="section-label" data-i18n="shop.hero.label">The Full System</div>
+        <h1 class="page-hero__title" data-i18n="shop.title">Shop TrailVolt</h1>
+        <p class="page-hero__sub" data-i18n="shop.subtitle">Every pack, every module. Three lines built for different journeys — all sharing one universal module ecosystem.</p>
+      </div>
+    </section>
+
+    <!-- ── Filter Tabs ── -->
+    <section class="section-pad" aria-label="Shop">
+      <div class="container">
+
+        <div class="filter-tabs" role="tablist" id="shop-filter">
+          <button class="filter-tab active" data-target="section-all"        role="tab" aria-selected="true" data-i18n="shop.filter.all">All</button>
+          <button class="filter-tab"        data-target="section-everyday"   role="tab" data-i18n="shop.filter.everyday" aria-selected="false">Everyday</button>
+          <button class="filter-tab"        data-target="section-travel"     role="tab" data-i18n="shop.filter.travel" aria-selected="false">Travel</button>
+          <button class="filter-tab"        data-target="section-trail"      role="tab" data-i18n="shop.filter.trail" aria-selected="false">Trail</button>
+          <button class="filter-tab"        data-target="section-modules"    role="tab" data-i18n="shop.filter.modules" aria-selected="false">Modules</button>
+        </div>
+
+        <!-- ── Everyday ── -->
+        <div id="section-everyday" class="shop-section">
+          <div style="margin-bottom:var(--space-8);">
+            <div class="section-label" data-i18n="shop.everyday.label">22L — Urban Carry</div>
+            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.everyday.title">Everyday Line</h2>
+            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.everyday.sub">Your daily companion. Structure and freedom in one pack — the city commuter's choice for laptop, gym kit, and organised essentials.</p>
+          </div>
+          <div class="product-grid" style="margin-bottom:var(--space-12);">
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Everyday+Core+Black" alt="TrailVolt Everyday 22L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.bestseller">Best Seller</span>
+                <h3 class="card__title"><span data-i18n="lines.everyday.name">Everyday</span> <span data-i18n="cfg.color.core_black">Core Black</span></h3>
+                <p class="card__text" data-i18n="shop.card.everyday.cb.desc">The essential daily configuration. 16" laptop sleeve, front organiser, and the full module-ready front face. The one they always ask about.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=everyday&color=core-black" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/374754/ffffff?text=Everyday+Slate+Grey" alt="TrailVolt Everyday 22L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.new_colour">New Colour</span>
+                <h3 class="card__title"><span data-i18n="lines.everyday.name">Everyday</span> <span data-i18n="cfg.color.slate_grey">Slate Grey</span></h3>
+                <p class="card__text" data-i18n="shop.card.everyday.sg.desc">Understated, versatile, and office-ready. The Slate Grey Everyday carries your workday with ease and pairs with every module in the system.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=everyday&color=slate-grey" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/1a3a2a/ffffff?text=Everyday+Forest+Green" alt="TrailVolt Everyday 22L Forest Green" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.limited">Limited</span>
+                <h3 class="card__title"><span data-i18n="lines.everyday.name">Everyday</span> <span data-i18n="cfg.color.forest_green">Forest Green</span></h3>
+                <p class="card__text" data-i18n="shop.card.everyday.fg.desc">A subtle nod to the outdoors for your daily carry. Limited colourway — the Forest Green Everyday sells out fast. Configure yours before it's gone.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=everyday&color=forest-green" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ── Travel ── -->
+        <div id="section-travel" class="shop-section">
+          <div style="margin-bottom:var(--space-8);">
+            <div class="section-label" data-i18n="shop.travel.label">30L — Cabin Carry</div>
+            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.travel.title">Travel Line</h2>
+            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.travel.sub">IATA cabin-compliant. Clamshell flat-open design. Detachable 8L day bag. This is the only luggage you need for most trips.</p>
+          </div>
+          <div class="product-grid" style="margin-bottom:var(--space-12);">
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Travel+Core+Black" alt="TrailVolt Travel 30L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.cabin_ready">Cabin Ready</span>
+                <h3 class="card__title"><span data-i18n="lines.travel.name">Travel</span> <span data-i18n="cfg.color.core_black">Core Black</span></h3>
+                <p class="card__text" data-i18n="shop.card.travel.cb.desc">Built for the modern nomad. Meets carry-on requirements for Ryanair, easyJet, and most major airlines. Pack it once. Unpack at the destination.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=travel&color=core-black" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/374754/ffffff?text=Travel+Slate+Grey" alt="TrailVolt Travel 30L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.most_popular">Most Popular</span>
+                <h3 class="card__title"><span data-i18n="lines.travel.name">Travel</span> <span data-i18n="cfg.color.slate_grey">Slate Grey</span></h3>
+                <p class="card__text" data-i18n="shop.card.travel.sg.desc">The most popular Travel configuration. Neutral enough for business, spacious enough for the weekend. Add the Hidden Document Sleeve and Power Bank Module for the complete travel set.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=travel&color=slate-grey" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/0B1626/3FFFAB?text=Travel+Custom+Build" alt="TrailVolt Travel 30L Custom Build" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.custom">Custom</span>
+                <h3 class="card__title"><span data-i18n="lines.travel.name">Travel</span> <span data-i18n="cfg.color.custom">Custom Build</span></h3>
+                <p class="card__text" data-i18n="shop.card.travel.fg.desc">Build your Travel line from scratch. Choose your colour, select your modules, and create a configuration that belongs only to you.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=travel" class="btn btn--primary btn--full" data-i18n="shop.configure">Start Configuring</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ── Trail ── -->
+        <div id="section-trail" class="shop-section">
+          <div style="margin-bottom:var(--space-8);">
+            <div class="section-label" data-i18n="shop.trail.label">28L — Outdoor</div>
+            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.trail.title">Trail Line</h2>
+            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.trail.sub">500D Cordura, DWR weather-resistant coating, load-distribution harness. Built for terrain — compatible with every module for post-trail versatility.</p>
+          </div>
+          <div class="product-grid" style="margin-bottom:var(--space-12);">
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/1a3a2a/ffffff?text=Trail+Forest+Green" alt="TrailVolt Trail 28L Forest Green" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.trail_fav">Trail Favourite</span>
+                <h3 class="card__title"><span data-i18n="lines.trail.name">Trail</span> <span data-i18n="cfg.color.forest_green">Forest Green</span></h3>
+                <p class="card__text" data-i18n="shop.card.trail.fg.desc">The signature Trail colourway. Built for mud, rain, and elevation — and stylish enough for the café when you get back down.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=trail&color=forest-green" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Trail+Core+Black" alt="TrailVolt Trail 28L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.label.versatile">Versatile</span>
+                <h3 class="card__title"><span data-i18n="lines.trail.name">Trail</span> <span data-i18n="cfg.color.core_black">Core Black</span></h3>
+                <p class="card__text" data-i18n="shop.card.trail.cb.desc">All the performance of the Trail line in a clean, urban-friendly colourway. Add the Hydration Sleeve and Rain Cover Module and you're ready for anything.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=trail&color=core-black" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+            <article class="card fade-in">
+              <div class="card__image">
+                <img src="https://placehold.co/400x300/374754/ffffff?text=Trail+Slate+Grey" alt="TrailVolt Trail 28L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="card__body">
+                <span class="card__label" data-i18n="shop.new">New</span>
+                <h3 class="card__title"><span data-i18n="lines.trail.name">Trail</span> <span data-i18n="cfg.color.slate_grey">Slate Grey</span></h3>
+                <p class="card__text" data-i18n="shop.card.trail.sg.desc">A new addition to the Trail family. The Slate Grey brings a technical aesthetic to the outdoors — paired best with the Bottle Holder and Rain Cover modules.</p>
+                <div class="card__price"><span class="card__price-from" data-i18n="shop.from">From </span><span data-price="159">€159</span></div>
+                <a href="product.html?line=trail&color=slate-grey" class="btn btn--secondary btn--full" data-i18n="shop.configure">Configure Yours</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ── Modules ── -->
+        <div id="section-modules" class="shop-section">
+          <div style="margin-bottom:var(--space-8);">
+            <div class="section-label" data-i18n="mp.label">The Add-ons</div>
+            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="mp.title">Modules</h2>
+            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.modules.sub">Eight modular accessories. All compatible with every TrailVolt pack. Snap on, snap off — in seconds, without tools.</p>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--space-6);margin-bottom:var(--space-12);">
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Chest+Phone+Module" alt="Chest Phone Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.phone.name">Chest Phone Module</h3>
+                <p class="card__text" data-i18n="modules.phone.desc">Magnetic chest-mount for instant phone access. No fumbling. No opening the bag.</p>
+                <div class="card__price"><span data-price="29">€29</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Tech+Organizer+Module" alt="Tech Organizer Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.tech.name">Tech Organizer Module</h3>
+                <p class="card__text" data-i18n="modules.tech.desc">Cables, adapters, SD cards, pen loop. Never untangle your bag again.</p>
+                <div class="card__price"><span data-price="35">€35</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Power+Bank+Module" alt="Power Bank Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.power.name">Power Bank Module</h3>
+                <p class="card__text" data-i18n="modules.power.desc">10,000mAh integrated power bank with USB-A and USB-C passthrough.</p>
+                <div class="card__price"><span data-price="39">€39</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Shoe+Module" alt="Shoe Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.shoe.name">Shoe Module</h3>
+                <p class="card__text" data-i18n="modules.shoe.desc">Ventilated isolated compartment for gym shoes or post-trail sandals.</p>
+                <div class="card__price"><span data-price="32">€32</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Clothing+Organizer+Cube" alt="Clothing Organizer Cube" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.clothing.name">Clothing Organizer Cube</h3>
+                <p class="card__text" data-i18n="modules.clothing.desc">Compression cube for a clean change. Collapses flat when empty.</p>
+                <div class="card__price"><span data-price="25">€25</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Hidden+Document+Sleeve" alt="Hidden Document Sleeve" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.doc.name">Hidden Document Sleeve</h3>
+                <p class="card__text" data-i18n="modules.doc.desc">RFID-blocking slim sleeve flush against the back panel. Invisible to thieves.</p>
+                <div class="card__price"><span data-price="19">€19</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Bottle+Holder+Module" alt="Bottle Holder Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.bottle.name">Bottle Holder Module</h3>
+                <p class="card__text" data-i18n="modules.bottle.desc">Side-swing holder for 1L water bottles. Retracts flush when not in use.</p>
+                <div class="card__price"><span data-price="18">€18</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+            <article class="card fade-in">
+              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Rain+Cover+Module" alt="Rain Cover Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__body">
+                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.rain.name">Rain Cover Module</h3>
+                <p class="card__text" data-i18n="modules.rain.desc">Tucked in its own base pocket. Full-pack coverage in under 10 seconds.</p>
+                <div class="card__price"><span data-price="22">€22</span></div>
+                <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Upsell / Bundles ── -->
+        <section style="background:var(--color-navy);border-radius:var(--radius-2xl);padding:var(--space-12);margin-top:var(--space-16);" aria-labelledby="bundle-heading">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;">
+            <div>
+              <div class="section-label" data-i18n="shop.bundle.label">Curated Configurations</div>
+              <h2 class="section-title section-title--white" id="bundle-heading" data-i18n="shop.bundle.title">Not Sure Where to Start?</h2>
+              <p class="section-subtitle section-subtitle--white" data-i18n="shop.bundle.sub">Try one of our three pre-configured starter builds — handpicked module combinations that cover 90% of journeys right out of the box. Customise from there.</p>
+              <div style="display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-8);">
+                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+                  <div>
+                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.kit.title">The Office Kit</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.kit.sub">Everyday + Tech Organizer + Chest Phone Module</p>
+                  </div>
+                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="223">€223</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+                  <div>
+                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.traveller.title">The Traveller</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.traveller.sub">Travel + Hidden Document Sleeve + Power Bank Module</p>
+                  </div>
+                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="217">€217</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+                  <div>
+                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.runner.title">The Trail Runner</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.runner.sub">Trail + Rain Cover Module + Bottle Holder Module</p>
+                  </div>
+                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="199">€199</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="https://placehold.co/500x400/0B1626/3FFFAB?text=TrailVolt+Starter+Bundles" alt="Three TrailVolt starter configurations side by side" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);min-height:280px;">
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:var(--space-8);">
+            <a href="product.html" class="btn btn--primary btn--lg" data-i18n="shop.bundle.cta">Start Your Custom Build</a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Trust Bar ── -->
+  <section style="background:var(--color-glacier);padding:var(--space-8) 0;border-top:1px solid var(--color-grey-200);" aria-label="Trust badges">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-4);text-align:center;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.shipping">Free EU Shipping</p>
+          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.on_all">On all orders</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.checkout">Secure Checkout</p>
+          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.ssl_sub">SSL encrypted</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.returns">60-Day Returns</p>
+          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.no_q">No questions asked</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.warranty">2-Year Warranty</p>
+          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.on_products">On all products</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M5 17H3v-4M2 5h11l3 9"/><path d="M9 17H13"/><path d="M13 6V3"/></svg>
+          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="shop.trust.materials">Recycled Nylon</p>
+          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.certified">Bluesign certified</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="newsletter-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" data-i18n-placeholder="newsletter.placeholder" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary" data-i18n="newsletter.cta">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://tiktok.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+            <a href="https://youtube.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link" data-i18n="footer.configure">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link" data-i18n="footer.shop">Shop All</a>
+            <a href="modules.html" class="footer__link" data-i18n="footer.modules">Modules</a>
+            <a href="shop.html#packs" class="footer__link" data-i18n="footer.packs">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link" data-i18n="footer.story">Our Story</a>
+            <a href="tribe.html" class="footer__link" data-i18n="footer.tribe">The Tribe</a>
+            <a href="sustainability.html" class="footer__link" data-i18n="footer.sustain">Sustainability</a>
+            <a href="loyalty.html" class="footer__link" data-i18n="footer.loyalty">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link" data-i18n="footer.faq">FAQ</a>
+            <a href="contact.html" class="footer__link" data-i18n="footer.contact">Contact</a>
+            <a href="terms.html" class="footer__link" data-i18n="footer.terms">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);" data-i18n="footer.promo.code">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);" data-i18n="footer.promo.sub">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link" data-i18n="footer.tos">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link" data-i18n="footer.cookies">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filter tabs logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.filter-tab');
+      const sections = {
+        'section-all':      ['section-everyday','section-travel','section-trail','section-modules'],
+        'section-everyday': ['section-everyday'],
+        'section-travel':   ['section-travel'],
+        'section-trail':    ['section-trail'],
+        'section-modules':  ['section-modules'],
+      };
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected','true');
+
+          const target = tab.dataset.target;
+          const visible = sections[target] || [];
+          document.querySelectorAll('.shop-section').forEach(sec => {
+            sec.style.display = visible.includes(sec.id) ? 'block' : 'none';
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

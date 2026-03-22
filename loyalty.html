@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basecamp Loyalty — TrailVolt</title>
+  <meta name="description" content="Join Basecamp Loyalty. Earn points, unlock exclusive perks, and be rewarded for every kilometre you carry TrailVolt." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Announce Bar ── -->
+  <div class="announce-bar" role="banner">
+    <span>Free EU shipping on orders over €100 · Use <strong>BASECAMP10</strong> for 10% off your first order</span>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Hero ── -->
+    <section style="background:var(--color-navy);padding:var(--space-24) 0;position:relative;overflow:hidden;" aria-labelledby="loyalty-hero-heading">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%, rgba(63,255,171,0.08) 0%, transparent 70%);pointer-events:none;"></div>
+      <div class="container" style="position:relative;z-index:1;text-align:center;">
+        <span style="font-family:var(--font-accent);font-size:var(--text-sm);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-mint);background:rgba(63,255,171,0.1);padding:6px 16px;border-radius:100px;display:inline-block;margin-bottom:var(--space-5);" data-i18n="loyalty.hero.badge">Free to Join</span>
+        <h1 id="loyalty-hero-heading" style="font-family:var(--font-heading);font-size:clamp(var(--text-4xl),6vw,var(--text-6xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-white);line-height:1.1;margin-bottom:var(--space-5);">
+          Basecamp <span style="color:var(--color-mint);">Loyalty</span>
+        </h1>
+        <p style="font-size:var(--text-xl);color:rgba(255,255,255,0.6);max-width:580px;margin:0 auto var(--space-8);line-height:1.7;" data-i18n="loyalty.hero.sub">
+          Every purchase earns. Every kilometre counts. Climb through three tiers and unlock perks built for people who carry with purpose.
+        </p>
+        <a href="#join-form" class="btn btn--primary btn--lg" data-i18n="loyalty.hero.cta">Join Basecamp Free</a>
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);margin-top:var(--space-4);" data-i18n="loyalty.hero.members">12,000+ members already inside.</p>
+      </div>
+    </section>
+
+    <!-- ── Loyalty Tiers ── -->
+    <section class="section-pad" aria-labelledby="tiers-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--space-12);">
+          <div class="section-label" style="justify-content:center;margin:0 auto var(--space-4);" data-i18n="loyalty.label">The Tiers</div>
+          <h2 id="tiers-heading" class="section-title" data-i18n="loyalty.title" style="margin-bottom:var(--space-4);">Climb the Mountain</h2>
+          <p style="color:var(--color-grey-500);max-width:540px;margin:0 auto;" data-i18n="loyalty.tiers.sub">Earn points for every purchase, review, and referral. Unlock better perks as you climb through Scout, Basecamp, and Summit.</p>
+        </div>
+        <div class="loyalty-tiers">
+
+          <div class="loyalty-tier">
+            <span class="loyalty-tier__badge loyalty-tier__badge--base" data-i18n="loyalty.tier.scout.name">Scout</span>
+            <h3 style="font-size:var(--text-xl);font-weight:800;color:var(--color-navy);" data-i18n="loyalty.tier.scout.label">Entry Level</h3>
+            <p class="loyalty-tier__points">0–499</p>
+            <p style="font-size:var(--text-xs);color:var(--color-grey-400);font-family:var(--font-accent);letter-spacing:0.06em;text-transform:uppercase;">Points</p>
+            <ul class="loyalty-tier__perks">
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.scout.p1">10% off first order with BASECAMP10</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.scout.p2">Access to Basecamp newsletter</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.scout.p3">Early access to product drops (24hr)</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.scout.p4">Community voting rights</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.scout.p5">Birthday discount (5% off)</li>
+            </ul>
+          </div>
+
+          <div class="loyalty-tier loyalty-tier--featured">
+            <span class="loyalty-tier__badge loyalty-tier__badge--plus" data-i18n="loyalty.tier.basecamp.name">Basecamp</span>
+            <h3 data-i18n="loyalty.tier.basecamp.label">Most Popular</h3>
+            <p class="loyalty-tier__points">500–1999</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);font-family:var(--font-accent);letter-spacing:0.06em;text-transform:uppercase;">Points</p>
+            <ul class="loyalty-tier__perks">
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p1">All Scout benefits</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p2">15% off all future orders</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p3">Free standard shipping always</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p4">Early access (48hr before public)</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p5">Priority customer support</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.basecamp.p6">Exclusive member-only drops</li>
+            </ul>
+          </div>
+
+          <div class="loyalty-tier">
+            <span class="loyalty-tier__badge loyalty-tier__badge--elite" data-i18n="loyalty.tier.summit.name">Summit</span>
+            <h3 style="font-size:var(--text-xl);font-weight:800;color:var(--color-navy);" data-i18n="loyalty.tier.summit.label">Elite Tier</h3>
+            <p class="loyalty-tier__points">2000+</p>
+            <p style="font-size:var(--text-xs);color:var(--color-grey-400);font-family:var(--font-accent);letter-spacing:0.06em;text-transform:uppercase;">Points</p>
+            <ul class="loyalty-tier__perks">
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p1">All Basecamp benefits</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p2">25% off all orders (code TRIBE25)</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p3">Free express shipping always</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p4">Exclusive first access (72hr)</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p5">Annual free module gift</li>
+              <li class="loyalty-tier__perk" data-i18n="loyalty.tier.summit.p6">Named in our Tribe Hall of Fame</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Points Earning Guide ── -->
+    <section class="section-pad" style="background:var(--color-glacier);" aria-labelledby="points-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--space-12);">
+          <div class="section-label" style="justify-content:center;margin:0 auto var(--space-4);" data-i18n="loyalty.points.label">Earn Points</div>
+          <h2 id="points-heading" class="section-title" data-i18n="loyalty.points.title" style="margin-bottom:0;">Every Action Counts</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space-5);max-width:900px;margin:0 auto;">
+
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-7);text-align:center;border:1px solid var(--color-grey-200);">
+            <div style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:900;color:var(--color-mint);margin-bottom:var(--space-2);">100</div>
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-navy);margin-bottom:var(--space-2);">Points</p>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);" data-i18n="loyalty.points.pack">Buy a Core Pack</p>
+          </div>
+
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-7);text-align:center;border:1px solid var(--color-grey-200);">
+            <div style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:900;color:var(--color-mint);margin-bottom:var(--space-2);">25</div>
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-navy);margin-bottom:var(--space-2);">Points</p>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);" data-i18n="loyalty.points.module">Buy Any Module</p>
+          </div>
+
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-7);text-align:center;border:1px solid var(--color-grey-200);">
+            <div style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:900;color:var(--color-mint);margin-bottom:var(--space-2);">50</div>
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-navy);margin-bottom:var(--space-2);">Points</p>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);" data-i18n="loyalty.points.review">Leave a Product Review</p>
+          </div>
+
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-7);text-align:center;border:1px solid var(--color-grey-200);">
+            <div style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:900;color:var(--color-mint);margin-bottom:var(--space-2);">200</div>
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-navy);margin-bottom:var(--space-2);">Points</p>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);" data-i18n="loyalty.points.referral">Refer a Friend Who Buys</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Loyalty FAQ ── -->
+    <section class="section-pad" aria-labelledby="loyalty-faq-heading">
+      <div class="container container--narrow">
+        <div style="text-align:center;margin-bottom:var(--space-10);">
+          <h2 id="loyalty-faq-heading" class="section-title" style="margin-bottom:0;" data-i18n="loyalty.faq.title">Program Questions</h2>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+
+          <div class="accordion-item" id="lf1">
+            <button class="accordion-header" aria-expanded="false" aria-controls="lf1-body">
+              <span data-i18n="loyalty.faq.q1">Do points expire?</span>
+              <div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+            </button>
+            <div class="accordion-body" id="lf1-body" role="region">
+              <div class="accordion-body-inner" data-i18n="loyalty.faq.a1">Points are valid for 24 months from the date they are earned. If your account has no activity for 24 months, any remaining points will expire. We'll email you 30 days before any points are due to expire so you can take action.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="lf2">
+            <button class="accordion-header" aria-expanded="false" aria-controls="lf2-body">
+              <span data-i18n="loyalty.faq.q2">Can I redeem points for discounts?</span>
+              <div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+            </button>
+            <div class="accordion-body" id="lf2-body" role="region">
+              <div class="accordion-body-inner" data-i18n="loyalty.faq.a2">Points unlock tier-based perks automatically as you earn them. Each tier comes with increasing discount codes and benefits. At Summit tier, your discount code TRIBE25 gives you 25% off every order. Points function as progress trackers — the discounts and perks are the reward.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="lf3">
+            <button class="accordion-header" aria-expanded="false" aria-controls="lf3-body">
+              <span data-i18n="loyalty.faq.q3">How do I track my points balance?</span>
+              <div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+            </button>
+            <div class="accordion-body" id="lf3-body" role="region">
+              <div class="accordion-body-inner" data-i18n="loyalty.faq.a3">Every purchase, review, and referral triggers an automatic email showing your updated points balance and current tier. You can also email hello@trailvolt.com at any time to request a points balance summary. A dedicated member dashboard is on our roadmap for 2026.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="lf4">
+            <button class="accordion-header" aria-expanded="false" aria-controls="lf4-body">
+              <span data-i18n="loyalty.faq.q4">What happens to my points if I return a product?</span>
+              <div class="accordion-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+            </button>
+            <div class="accordion-body" id="lf4-body" role="region">
+              <div class="accordion-body-inner" data-i18n="loyalty.faq.a4">If you return a product within the 60-day return window, the points earned from that purchase will be deducted from your balance. If a deduction causes your balance to drop below a tier threshold, your tier will be adjusted accordingly. Referral and review points are not affected by returns.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Join Form ── -->
+    <section id="join-form" style="background:var(--color-navy);padding:var(--space-24) 0;" aria-labelledby="join-heading">
+      <div class="container" style="max-width:640px;">
+        <div style="text-align:center;margin-bottom:var(--space-10);">
+          <div class="section-label" style="justify-content:center;margin:0 auto var(--space-4);" data-i18n="loyalty.join.label">Free Membership</div>
+          <h2 id="join-heading" style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-white);margin-bottom:var(--space-4);" data-i18n="loyalty.join.title">Join Basecamp</h2>
+          <p style="font-size:var(--text-lg);color:rgba(255,255,255,0.6);" data-i18n="loyalty.join.sub">One email. Instant 10% off. Free forever.</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-2xl);padding:var(--space-10);">
+          <form data-email-form style="display:flex;flex-direction:column;gap:var(--space-5);">
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label" style="color:rgba(255,255,255,0.7);" for="loyalty-name" data-i18n="loyalty.join.fname">First Name</label>
+              <input type="text" id="loyalty-name" class="form-input" placeholder="Your first name" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);color:var(--color-white);" />
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label" style="color:rgba(255,255,255,0.7);" for="loyalty-email" data-i18n="loyalty.join.email.label">Email Address *</label>
+              <input type="email" id="loyalty-email" class="form-input" placeholder="hello@example.com" required style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);color:var(--color-white);" />
+            </div>
+            <label style="display:flex;align-items:flex-start;gap:var(--space-3);cursor:pointer;">
+              <input type="checkbox" required style="margin-top:3px;accent-color:var(--color-mint);" />
+              <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);line-height:1.6;" data-i18n="loyalty.join.agree">I agree to receive the TrailVolt Basecamp newsletter and accept the <a href="terms.html" style="color:rgba(255,255,255,0.6);text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full" style="font-size:var(--text-base);padding:var(--space-5);" data-i18n="loyalty.join.cta">Join Basecamp — Get 10% Off</button>
+          </form>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.25);text-align:center;margin-top:var(--space-5);" data-i18n="loyalty.join.legal">No spam. No selling your data. Unsubscribe any time.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="nl-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="nl-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Accordion
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.accordion-item');
+        const body = item.querySelector('.accordion-body');
+        const isOpen = item.classList.contains('open');
+        item.classList.toggle('open', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        body.style.maxHeight = isOpen ? '0' : body.scrollHeight + 'px';
+      });
+    });
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+</body>
+</html>

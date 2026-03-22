@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost on the Trail — TrailVolt</title>
+  <meta name="description" content="Page not found. Let's get you back on trail." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html" class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html" class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html" class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html" class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+      </div>
+      <div class="nav__actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">🇬🇧 EN</button>
+            <button class="lang-option" data-lang="fr">🇫🇷 FR</button>
+            <button class="lang-option" data-lang="de">🇩🇪 DE</button>
+            <button class="lang-option" data-lang="es">🇪🇸 ES</button>
+            <button class="lang-option" data-lang="zh">🇨🇳 ZH</button>
+            <button class="lang-option" data-lang="ja">🇯🇵 JA</button>
+          </div>
+        </div>
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-offset" style="min-height:80vh;display:flex;align-items:center;justify-content:center;background:var(--color-navy);">
+    <div style="text-align:center;padding:var(--space-16);">
+      <p style="font-family:var(--font-heading);font-size:8rem;font-weight:900;color:var(--color-mint);letter-spacing:-0.05em;line-height:1;margin-bottom:0;">404</p>
+      <h1 style="font-family:var(--font-heading);font-size:clamp(var(--text-2xl),4vw,var(--text-4xl));font-weight:800;color:var(--color-white);margin:var(--space-4) 0 var(--space-6);" data-i18n="404.title">Lost on the Trail.</h1>
+      <p style="font-size:var(--text-lg);color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto var(--space-10);line-height:1.7;">The page you're looking for has wandered off the map. Let's get you back to base.</p>
+      <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+        <a href="index.html" class="btn btn--primary btn--lg" data-i18n="404.home">Back to Base Camp</a>
+        <a href="shop.html" class="btn btn--ghost" data-i18n="404.shop">Shop the System</a>
+      </div>
+      <img src="https://placehold.co/400x280/0B1626/3FFFAB?text=Lost+on+the+Trail" alt="404 — TrailVolt pack lost on trail" loading="lazy" style="margin-top:var(--space-12);border-radius:var(--radius-xl);max-width:400px;width:100%;opacity:0.6;">
+    </div>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

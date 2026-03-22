@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — TrailVolt</title>
+  <meta name="description" content="Secure checkout for your TrailVolt order." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Minimal Checkout Nav ── -->
+  <nav class="nav" role="navigation" aria-label="Checkout navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:var(--space-6);">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">🇬🇧 EN</button>
+            <button class="lang-option" data-lang="fr">🇫🇷 FR</button>
+            <button class="lang-option" data-lang="de">🇩🇪 DE</button>
+            <button class="lang-option" data-lang="es">🇪🇸 ES</button>
+            <button class="lang-option" data-lang="zh">🇨🇳 ZH</button>
+            <button class="lang-option" data-lang="ja">🇯🇵 JA</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-family:var(--font-accent);font-size:var(--text-xs);color:rgba(255,255,255,0.5);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-i18n="co.secure">Secure Checkout</span>
+        </div>
+        <a href="cart.html" style="font-family:var(--font-accent);font-size:var(--text-sm);color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--color-white)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'" data-i18n="co.back">← Back to Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-offset">
+    <section class="section-pad" aria-label="Checkout">
+      <div class="container">
+
+        <h1 style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),4vw,var(--text-4xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-navy);margin-bottom:var(--space-10);" data-i18n="co.title">Checkout</h1>
+
+        <!-- Checkout Form Layout -->
+        <div class="checkout-layout" id="checkout-form-wrapper">
+
+          <!-- Left: Form -->
+          <div>
+
+            <!-- Progress steps -->
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-8);flex-wrap:wrap;" role="list" aria-label="Checkout steps">
+              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-navy);" role="listitem">
+                <span style="width:24px;height:24px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--color-navy);" aria-hidden="true">1</span>
+                <span data-i18n="co.step.contact">Contact</span>
+              </div>
+              <div style="width:24px;height:1px;background:var(--color-grey-300);" aria-hidden="true"></div>
+              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-grey-400);" role="listitem">
+                <span style="width:24px;height:24px;background:var(--color-grey-200);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--color-grey-500);" aria-hidden="true">2</span>
+                <span data-i18n="co.step.shipping">Shipping</span>
+              </div>
+              <div style="width:24px;height:1px;background:var(--color-grey-300);" aria-hidden="true"></div>
+              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-grey-400);" role="listitem">
+                <span style="width:24px;height:24px;background:var(--color-grey-200);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--color-grey-500);" aria-hidden="true">3</span>
+                <span data-i18n="co.step.payment">Payment</span>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="checkout-section">
+              <h2 class="checkout-section__title" data-i18n="co.contact">Contact Information</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="co-first" data-i18n="co.firstName">First Name</label>
+                  <input type="text" id="co-first" class="form-input" placeholder="First Name" data-i18n-placeholder="co.firstName" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-last" data-i18n="co.lastName">Last Name</label>
+                  <input type="text" id="co-last" class="form-input" placeholder="Smith" data-i18n-placeholder="co.lastName" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-email" data-i18n="co.email">Email Address</label>
+                <input type="email" id="co-email" class="form-input" placeholder="hello@example.com" data-i18n-placeholder="co.email" required autocomplete="email" />
+                <p class="form-hint" data-i18n="co.email.hint">Your order confirmation and tracking link will be sent here.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-phone" data-i18n="co.phone">Phone Number</label>
+                <input type="tel" id="co-phone" class="form-input" placeholder="+353 1 234 5678" autocomplete="tel" />
+                <p class="form-hint" data-i18n="co.phone.hint">Optional. Used only for delivery updates.</p>
+              </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="checkout-section">
+              <h2 class="checkout-section__title" data-i18n="co.shipping.addr">Shipping Address</h2>
+              <div class="form-group">
+                <label class="form-label" for="co-address1" data-i18n="co.address1">Address Line 1</label>
+                <input type="text" id="co-address1" class="form-input" placeholder="123 Main Street" data-i18n-placeholder="co.address1" required autocomplete="address-line1" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-address2" data-i18n="co.address2">Address Line 2</label>
+                <input type="text" id="co-address2" class="form-input" placeholder="Apartment, suite, etc." data-i18n-placeholder="co.address2" autocomplete="address-line2" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="co-city" data-i18n="co.city">City</label>
+                  <input type="text" id="co-city" class="form-input" placeholder="Dublin" data-i18n-placeholder="co.city" required autocomplete="address-level2" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-eircode" data-i18n="co.zip">Postal Code</label>
+                  <input type="text" id="co-eircode" class="form-input" placeholder="D01 AB12" required autocomplete="postal-code" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="co-county" data-i18n="co.county">County / State</label>
+                  <input type="text" id="co-county" class="form-input" placeholder="Dublin" autocomplete="address-level1" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-country" data-i18n="co.country">Country</label>
+                  <select id="co-country" class="form-select" required autocomplete="country">
+                    <option value="IE" selected>Ireland</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="ES">Spain</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="BE">Belgium</option>
+                    <option value="IT">Italy</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PL">Poland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="DK">Denmark</option>
+                    <option value="NO">Norway</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="AT">Austria</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shipping Method -->
+            <div class="checkout-section">
+              <h2 class="checkout-section__title" data-i18n="co.shipping.method">Shipping Method</h2>
+
+              <label class="shipping-option selected" id="shipping-standard-label">
+                <input type="radio" name="shipping" value="standard" checked style="accent-color:var(--color-navy);" />
+                <div class="shipping-option__details">
+                  <p class="shipping-option__name" data-i18n="co.ship.std">Standard Shipping</p>
+                  <p class="shipping-option__time" data-i18n="co.ship.std.time">3–5 business days · DPD</p>
+                </div>
+                <span class="shipping-option__price" id="standard-price" data-i18n="co.free">Free</span>
+              </label>
+
+              <label class="shipping-option" id="shipping-express-label">
+                <input type="radio" name="shipping" value="express" style="accent-color:var(--color-navy);" />
+                <div class="shipping-option__details">
+                  <p class="shipping-option__name" data-i18n="co.ship.exp">Express Shipping</p>
+                  <p class="shipping-option__time" data-i18n="co.ship.exp.time">1–2 business days · DPD Priority</p>
+                </div>
+                <span class="shipping-option__price" data-price="12.99">€12.99</span>
+              </label>
+
+              <p style="font-size:var(--text-xs);color:var(--color-grey-400);margin-top:var(--space-3);" data-i18n="co.ship.note">All orders include a tracking number sent to your email. Standard shipping is free on orders over €100.</p>
+            </div>
+
+            <!-- Payment -->
+            <div class="checkout-section">
+              <h2 class="checkout-section__title" data-i18n="co.payment">Payment</h2>
+
+              <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-6);flex-wrap:wrap;" role="group" aria-label="Payment method">
+                <button type="button" id="pay-card-btn" onclick="selectPayMethod('card')" style="flex:1;min-width:120px;display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);border:2px solid var(--color-navy);background:var(--color-navy);color:var(--color-white);font-family:var(--font-accent);font-size:var(--text-sm);font-weight:600;cursor:pointer;transition:all 0.2s;" aria-pressed="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                  <span data-i18n="co.pay.card">Card</span>
+                </button>
+                <button type="button" id="pay-apple-btn" onclick="selectPayMethod('apple')" style="flex:1;min-width:120px;display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);border:2px solid var(--color-grey-300);background:var(--color-white);color:var(--color-navy);font-family:var(--font-accent);font-size:var(--text-sm);font-weight:600;cursor:pointer;transition:all 0.2s;" aria-pressed="false">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  Apple Pay
+                </button>
+                <button type="button" id="pay-google-btn" onclick="selectPayMethod('google')" style="flex:1;min-width:120px;display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);border:2px solid var(--color-grey-300);background:var(--color-white);color:var(--color-navy);font-family:var(--font-accent);font-size:var(--text-sm);font-weight:600;cursor:pointer;transition:all 0.2s;" aria-pressed="false">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  Google Pay
+                </button>
+              </div>
+
+              <div id="card-fields-wrapper">
+                <div class="form-group">
+                  <label class="form-label" for="co-card-name" data-i18n="co.nameOnCard">Name on Card</label>
+                  <input type="text" id="co-card-name" class="form-input" placeholder="RUSLAN SMITH" required autocomplete="cc-name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-card-num" data-i18n="co.card">Card Number</label>
+                  <div class="card-input-wrapper">
+                    <input type="text" id="co-card-num" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19" required autocomplete="cc-number" inputmode="numeric" />
+                    <div class="card-input-icons">
+                      <div class="card-icon">VISA</div>
+                      <div class="card-icon">MC</div>
+                      <div class="card-icon">AMEX</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="co-expiry" data-i18n="co.expiry">Expiry</label>
+                    <input type="text" id="co-expiry" class="form-input" placeholder="MM / YY" maxlength="7" required autocomplete="cc-exp" inputmode="numeric" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="co-cvv">
+                      <span data-i18n="co.cvv">CVV</span>
+                      <span style="font-weight:400;color:var(--color-grey-400);font-size:var(--text-xs);">(3–4 digits)</span>
+                    </label>
+                    <input type="text" id="co-cvv" class="form-input" placeholder="•••" maxlength="4" required autocomplete="cc-csc" inputmode="numeric" />
+                  </div>
+                </div>
+
+                <div style="display:flex;align-items:center;gap:var(--space-3);margin-top:var(--space-4);padding:var(--space-4);background:var(--color-glacier);border-radius:var(--radius-md);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="co.ssl.text">Your payment information is encrypted with SSL. We never store card details.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terms + Place Order -->
+            <div class="checkout-section" style="border:none;">
+              <label style="display:flex;align-items:flex-start;gap:var(--space-3);cursor:pointer;margin-bottom:var(--space-6);">
+                <input type="checkbox" id="co-terms" style="margin-top:3px;accent-color:var(--color-navy);" required />
+                <span style="font-size:var(--text-sm);color:var(--color-grey-600);line-height:1.6;">I agree to the TrailVolt <a href="terms.html" style="color:var(--color-navy);font-weight:600;text-decoration:underline;">Terms &amp; Conditions</a> and <a href="terms.html" style="color:var(--color-navy);font-weight:600;text-decoration:underline;">Privacy Policy</a>.</span>
+              </label>
+
+              <button type="button" class="btn btn--primary btn--full btn--lg" id="place-order-btn" style="font-size:var(--text-lg);" data-i18n="co.submit">Complete Order
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right: Order Summary -->
+          <div>
+            <div class="order-sidebar">
+              <h2 class="order-sidebar__title" data-i18n="co.summary.title">Order Summary</h2>
+              <div id="checkout-items">
+                <p style="color:rgba(255,255,255,0.4);font-size:var(--text-sm);" data-i18n="co.loading">Loading your items…</p>
+              </div>
+
+              <div style="border-top:1px solid rgba(255,255,255,0.1);margin-top:var(--space-4);padding-top:var(--space-4);">
+                <div class="order-sidebar__item">
+                  <span class="order-sidebar__item-name" data-i18n="co.subtotal">Subtotal</span>
+                  <span class="order-sidebar__item-price" id="checkout-subtotal">€0</span>
+                </div>
+
+                <!-- Discount row (hidden if no promo) -->
+                <div class="order-sidebar__item" id="checkout-discount-row" style="display:none;">
+                  <span class="order-sidebar__item-name" style="color:var(--color-mint);" data-i18n="co.promo.label">Promo</span>
+                  <span class="order-sidebar__item-price" style="color:var(--color-mint);">−€0</span>
+                </div>
+
+                <div class="order-sidebar__item">
+                  <span class="order-sidebar__item-name" data-i18n="co.shipping">Shipping</span>
+                  <span class="order-sidebar__item-price" id="checkout-shipping" data-i18n="co.free">Free</span>
+                </div>
+                <div class="order-sidebar__item">
+                  <span class="order-sidebar__item-name" style="font-size:var(--text-xs);color:rgba(255,255,255,0.35);" data-i18n="co.vat">VAT (23%) included</span>
+                  <span class="order-sidebar__item-price" style="font-size:var(--text-xs);color:rgba(255,255,255,0.35);" data-i18n="co.included">Included</span>
+                </div>
+              </div>
+
+              <div class="order-sidebar__total">
+                <span data-i18n="co.total">Total</span>
+                <span class="order-sidebar__total-mint" id="checkout-total">€0</span>
+              </div>
+
+              <!-- Promo Code Section (rendered by JS) -->
+              <div id="checkout-promo-container" style="margin-top:var(--space-4);"></div>
+
+              <div style="margin-top:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3);">
+                <div style="display:flex;align-items:center;gap:var(--space-3);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="co.trust.ssl">Secure SSL payment</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-3);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+                  <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="co.trust.returns">60-day free returns</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-3);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="co.trust.warranty">2-year warranty included</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Order Success State ── -->
+        <div class="checkout-success" id="checkout-success" aria-live="polite">
+          <div class="checkout-success__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h2 style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),4vw,var(--text-4xl));font-weight:900;letter-spacing:-0.02em;color:var(--color-navy);margin-bottom:var(--space-4);" data-i18n="co.success.title">Order Confirmed!</h2>
+          <p style="font-size:var(--text-lg);color:var(--color-grey-600);max-width:520px;margin:0 auto var(--space-4);line-height:1.7;" data-i18n="co.success.body">Thank you for building with TrailVolt. Your order is confirmed and will be dispatched from Dublin within 1–2 business days.</p>
+          <p style="font-size:var(--text-base);color:var(--color-grey-500);margin-bottom:var(--space-8);" data-i18n="co.success.track">You'll receive a confirmation email with your order number and tracking link shortly.</p>
+          <div style="background:var(--color-glacier);border-radius:var(--radius-xl);padding:var(--space-6) var(--space-8);display:inline-block;margin-bottom:var(--space-8);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-grey-400);margin-bottom:var(--space-2);" data-i18n="co.success.order">Order Number</p>
+            <p style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:900;color:var(--color-navy);" id="order-number">TV-2026-XXXXX</p>
+          </div>
+          <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+            <a href="index.html" class="btn btn--primary btn--lg" data-i18n="co.success.home">Back to Home</a>
+            <a href="tribe.html" class="btn btn--ghost-dark" data-i18n="co.success.tribe">Join the Tribe</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal checkout footer -->
+  <footer style="background:var(--color-navy);padding:var(--space-6) 0;border-top:1px solid rgba(255,255,255,0.06);" role="contentinfo">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);">
+        <span style="font-family:var(--font-heading);font-size:var(--text-base);font-weight:800;color:var(--color-white);">Trail<span style="color:var(--color-mint);">Volt</span></span>
+        <div style="display:flex;gap:var(--space-6);">
+          <a href="terms.html"   style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);text-decoration:none;" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html#terms" style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);text-decoration:none;" data-i18n="footer.tos">Terms of Service</a>
+          <a href="contact.html" style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);text-decoration:none;" data-i18n="nav.m.contact">Contact</a>
+        </div>
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);">© 2026 TrailVolt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function selectPayMethod(method) {
+      const methods = ['card', 'apple', 'google'];
+      methods.forEach(m => {
+        const btn = document.getElementById('pay-' + m + '-btn');
+        if (!btn) return;
+        if (m === method) {
+          btn.style.borderColor = 'var(--color-navy)';
+          btn.style.background  = 'var(--color-navy)';
+          btn.style.color       = 'var(--color-white)';
+          btn.setAttribute('aria-pressed', 'true');
+        } else {
+          btn.style.borderColor = 'var(--color-grey-300)';
+          btn.style.background  = 'var(--color-white)';
+          btn.style.color       = 'var(--color-navy)';
+          btn.setAttribute('aria-pressed', 'false');
+        }
+      });
+      const wrapper = document.getElementById('card-fields-wrapper');
+      if (wrapper) wrapper.style.display = method === 'card' ? '' : 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Format card number
+      const cardNum = document.getElementById('co-card-num');
+      if (cardNum) {
+        cardNum.addEventListener('input', () => {
+          let v = cardNum.value.replace(/\D/g, '').slice(0, 16);
+          cardNum.value = v.replace(/(.{4})/g, '$1 ').trim();
+        });
+      }
+
+      // Format expiry
+      const expiry = document.getElementById('co-expiry');
+      if (expiry) {
+        expiry.addEventListener('input', () => {
+          let v = expiry.value.replace(/\D/g, '').slice(0, 4);
+          if (v.length >= 3) v = v.slice(0, 2) + ' / ' + v.slice(2);
+          expiry.value = v;
+        });
+      }
+
+      // Shipping option highlight
+      document.querySelectorAll('input[name="shipping"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          document.querySelectorAll('.shipping-option').forEach(el => el.classList.remove('selected'));
+          radio.closest('.shipping-option').classList.add('selected');
+          TVCart.renderCheckoutSummary();
+        });
+      });
+
+      // Place order
+      const placeBtn = document.getElementById('place-order-btn');
+      if (placeBtn) {
+        placeBtn.addEventListener('click', () => {
+          // Remove previous error banner
+          const prevBanner = document.getElementById('checkout-error-banner');
+          if (prevBanner) prevBanner.remove();
+
+          // Check terms checkbox
+          const termsCheck = document.getElementById('co-terms');
+          if (termsCheck && !termsCheck.checked) {
+            termsCheck.style.outline = '2px solid var(--color-error)';
+            setTimeout(() => termsCheck.style.outline = '', 3000);
+            showErrorBanner('Please agree to the Terms &amp; Conditions to continue.');
+            return;
+          }
+
+          // Validate required fields
+          const required = document.querySelectorAll('#checkout-form-wrapper [required]:not([type="checkbox"])');
+          let valid = true;
+          let firstInvalid = null;
+          required.forEach(field => {
+            if (!field.value.trim()) {
+              field.style.borderColor = 'var(--color-error)';
+              valid = false;
+              if (!firstInvalid) firstInvalid = field;
+              setTimeout(() => { field.style.borderColor = ''; }, 3000);
+            }
+          });
+
+          if (!valid) {
+            showErrorBanner('Please fill in all required fields before completing your order.');
+            if (firstInvalid) firstInvalid.focus();
+            return;
+          }
+
+          // Simulate processing
+          placeBtn.disabled = true;
+          placeBtn.innerHTML = 'Processing…';
+
+          setTimeout(() => {
+            const orderNum = 'TV-2026-' + Math.floor(10000 + Math.random() * 90000);
+            document.getElementById('order-number').textContent = orderNum;
+            document.getElementById('checkout-form-wrapper').style.display = 'none';
+            const success = document.getElementById('checkout-success');
+            success.classList.add('show');
+            TVCart.clearCart();
+            TVCart.removePromoCode();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 2000);
+        });
+      }
+
+      function showErrorBanner(msg) {
+        const banner = document.createElement('div');
+        banner.id = 'checkout-error-banner';
+        banner.style.cssText = 'display:flex;align-items:center;gap:var(--space-3);background:#FEE2E2;border:1px solid #FECACA;border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-4);font-size:var(--text-sm);color:#991B1B;font-family:var(--font-body);';
+        banner.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#991B1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> ' + msg;
+        const placeBtn = document.getElementById('place-order-btn');
+        if (placeBtn) placeBtn.parentNode.insertBefore(banner, placeBtn);
+      }
+
+    });
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+</body>
+</html>

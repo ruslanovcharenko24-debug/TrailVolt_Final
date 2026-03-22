@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — TrailVolt</title>
+  <meta name="description" content="Get in touch with the TrailVolt team. We reply within 24 hours on business days." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Announce Bar ── -->
+  <div class="announce-bar" role="banner">
+    <span>Free EU shipping on orders over €100 · Use <strong>BASECAMP10</strong> for 10% off your first order</span>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Page Hero ── -->
+    <section style="background:var(--color-glacier);padding:var(--space-16) 0;" aria-labelledby="contact-hero-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="contact.label">Get in Touch</div>
+        <h1 id="contact-hero-heading" data-i18n="contact.title" style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-navy);margin-bottom:var(--space-4);">Contact TrailVolt</h1>
+        <p style="font-size:var(--text-lg);color:var(--color-grey-500);max-width:520px;line-height:1.7;" data-i18n="contact.info.desc">We reply to every message within 24 hours on business days. No bots, no automated responses — a real person reads every email.</p>
+      </div>
+    </section>
+
+    <!-- ── Contact Layout ── -->
+    <section class="section-pad" aria-label="Contact form and information">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:var(--space-16);align-items:start;">
+
+          <!-- Left: Info -->
+          <div>
+            <h2 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-6);" data-i18n="contact.info.sub">We'd Love to Hear From You</h2>
+            <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.8;margin-bottom:var(--space-8);" data-i18n="contact.info.desc">
+              Whether you have a question about your order, want help configuring your perfect pack, have feedback, or just want to say hello — we're here and we listen.
+            </p>
+
+            <!-- Info Cards -->
+            <div style="display:flex;flex-direction:column;gap:var(--space-4);margin-bottom:var(--space-8);">
+
+              <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-5);background:var(--color-glacier);border-radius:var(--radius-xl);">
+                <div style="width:44px;height:44px;background:rgba(63,255,171,0.12);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);margin-bottom:var(--space-1);" data-i18n="contact.info.email.label">Email</p>
+                  <a href="mailto:hello@trailvolt.com" style="font-size:var(--text-base);font-weight:600;color:var(--color-navy);text-decoration:none;">hello@trailvolt.com</a>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-5);background:var(--color-glacier);border-radius:var(--radius-xl);">
+                <div style="width:44px;height:44px;background:rgba(63,255,171,0.12);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);margin-bottom:var(--space-1);" data-i18n="contact.info.addr.label">Address</p>
+                  <p style="font-size:var(--text-base);font-weight:600;color:var(--color-navy);" data-i18n="contact.info.addr.val">Dublin, Ireland</p>
+                  <p style="font-size:var(--text-xs);color:var(--color-grey-400);margin-top:2px;">All orders ship from Dublin</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-5);background:var(--color-glacier);border-radius:var(--radius-xl);">
+                <div style="width:44px;height:44px;background:rgba(63,255,171,0.12);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);margin-bottom:var(--space-1);" data-i18n="contact.info.resp.label">Response Time</p>
+                  <p style="font-size:var(--text-base);font-weight:600;color:var(--color-navy);" data-i18n="contact.info.resp.val">Within 24 hours</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-5);background:var(--color-glacier);border-radius:var(--radius-xl);">
+                <div style="width:44px;height:44px;background:rgba(63,255,171,0.12);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.21 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 8.1a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-slate);margin-bottom:var(--space-1);" data-i18n="contact.info.social.label">Social Media</p>
+                  <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-1);">
+                    <a href="https://instagram.com/trailvolt" target="_blank" rel="noopener" style="font-size:var(--text-xs);font-weight:600;color:var(--color-navy);text-decoration:none;padding:2px 8px;background:var(--color-white);border-radius:var(--radius-md);">@trailvolt</a>
+                    <a href="https://tiktok.com/@trailvolt" target="_blank" rel="noopener" style="font-size:var(--text-xs);font-weight:600;color:var(--color-navy);text-decoration:none;padding:2px 8px;background:var(--color-white);border-radius:var(--radius-md);">TikTok</a>
+                    <a href="https://youtube.com/@trailvolt" target="_blank" rel="noopener" style="font-size:var(--text-xs);font-weight:600;color:var(--color-navy);text-decoration:none;padding:2px 8px;background:var(--color-white);border-radius:var(--radius-md);">YouTube</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div>
+            <form id="contact-form" data-contact-form style="background:var(--color-glacier);border-radius:var(--radius-2xl);padding:var(--space-10);">
+              <h3 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-2);" data-i18n="contact.form.title">Send Us a Message</h3>
+              <p style="font-size:var(--text-sm);color:var(--color-grey-500);margin-bottom:var(--space-8);" data-i18n="contact.form.sub">Fill in the form and we'll get back to you within 24 hours.</p>
+
+              <div class="contact-form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="contact-first" data-i18n="contact.first_name">First Name *</label>
+                  <input type="text" id="contact-first" name="first_name" class="form-input" placeholder="Ruslan" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-last" data-i18n="contact.last_name">Last Name *</label>
+                  <input type="text" id="contact-last" name="last_name" class="form-input" placeholder="Smith" required />
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="contact-email" data-i18n="contact.email.label">Email Address *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="hello@example.com" required />
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="contact-subject" data-i18n="contact.subject">Subject *</label>
+                  <select id="contact-subject" name="subject" class="form-select" required>
+                    <option value="" disabled selected data-i18n="contact.form.sel.placeholder">Select a topic…</option>
+                    <option value="order" data-i18n="contact.form.sel.order">Order enquiry</option>
+                    <option value="product" data-i18n="contact.form.sel.product">Product question</option>
+                    <option value="warranty" data-i18n="contact.form.sel.warranty">Warranty or repair</option>
+                    <option value="return" data-i18n="contact.form.sel.returns">Return request</option>
+                    <option value="wholesale">Wholesale / B2B</option>
+                    <option value="press">Press or media</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="other" data-i18n="contact.form.sel.other">Something else</option>
+                  </select>
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="contact-message" data-i18n="contact.message">Message *</label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="6" placeholder="Tell us what's on your mind. The more detail you provide, the better we can help." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full btn--lg" style="margin-top:var(--space-6);" data-i18n="contact.send">Send Message</button>
+              <p style="font-size:var(--text-xs);color:var(--color-grey-400);margin-top:var(--space-4);text-align:center;" data-i18n="contact.form.disclaimer">
+                By submitting this form you agree to our <a href="terms.html" style="color:var(--color-grey-500);text-decoration:underline;">Privacy Policy</a>.
+              </p>
+            </form>
+
+            <!-- Success Message -->
+            <div id="contact-success" style="display:none;background:rgba(63,255,171,0.08);border:2px solid rgba(63,255,171,0.3);border-radius:var(--radius-2xl);padding:var(--space-12);text-align:center;" aria-live="polite">
+              <div style="width:72px;height:72px;background:rgba(63,255,171,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-5);">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-bottom:var(--space-3);" data-i18n="contact.success.title">Message Sent</h3>
+              <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.7;max-width:400px;margin:0 auto var(--space-6);" data-i18n="contact.success.body">Thank you for reaching out. We'll reply to the email address you provided within 24 hours.</p>
+              <a href="index.html" class="btn btn--secondary" data-i18n="contact.success.home">Back to Home</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Trust Strip ── -->
+    <section style="background:var(--color-glacier);padding:var(--space-10) 0;border-top:1px solid var(--color-grey-200);" aria-label="Trust indicators">
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:center;gap:var(--space-10);flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:var(--space-3);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span style="font-size:var(--text-sm);font-weight:600;color:var(--color-navy);">2-Year Warranty</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:var(--space-3);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+            <span style="font-size:var(--text-sm);font-weight:600;color:var(--color-navy);">60-Day Returns</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:var(--space-3);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span style="font-size:var(--text-sm);font-weight:600;color:var(--color-navy);">Free EU Shipping over €100</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="nl-contact-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="nl-contact-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form    = document.getElementById('contact-form');
+      const success = document.getElementById('contact-success');
+      if (!form) return;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Validate required fields
+        let valid = true;
+        form.querySelectorAll('[required]').forEach(field => {
+          if (!field.value.trim()) {
+            field.style.borderColor = 'var(--color-error)';
+            valid = false;
+            setTimeout(() => field.style.borderColor = '', 3000);
+          }
+        });
+        if (!valid) return;
+
+        // Simulate submission
+        const btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+
+        setTimeout(() => {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        }, 1000);
+      });
+    });
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability — TrailVolt</title>
+  <meta name="description" content="TrailVolt is built for decades, not seasons. Our commitment to sustainable design, materials transparency, and modular longevity." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link" role="listitem" data-i18n="nav.story">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link active" role="listitem">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Hero ── -->
+    <section style="background:linear-gradient(135deg,#0B1626 0%,#0d2518 60%,#0B1626 100%);padding:var(--space-24) 0;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 50% 60%, rgba(63,255,171,0.07) 0%, transparent 70%);"></div>
+      <div class="container" style="position:relative;z-index:1;text-align:center;">
+        <div class="section-label mx-auto" style="justify-content:center;" data-i18n="sp.label">Built Responsibly</div>
+        <h1 style="font-family:var(--font-heading);font-size:clamp(var(--text-4xl),6vw,var(--text-6xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-white);line-height:1.1;margin-bottom:var(--space-5);">
+          Less. <span style="color:var(--color-mint);">Better.</span> Longer.
+        </h1>
+        <p style="font-size:var(--text-xl);color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto;line-height:1.7;" data-i18n="sp.hero.sub">
+          The most sustainable pack is the one you never need to replace. TrailVolt is designed to last decades — and when something wears out, we fix it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Core Commitments ── -->
+    <section class="section-pad" aria-labelledby="commitments-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--space-12);">
+          <h2 class="section-title" id="commitments-heading" data-i18n="sp.commitments.title">Our Commitments</h2>
+          <p style="color:var(--color-grey-500);max-width:540px;margin:var(--space-3) auto 0;" data-i18n="sp.commitments.sub">Not aspirations. Not marketing language. These are the actual design and business decisions we make every day.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-6);">
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">♻️</div>
+            <h3 class="value-card__title" data-i18n="sp.vc1.title">Recyclable Packaging</h3>
+            <p class="value-card__text" data-i18n="sp.vc1.text">Every TrailVolt pack ships in 100% recyclable outer packaging. No virgin plastic. No polystyrene. Cardboard inner structure. Tissue paper. A single-use plastic-free unboxing experience that still feels premium.</p>
+          </div>
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">🔧</div>
+            <h3 class="value-card__title" data-i18n="sp.vc2.title">Designed for Repair</h3>
+            <p class="value-card__text" data-i18n="sp.vc2.text">Repairability is an intentional design parameter — not an afterthought. Every component that is likely to wear — zippers, buckles, module connectors — is designed to be replaced. We stock spare parts indefinitely for every product we've ever made.</p>
+          </div>
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">🧩</div>
+            <h3 class="value-card__title" data-i18n="sp.vc3.title">Modular Reduces Waste</h3>
+            <p class="value-card__text" data-i18n="sp.vc3.text">The traditional model: own three bags, replace each every few years. The TrailVolt model: own one base pack for decades, swap modules as your life changes. Our data shows modular buyers replace their main pack 73% less often than single-purpose bag buyers.</p>
+          </div>
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">📋</div>
+            <h3 class="value-card__title" data-i18n="sp.vc4.title">Materials Transparency</h3>
+            <p class="value-card__text" data-i18n="sp.vc4.text">We publish a full materials breakdown for every product we make. No vague "premium nylon" claims. Denier count, weave type, coating specification, hardware supplier — it's all disclosed because you deserve to know exactly what you're buying.</p>
+          </div>
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">🏔️</div>
+            <h3 class="value-card__title" data-i18n="sp.vc5.title">Built for a Decade</h3>
+            <p class="value-card__text" data-i18n="sp.vc5.text">We design every TrailVolt pack to outlast fashion cycles, trend cycles, and tech cycles. Our five-year warranty and lifetime repair programme aren't marketing — they're the natural consequence of building something we're actually proud of.</p>
+          </div>
+
+          <div class="value-card fade-in">
+            <div class="value-card__icon">🌍</div>
+            <h3 class="value-card__title" data-i18n="sp.vc6.title">No Greenwashing</h3>
+            <p class="value-card__text" data-i18n="sp.vc6.text">We won't claim carbon neutrality we haven't verified. We won't use "eco" as a marketing word without substance. Our sustainability page will always tell you exactly what we do — and where we're still working to improve.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Materials Transparency ── -->
+    <section class="section-pad bg-glacier" aria-labelledby="materials-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--space-10);">
+          <div class="section-label mx-auto" style="justify-content:center;" data-i18n="sp.materials.label">Full Disclosure</div>
+          <h2 class="section-title" id="materials-heading" data-i18n="sp.materials.title">What Goes Into Every Pack</h2>
+          <p style="color:var(--color-grey-500);max-width:540px;margin:var(--space-3) auto 0;" data-i18n="sp.materials.sub">We believe you should know exactly what you're carrying and where it comes from. This is our complete materials breakdown.</p>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="compat-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Material</th>
+                <th>Specification</th>
+                <th>Certifications</th>
+                <th>Recyclable?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Everyday Shell</strong></td>
+                <td>Ballistic Nylon</td>
+                <td>600D, PU backing, 3000mm waterhead</td>
+                <td>OEKO-TEX Standard 100</td>
+                <td class="compat-check">✓ Mechanically recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Travel Shell</strong></td>
+                <td>Ripstop Nylon</td>
+                <td>420D, DWR C6 fluorocarbon-free coating</td>
+                <td>bluesign® approved</td>
+                <td class="compat-check">✓ Mechanically recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Trail Shell</strong></td>
+                <td>Cordura® Nylon</td>
+                <td>500D, DWR coating, reinforced base</td>
+                <td>OEKO-TEX Standard 100</td>
+                <td class="compat-check">✓ Mechanically recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Lining</strong></td>
+                <td>Nylon Ripstop</td>
+                <td>210D, bright interior, easy-clean</td>
+                <td>OEKO-TEX Standard 100</td>
+                <td class="compat-check">✓ Mechanically recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Back Panel Foam</strong></td>
+                <td>EVA + Memory Foam</td>
+                <td>Channelled for airflow, 20mm depth</td>
+                <td>REACH compliant</td>
+                <td>Partially recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Zippers</strong></td>
+                <td>YKK Nylon Coil</td>
+                <td>100,000+ cycle rated, #5 and #8 sizes</td>
+                <td>YKK certified</td>
+                <td class="compat-check">✓ Take-back programme</td>
+              </tr>
+              <tr>
+                <td><strong>Buckles &amp; Hardware</strong></td>
+                <td>Duraflex Polypropylene</td>
+                <td>Load-rated, UV-stable</td>
+                <td>ISO 9001</td>
+                <td class="compat-check">✓ Recyclable PP</td>
+              </tr>
+              <tr>
+                <td><strong>Module Connectors</strong></td>
+                <td>Stainless Steel + Nylon</td>
+                <td>Magnetic + mechanical lock, 15kg pull-rated</td>
+                <td>RoHS compliant</td>
+                <td>Partially recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Shoulder Straps</strong></td>
+                <td>Nylon + EVA Foam</td>
+                <td>25mm wide, padded, mesh-covered</td>
+                <td>REACH compliant</td>
+                <td>Partially recyclable</td>
+              </tr>
+              <tr>
+                <td><strong>Packaging</strong></td>
+                <td>Kraft Cardboard + Tissue</td>
+                <td>100% recycled content, soy-based inks</td>
+                <td>FSC certified</td>
+                <td class="compat-check">✓ 100% recyclable</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Longevity by Design ── -->
+    <section class="section-pad" aria-labelledby="longevity-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;">
+          <div class="fade-in">
+            <img src="https://placehold.co/560x480/0d2518/3FFFAB?text=TrailVolt+Repair+Kit" alt="TrailVolt repair kit, spare parts, lifetime repair programme" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);min-height:320px;">
+          </div>
+          <div>
+            <div class="section-label" data-i18n="sp.longevity.label">Design for Longevity</div>
+            <h2 class="section-title" id="longevity-heading" data-i18n="sp.longevity.title">Why We Build It to Last</h2>
+            <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.8;margin-top:var(--space-5);margin-bottom:var(--space-6);" data-i18n="sp.longevity.p1">
+              Most gear brands design for three to five years of use — long enough to feel premium, short enough to ensure repeat purchases. We made a deliberate choice not to do this.
+            </p>
+            <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.8;margin-bottom:var(--space-6);" data-i18n="sp.longevity.p2">
+              A TrailVolt Core Pack should last fifteen years under normal use. The modularity means you extend its life instead of replacing it — adding new modules as they're released, repairing individual components, passing it on when you're done.
+            </p>
+            <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.8;margin-bottom:var(--space-8);" data-i18n="sp.longevity.p3">
+              We're building a customer relationship that lasts decades, not seasons. The best way to achieve that is to make something so good it never needs to be replaced.
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);">
+              <div style="background:rgba(63,255,171,0.06);border:1px solid rgba(63,255,171,0.2);border-radius:var(--radius-lg);padding:var(--space-5);text-align:center;">
+                <p style="font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:900;color:var(--color-navy);">5-yr</p>
+                <p style="font-size:var(--text-xs);color:var(--color-grey-500);font-family:var(--font-accent);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;" data-i18n="sp.warranty.label">Limited Warranty</p>
+              </div>
+              <div style="background:rgba(63,255,171,0.06);border:1px solid rgba(63,255,171,0.2);border-radius:var(--radius-lg);padding:var(--space-5);text-align:center;">
+                <p style="font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:900;color:var(--color-navy);">∞</p>
+                <p style="font-size:var(--text-xs);color:var(--color-grey-500);font-family:var(--font-accent);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;" data-i18n="sp.repair.label">Repair Programme</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Where We're Working ── -->
+    <section class="section-pad bg-glacier" aria-labelledby="progress-heading">
+      <div class="container container--narrow">
+        <h2 class="section-title text-center" id="progress-heading" style="margin-bottom:var(--space-3);">Where We're Still Working</h2>
+        <p style="color:var(--color-grey-500);text-align:center;max-width:540px;margin:0 auto var(--space-10);">We believe in honesty. These are the areas where we're making progress — but haven't yet solved.</p>
+
+        <div style="display:flex;flex-direction:column;gap:var(--space-5);">
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-6);border:1px solid var(--color-grey-200);">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);margin-bottom:var(--space-3);">
+              <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--color-navy);">Carbon footprint tracking</h3>
+              <span class="badge badge--ember">In Progress</span>
+            </div>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.7;">We're currently working with a third-party sustainability consultancy to calculate and publish the full cradle-to-gate carbon footprint of each product. We expect to publish our first Carbon Report in Q4 2026.</p>
+          </div>
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-6);border:1px solid var(--color-grey-200);">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);margin-bottom:var(--space-3);">
+              <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--color-navy);">Recycled shell fabrics</h3>
+              <span class="badge badge--ember">Prototyping</span>
+            </div>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.7;">We're testing rPET shell materials across three prototype rounds. The performance hasn't yet matched virgin nylon in abrasion resistance. We won't ship a product that underperforms — but we're close, and we will get there.</p>
+          </div>
+          <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:var(--space-6);border:1px solid var(--color-grey-200);">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);margin-bottom:var(--space-3);">
+              <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--color-navy);">End-of-life take-back programme</h3>
+              <span class="badge badge--navy">Planned 2027</span>
+            </div>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.7;">We're designing a take-back programme for packs at true end of life (15+ years, beyond repair). We plan to partner with textile recyclers to close the loop completely. This is scheduled for launch in 2027.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="newsletter-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://tiktok.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+            <a href="https://youtube.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

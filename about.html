@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — TrailVolt</title>
+  <meta name="description" content="TrailVolt was built by Ruslan out of real frustration with disorganised bags. This is the story of a system born from travel." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__links" role="list">
+        <a href="shop.html"           class="nav__link" role="listitem" data-i18n="nav.shop">Shop</a>
+        <a href="product.html"        class="nav__link" role="listitem" data-i18n="nav.configure">Configure</a>
+        <a href="modules.html"        class="nav__link" role="listitem" data-i18n="nav.modules">Modules</a>
+        <a href="about.html"          class="nav__link active" role="listitem">Our Story</a>
+        <a href="tribe.html"          class="nav__link" role="listitem" data-i18n="nav.tribe">Tribe</a>
+        <a href="sustainability.html" class="nav__link" role="listitem" data-i18n="nav.sustainability">Sustainability</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
+          <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          Cart
+          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+            <span id="lang-current">EN</span>
+            <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          </div>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
+    <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
+    <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
+    <a href="about.html"          class="nav__mobile-link" data-i18n="nav.story">Our Story</a>
+    <a href="tribe.html"          class="nav__mobile-link" data-i18n="nav.m.tribe">The Tribe</a>
+    <a href="sustainability.html" class="nav__mobile-link" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="loyalty.html"        class="nav__mobile-link" data-i18n="nav.m.loyalty">Basecamp Loyalty</a>
+    <a href="faq.html"            class="nav__mobile-link" data-i18n="nav.m.faq">FAQ</a>
+    <a href="contact.html"        class="nav__mobile-link" data-i18n="nav.m.contact">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
+      <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
+    <!-- Mobile Language Switcher -->
+    <div class="lang-switcher--mobile">
+      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    </div>
+    </div>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- ── Hero ── -->
+    <section style="background:var(--color-navy);padding:var(--space-24) 0;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 80% 50%, rgba(63,255,171,0.05) 0%, transparent 70%);"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;">
+          <div>
+            <div class="section-label" data-i18n="about.founder.label">Founder Story</div>
+            <h1 style="font-family:var(--font-heading);font-size:clamp(var(--text-4xl),5vw,var(--text-6xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-white);line-height:1.1;margin-bottom:var(--space-6);" data-i18n="about.hero.title">
+              Built Out of Frustration.<br><span style="color:var(--color-mint);">Perfected by Obsession.</span>
+            </h1>
+            <p style="font-size:var(--text-lg);color:rgba(255,255,255,0.65);line-height:1.8;max-width:500px;" data-i18n="about.hero.sub">
+              My name is Ruslan. I built TrailVolt because no bag I could find did what I actually needed it to do. This is the story of how that frustration became a system.
+            </p>
+          </div>
+          <div>
+            <img src="https://placehold.co/560x480/0B1626/3FFFAB?text=Founder+Photo+-+Ruslan" alt="Ruslan, founder of TrailVolt, in the Dublin design studio" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Founder Story ── -->
+    <section class="section-pad" aria-labelledby="story-heading">
+      <div class="container container--narrow">
+
+        <div style="max-width:680px;margin:0 auto;">
+          <h2 class="section-title" style="font-size:var(--text-3xl);margin-bottom:var(--space-8);" id="story-heading" data-i18n="about.story.title">The Problem with Every Other Pack</h2>
+
+          <p style="font-size:var(--text-lg);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.story.p1">
+            I used to own four different bags. A laptop backpack for work. A weekend duffel for travel. A trail pack for hiking. A gym bag I mostly hated. Four bags. Constant repacking. Forgotten chargers. The wrong shoes. Missing documents.
+          </p>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.story.p2">
+            It wasn't just inconvenient — it was mentally exhausting. Every Sunday evening I'd be reorganising for Monday. Every Friday afternoon I'd be repacking for the weekend.
+          </p>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.story.p3">
+            I tried expensive backpacks. Premium travel bags. The ones written about in gear review blogs with five stars and inflated prose. They all failed me in the same way: designed for one type of journey.
+          </p>
+
+          <div style="border-left:3px solid var(--color-mint);padding:var(--space-6) var(--space-8);margin:var(--space-8) 0;background:rgba(63,255,171,0.04);border-radius:0 var(--radius-lg) var(--radius-lg) 0;">
+            <p style="font-size:var(--text-xl);font-style:italic;color:var(--color-navy);line-height:1.7;font-weight:500;" data-i18n="about.story.quote">"I wanted one pack that could do everything — not because I was lazy, but because the right system should be that capable."</p>
+            <p style="font-size:var(--text-sm);color:var(--color-grey-400);margin-top:var(--space-3);font-family:var(--font-accent);font-weight:600;" data-i18n="about.story.quote.attr">— Ruslan, Founder</p>
+          </div>
+
+          <h3 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-top:var(--space-10);margin-bottom:var(--space-5);" data-i18n="about.idea.title">The Idea</h3>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.idea.p1">
+            The concept came to me on a Thursday morning in Dublin. I was at Dublin Airport — Everyday backpack on my back, wishing it were a travel bag — and I watched someone in front of me pull a whole secondary bag off their main pack. It was modular.
+          </p>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.idea.p2">
+            What if the modules weren't just the bag configuration — but the accessories, too? Phone holder, power bank, shoe compartment, and document sleeve all snapping on and off the same base pack?
+          </p>
+
+          <h3 style="font-size:var(--text-2xl);font-weight:800;color:var(--color-navy);margin-top:var(--space-10);margin-bottom:var(--space-5);" data-i18n="about.name.title">Why It's Called TrailVolt</h3>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;margin-bottom:var(--space-6);" data-i18n="about.name.p1">
+            The name came from the idea of energy — the voltage that a journey gives you. When you're carrying the right gear, there's a different quality to how you move through the world.
+          </p>
+
+          <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.9;" data-i18n="about.name.p2">
+            "Trail" because every journey is one. "Volt" because the right system charges you up for it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Founder image break ── -->
+    <section style="padding:0 0 var(--space-16);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--space-5);">
+          <img src="https://placehold.co/300x400/0B1626/3FFFAB?text=Wicklow+Mountains+Test" alt="Ruslan testing early prototype in Wicklow Mountains" loading="lazy" class="fade-in" style="aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:var(--radius-xl);">
+          <img src="https://placehold.co/300x400/374754/ffffff?text=Workshop+Prototypes" alt="TrailVolt prototypes spread on workshop table" loading="lazy" class="fade-in" style="aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:var(--radius-xl);margin-top:40px;">
+          <img src="https://placehold.co/300x400/0B1626/3FFFAB?text=Dublin+Airport+Prototype" alt="Ruslan boarding flight at Dublin Airport with Travel 30L prototype" loading="lazy" class="fade-in" style="aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:var(--radius-xl);">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mission, Vision, Values ── -->
+    <section class="section-pad bg-glacier" aria-labelledby="mission-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--space-12);">
+          <div class="section-label mx-auto" style="justify-content:center;" data-i18n="about.mission.label">What We Stand For</div>
+          <h2 class="section-title" id="mission-heading" data-i18n="about.mission.title">Mission, Vision, Values</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-8);">
+          <div class="fade-in" style="background:var(--color-navy);border-radius:var(--radius-xl);padding:var(--space-8);">
+            <div style="width:48px;height:48px;background:rgba(63,255,171,0.15);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:var(--space-5);">🎯</div>
+            <h3 style="font-size:var(--text-xl);font-weight:700;color:var(--color-white);margin-bottom:var(--space-4);" data-i18n="about.mission.m">Our Mission</h3>
+            <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.65);line-height:1.8;" data-i18n="about.mission.m.text">To make one pack system so capable, so adaptable, and so well-built that you never feel the need for another bag again. We exist to eliminate the compromise.</p>
+          </div>
+          <div class="fade-in" style="background:var(--color-navy);border-radius:var(--radius-xl);padding:var(--space-8);">
+            <div style="width:48px;height:48px;background:rgba(63,255,171,0.15);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:var(--space-5);">🔭</div>
+            <h3 style="font-size:var(--text-xl);font-weight:700;color:var(--color-white);margin-bottom:var(--space-4);" data-i18n="about.mission.v">Our Vision</h3>
+            <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.65);line-height:1.8;" data-i18n="about.mission.v.text">A world where the gear you carry never slows you down. Where modular design is the standard — not the premium option.</p>
+          </div>
+          <div class="fade-in" style="background:var(--color-navy);border-radius:var(--radius-xl);padding:var(--space-8);">
+            <div style="width:48px;height:48px;background:rgba(63,255,171,0.15);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:var(--space-5);">💡</div>
+            <h3 style="font-size:var(--text-xl);font-weight:700;color:var(--color-white);margin-bottom:var(--space-4);" data-i18n="about.mission.val">Our Values</h3>
+            <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.65);line-height:1.8;" data-i18n="about.mission.val.text">Honesty in design. Transparency in materials. Obsessive quality over seasonal volume. Build less. Build better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Our Process ── -->
+    <section class="section-pad" aria-labelledby="process-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;">
+          <div>
+            <div class="section-label" data-i18n="about.process.label">How We Build</div>
+            <h2 class="section-title" id="process-heading" data-i18n="about.process.title">Our Process</h2>
+            <p style="font-size:var(--text-base);color:var(--color-grey-600);line-height:1.8;margin-top:var(--space-5);margin-bottom:var(--space-8);" data-i18n="about.process.sub">
+              Every TrailVolt product goes through a minimum of six physical prototyping rounds before it ships. We test in real conditions — not labs.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:var(--space-6);">
+              <div style="display:flex;gap:var(--space-5);">
+                <div style="width:36px;height:36px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--color-navy);font-family:var(--font-heading);flex-shrink:0;">1</div>
+                <div>
+                  <p style="font-weight:700;font-size:var(--text-base);color:var(--color-navy);margin-bottom:var(--space-1);" data-i18n="about.process.1.title">Problem-First Design</p>
+                  <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.6;" data-i18n="about.process.1.desc">Every feature starts as a documented user problem. If we can't clearly articulate the frustration it solves, it doesn't get built.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:var(--space-5);">
+                <div style="width:36px;height:36px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--color-navy);font-family:var(--font-heading);flex-shrink:0;">2</div>
+                <div>
+                  <p style="font-weight:700;font-size:var(--text-base);color:var(--color-navy);margin-bottom:var(--space-1);" data-i18n="about.process.2.title">Real-World Prototyping</p>
+                  <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.6;" data-i18n="about.process.2.desc">Minimum six physical samples per product. Tested in commutes, airports, hiking trails, and everyday Dublin weather.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:var(--space-5);">
+                <div style="width:36px;height:36px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--color-navy);font-family:var(--font-heading);flex-shrink:0;">3</div>
+                <div>
+                  <p style="font-weight:700;font-size:var(--text-base);color:var(--color-navy);margin-bottom:var(--space-1);" data-i18n="about.process.3.title">Premium Materials Only</p>
+                  <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.6;" data-i18n="about.process.3.desc">We source Cordura, ballistic nylon, YKK zippers, and Duraflex hardware — and publish exactly what goes into every product.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:var(--space-5);">
+                <div style="width:36px;height:36px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--color-navy);font-family:var(--font-heading);flex-shrink:0;">4</div>
+                <div>
+                  <p style="font-weight:700;font-size:var(--text-base);color:var(--color-navy);margin-bottom:var(--space-1);" data-i18n="about.process.4.title">Lifetime Support</p>
+                  <p style="font-size:var(--text-sm);color:var(--color-grey-500);line-height:1.6;" data-i18n="about.process.4.desc">Five-year warranty. Lifetime repair programme. We built TrailVolt to last — and we back that up with actions, not just words.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fade-in">
+            <img src="https://placehold.co/560x480/374754/ffffff?text=TrailVolt+Workshop" alt="TrailVolt workshop, prototype materials laid out, stitching in progress" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);min-height:320px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section style="background:var(--color-navy);padding:var(--space-20) 0;">
+      <div class="container text-center">
+        <h2 class="section-title section-title--white" style="margin-bottom:var(--space-5);" data-i18n="about.cta.title">Ready to Experience the System?</h2>
+        <p class="section-subtitle section-subtitle--white mx-auto text-center" data-i18n="about.cta.sub">Build your TrailVolt Core Pack. Choose your line, colour, and modules. Shipped from Dublin — backed for life.</p>
+        <div style="display:flex;gap:var(--space-5);justify-content:center;flex-wrap:wrap;margin-top:var(--space-10);">
+          <a href="product.html" class="btn btn--primary btn--lg">Build Your Pack</a>
+          <a href="shop.html"    class="btn btn--ghost btn--lg">Browse the System</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Newsletter ── -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2 id="newsletter-heading" data-i18n="newsletter.title">Stay in the loop.</h2>
+          <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
+          <button type="submit" class="btn btn--primary">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="TrailVolt home">Trail<span class="footer__logo-accent">Volt</span></a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Premium modular backpacks engineered for the way ambitious people actually move — from the Monday commute to the Saturday trail.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://tiktok.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+            <a href="https://youtube.com/@trailvolt" class="footer__social-link" target="_blank" rel="noopener" aria-label="TrailVolt on YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.system">The System</p>
+          <nav class="footer__links" aria-label="Products navigation">
+            <a href="product.html" class="footer__link">Configure Your Pack</a>
+            <a href="shop.html" class="footer__link">Shop All</a>
+            <a href="modules.html" class="footer__link">Modules</a>
+            <a href="shop.html#packs" class="footer__link">Core Packs</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.company">Company</p>
+          <nav class="footer__links" aria-label="Company navigation">
+            <a href="about.html" class="footer__link">Our Story</a>
+            <a href="tribe.html" class="footer__link">The Tribe</a>
+            <a href="sustainability.html" class="footer__link">Sustainability</a>
+            <a href="loyalty.html" class="footer__link">Basecamp Loyalty</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title" data-i18n="footer.col.support">Support</p>
+          <nav class="footer__links" aria-label="Support navigation">
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
+          </nav>
+          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
+            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 TrailVolt Ltd. All rights reserved. Designed in Dublin. Made for everywhere.</p>
+        <div class="footer__bottom-links">
+          <a href="terms.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html#terms" class="footer__bottom-link">Terms of Service</a>
+          <a href="terms.html#cookies" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+    <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button class="cookie-accept" data-i18n="cookie.accept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
