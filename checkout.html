@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Checkout — TrailVolt</title>
   <meta name="description" content="Secure checkout for your TrailVolt order." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700">
+  </noscript>
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
 
@@ -76,21 +83,21 @@
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="co-first" data-i18n="co.firstName">First Name</label>
-                  <input type="text" id="co-first" class="form-input" placeholder="First Name" data-i18n-placeholder="co.firstName" required autocomplete="given-name" />
+                  <input type="text" id="co-first" name="first_name" class="form-input" placeholder="First Name" data-i18n-placeholder="co.firstName" required autocomplete="given-name" />
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="co-last" data-i18n="co.lastName">Last Name</label>
-                  <input type="text" id="co-last" class="form-input" placeholder="Smith" data-i18n-placeholder="co.lastName" required autocomplete="family-name" />
+                  <input type="text" id="co-last" name="last_name" class="form-input" placeholder="Smith" data-i18n-placeholder="co.lastName" required autocomplete="family-name" />
                 </div>
               </div>
               <div class="form-group">
                 <label class="form-label" for="co-email" data-i18n="co.email">Email Address</label>
-                <input type="email" id="co-email" class="form-input" placeholder="hello@example.com" data-i18n-placeholder="co.email" required autocomplete="email" />
+                <input type="email" id="co-email" name="email" class="form-input" placeholder="hello@example.com" data-i18n-placeholder="co.email" required autocomplete="email" />
                 <p class="form-hint" data-i18n="co.email.hint">Your order confirmation and tracking link will be sent here.</p>
               </div>
               <div class="form-group">
                 <label class="form-label" for="co-phone" data-i18n="co.phone">Phone Number</label>
-                <input type="tel" id="co-phone" class="form-input" placeholder="+353 1 234 5678" autocomplete="tel" />
+                <input type="tel" id="co-phone" name="phone" class="form-input" placeholder="+353 1 234 5678" autocomplete="tel" />
                 <p class="form-hint" data-i18n="co.phone.hint">Optional. Used only for delivery updates.</p>
               </div>
             </div>
@@ -100,30 +107,30 @@
               <h2 class="checkout-section__title" data-i18n="co.shipping.addr">Shipping Address</h2>
               <div class="form-group">
                 <label class="form-label" for="co-address1" data-i18n="co.address1">Address Line 1</label>
-                <input type="text" id="co-address1" class="form-input" placeholder="123 Main Street" data-i18n-placeholder="co.address1" required autocomplete="address-line1" />
+                <input type="text" id="co-address1" name="address_line1" class="form-input" placeholder="123 Main Street" data-i18n-placeholder="co.address1" required autocomplete="address-line1" />
               </div>
               <div class="form-group">
                 <label class="form-label" for="co-address2" data-i18n="co.address2">Address Line 2</label>
-                <input type="text" id="co-address2" class="form-input" placeholder="Apartment, suite, etc." data-i18n-placeholder="co.address2" autocomplete="address-line2" />
+                <input type="text" id="co-address2" name="address_line2" class="form-input" placeholder="Apartment, suite, etc." data-i18n-placeholder="co.address2" autocomplete="address-line2" />
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="co-city" data-i18n="co.city">City</label>
-                  <input type="text" id="co-city" class="form-input" placeholder="Dublin" data-i18n-placeholder="co.city" required autocomplete="address-level2" />
+                  <input type="text" id="co-city" name="city" class="form-input" placeholder="Dublin" data-i18n-placeholder="co.city" required autocomplete="address-level2" />
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="co-eircode" data-i18n="co.zip">Postal Code</label>
-                  <input type="text" id="co-eircode" class="form-input" placeholder="D01 AB12" required autocomplete="postal-code" />
+                  <input type="text" id="co-eircode" name="postal_code" class="form-input" placeholder="D01 AB12" required autocomplete="postal-code" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="co-county" data-i18n="co.county">County / State</label>
-                  <input type="text" id="co-county" class="form-input" placeholder="Dublin" autocomplete="address-level1" />
+                  <input type="text" id="co-county" name="county" class="form-input" placeholder="Dublin" autocomplete="address-level1" />
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="co-country" data-i18n="co.country">Country</label>
-                  <select id="co-country" class="form-select" required autocomplete="country">
+                  <select id="co-country" name="country" class="form-select" required autocomplete="country">
                     <option value="IE" selected>Ireland</option>
                     <option value="GB">United Kingdom</option>
                     <option value="DE">Germany</option>
@@ -195,32 +202,13 @@
 
               <div id="card-fields-wrapper">
                 <div class="form-group">
-                  <label class="form-label" for="co-card-name" data-i18n="co.nameOnCard">Name on Card</label>
-                  <input type="text" id="co-card-name" class="form-input" placeholder="RUSLAN SMITH" required autocomplete="cc-name" />
+                  <label class="form-label" for="card-name" data-i18n="co.nameOnCard">Cardholder Name *</label>
+                  <input type="text" id="card-name" name="card_name" class="form-input" required autocomplete="cc-name" />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="co-card-num" data-i18n="co.card">Card Number</label>
-                  <div class="card-input-wrapper">
-                    <input type="text" id="co-card-num" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19" required autocomplete="cc-number" inputmode="numeric" />
-                    <div class="card-input-icons">
-                      <div class="card-icon">VISA</div>
-                      <div class="card-icon">MC</div>
-                      <div class="card-icon">AMEX</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" for="co-expiry" data-i18n="co.expiry">Expiry</label>
-                    <input type="text" id="co-expiry" class="form-input" placeholder="MM / YY" maxlength="7" required autocomplete="cc-exp" inputmode="numeric" />
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="co-cvv">
-                      <span data-i18n="co.cvv">CVV</span>
-                      <span style="font-weight:400;color:var(--color-grey-400);font-size:var(--text-xs);">(3–4 digits)</span>
-                    </label>
-                    <input type="text" id="co-cvv" class="form-input" placeholder="•••" maxlength="4" required autocomplete="cc-csc" inputmode="numeric" />
-                  </div>
+                  <label class="form-label" data-i18n="co.card">Card Details *</label>
+                  <div id="card-element" class="stripe-element"></div>
+                  <div id="card-errors" role="alert" class="form-error"></div>
                 </div>
 
                 <div style="display:flex;align-items:center;gap:var(--space-3);margin-top:var(--space-4);padding:var(--space-4);background:var(--color-glacier);border-radius:var(--radius-md);">
@@ -340,10 +328,10 @@
     </div>
   </footer>
 
-  <script src="assets/js/translations.js"></script>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/cart.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
   <script>
     function selectPayMethod(method) {
       const methods = ['card', 'apple', 'google'];
@@ -367,25 +355,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-
-      // Format card number
-      const cardNum = document.getElementById('co-card-num');
-      if (cardNum) {
-        cardNum.addEventListener('input', () => {
-          let v = cardNum.value.replace(/\D/g, '').slice(0, 16);
-          cardNum.value = v.replace(/(.{4})/g, '$1 ').trim();
-        });
-      }
-
-      // Format expiry
-      const expiry = document.getElementById('co-expiry');
-      if (expiry) {
-        expiry.addEventListener('input', () => {
-          let v = expiry.value.replace(/\D/g, '').slice(0, 4);
-          if (v.length >= 3) v = v.slice(0, 2) + ' / ' + v.slice(2);
-          expiry.value = v;
-        });
-      }
 
       // Shipping option highlight
       document.querySelectorAll('input[name="shipping"]').forEach(radio => {
@@ -460,6 +429,8 @@
 
     });
   </script>
+
+  <script src="assets/js/checkout.js" defer></script>
 
   <!-- ── Cookie Consent Banner ── -->
   <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">

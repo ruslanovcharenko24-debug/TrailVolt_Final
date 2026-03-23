@@ -24,56 +24,71 @@ const CART_MODULE_NAMES = {
   'mod-rain':     'modules.rain.name',
 };
 
-/* ============================================================
-   PROMO CODE DATA
-   ============================================================ */
-
-const PROMO_CODES = {
-  'BASECAMP10': 0.10,
-  'TRAIL20':    0.20,
-  'VOLT15':     0.15,
-  'TRIBE25':    0.25,
-};
-
 /**
- * Apply a promo code — validates and saves to localStorage
+ * Apply a promo code — validates against server, saves code + server-provided
+ * discount percentage to localStorage for UI preview only.
+ * The authoritative discount is always recomputed server-side at checkout.
  * @param {string} code
- * @returns {{ success: boolean, message: string, discount?: number }}
+ * @returns {Promise<{ success: boolean, message: string }>}
  */
-function applyPromoCode(code) {
+async function applyPromoCode(code) {
   const normalised = (code || '').trim().toUpperCase();
 
   if (!normalised) {
     return { success: false, message: _ct('promo.empty', 'Please enter a promo code.') };
   }
 
-  if (!PROMO_CODES[normalised]) {
-    return { success: false, message: _ct('promo.not_found', 'Code not found. Try BASECAMP10 for 10% off.') };
+  if (normalised.length < 3) {
+    return { success: false, message: _ct('promo.invalid', 'Invalid promo code.') };
   }
 
-  const discount = PROMO_CODES[normalised];
-  localStorage.setItem(PROMO_KEY, JSON.stringify({ code: normalised, discount }));
+  try {
+    const response = await fetch('/api/validate-promo', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        code: normalised,
+        cart_total: getCartSubtotal(),
+      }),
+    });
 
-  const pct = Math.round(discount * 100);
-  const appliedMsg = _ct('promo.applied', '% discount applied!');
-  return { success: true, message: `${pct}${appliedMsg}`, discount };
+    const data = await response.json();
+
+    if (!response.ok || !data.valid) {
+      return { success: false, message: data.message || _ct('promo.not_found', 'Code not found or expired.') };
+    }
+
+    // Store code + server-provided percentage (UI preview only — not trusted for final price)
+    localStorage.setItem(PROMO_KEY, JSON.stringify({
+      code: normalised,
+      discountPercent: data.discount_percent,
+    }));
+
+    const pct = data.discount_percent;
+    const appliedMsg = _ct('promo.applied', '% discount applied!');
+    return { success: true, message: `${pct}${appliedMsg}` };
+
+  } catch (err) {
+    console.error('Promo validation error:', err);
+    return { success: false, message: _ct('cart.error', 'An error occurred. Please try again.') };
+  }
 }
 
 /**
- * Get current promo discount info
- * @returns {{ code: string, discount: number, amount: number } | null}
+ * Get current promo discount info (for UI preview only)
+ * @returns {{ code: string, discountPercent: number, amount: number } | null}
  */
 function getPromoDiscount() {
   try {
     const raw = localStorage.getItem(PROMO_KEY);
     if (!raw) return null;
     const promo = JSON.parse(raw);
-    if (!promo || !promo.code || !promo.discount) return null;
+    if (!promo || !promo.code || !promo.discountPercent) return null;
     const subtotal = getCartSubtotal();
     return {
-      code:     promo.code,
-      discount: promo.discount,
-      amount:   subtotal * promo.discount,
+      code:            promo.code,
+      discountPercent: promo.discountPercent,
+      amount:          subtotal * (promo.discountPercent / 100),
     };
   } catch {
     return null;
@@ -344,7 +359,7 @@ function renderPromoSection() {
         <p class="promo-section__label">${promoLabel}</p>
         <div class="promo-applied-row">
           <span class="promo-applied-code">${escapeHtml(promo.code)}</span>
-          <span class="promo-applied-discount">−${Math.round(promo.discount * 100)}${promoPctOff}</span>
+          <span class="promo-applied-discount">−${promo.discountPercent}${promoPctOff}</span>
           <button class="promo-remove-btn" id="promo-remove-btn" aria-label="${promoRemove}" title="${promoRemove}">✕</button>
         </div>
       </div>
@@ -365,12 +380,17 @@ function renderPromoSection() {
         <p id="promo-msg" class="promo-msg" aria-live="polite"></p>
       </div>
     `;
-    document.getElementById('promo-apply-btn').addEventListener('click', () => {
+    document.getElementById('promo-apply-btn').addEventListener('click', async () => {
       const input = document.getElementById('promo-code-input');
       const msg   = document.getElementById('promo-msg');
-      const result = applyPromoCode(input.value);
+      const btn   = document.getElementById('promo-apply-btn');
+      btn.disabled = true;
+      msg.textContent = _ct('promo.checking', 'Checking…');
+      msg.className = 'promo-msg';
+      const result = await applyPromoCode(input.value);
       msg.textContent = result.message;
       msg.className = 'promo-msg ' + (result.success ? 'promo-msg--success' : 'promo-msg--error');
+      btn.disabled = false;
       if (result.success) {
         setTimeout(() => renderCart(), 600);
       }
@@ -594,7 +614,7 @@ function renderCheckoutPromoSection() {
         <p class="promo-section__label" style="color:rgba(255,255,255,0.5);">${coPromoLabel}</p>
         <div class="promo-applied-row" style="background:rgba(63,255,171,0.08);border-color:rgba(63,255,171,0.25);">
           <span class="promo-applied-code" style="color:var(--color-white);">${escapeHtml(promo.code)}</span>
-          <span class="promo-applied-discount">−${Math.round(promo.discount * 100)}${coPctOff}</span>
+          <span class="promo-applied-discount">−${promo.discountPercent}${coPctOff}</span>
           <button class="promo-remove-btn" id="checkout-promo-remove" aria-label="${coPromoRemove}">✕</button>
         </div>
       </div>
@@ -616,12 +636,17 @@ function renderCheckoutPromoSection() {
         <p id="checkout-promo-msg" class="promo-msg" aria-live="polite"></p>
       </div>
     `;
-    document.getElementById('checkout-promo-apply').addEventListener('click', () => {
+    document.getElementById('checkout-promo-apply').addEventListener('click', async () => {
       const input  = document.getElementById('checkout-promo-input');
       const msg    = document.getElementById('checkout-promo-msg');
-      const result = applyPromoCode(input.value);
+      const btn    = document.getElementById('checkout-promo-apply');
+      btn.disabled = true;
+      msg.textContent = _ct('promo.checking', 'Checking…');
+      msg.className = 'promo-msg';
+      const result = await applyPromoCode(input.value);
       msg.textContent = result.message;
       msg.className = 'promo-msg ' + (result.success ? 'promo-msg--success' : 'promo-msg--error');
+      btn.disabled = false;
       if (result.success) setTimeout(() => renderCheckoutSummary(), 600);
     });
     document.getElementById('checkout-promo-input').addEventListener('keydown', (e) => {

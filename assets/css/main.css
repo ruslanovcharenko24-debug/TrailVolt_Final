@@ -3,8 +3,6 @@
    main.css
    ============================================================ */
 
-/* ── Google Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* ── CSS Custom Properties ── */
 :root {
@@ -5138,4 +5136,33 @@ p {
     padding: 4px 8px;
     font-size: 10px;
   }
+}
+
+/* ── Stripe Elements ── */
+.stripe-element {
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--color-grey-200);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  min-height: 44px;
+}
+
+.stripe-element.StripeElement--focus {
+  outline: none;
+  border-color: var(--color-mint);
+  box-shadow: 0 0 0 3px rgba(63, 255, 171, 0.12);
+}
+
+.stripe-element.StripeElement--invalid {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.form-error {
+  color: var(--color-error);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+  display: none;
 }
