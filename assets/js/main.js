@@ -18,15 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartCountBadge();
   highlightActiveNavLink();
   initContactForm();
+  initAnnouncementBar();
   initCookieBanner();
+  initStoryForm();
 });
 
 /* ============================================================
    NAVIGATION
    ============================================================ */
 function initNav() {
-  const hamburger = document.querySelector('.nav__hamburger');
-  const mobileNav = document.querySelector('.nav__mobile');
+  const hamburger   = document.querySelector('.nav__hamburger');
+  const mobileNav   = document.querySelector('.nav__mobile');
+  const mobileClose = mobileNav?.querySelector('.nav__mobile-close');
   const mobileLinks = document.querySelectorAll('.nav__mobile-link');
 
   if (!hamburger || !mobileNav) return;
@@ -36,7 +39,14 @@ function initNav() {
     mobileNav.classList.toggle('open', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
     hamburger.setAttribute('aria-expanded', isOpen);
+    // Move focus into dialog when opened
+    if (isOpen) (mobileClose || mobileNav.querySelector('a, button'))?.focus();
   });
+
+  // Close via in-dialog close button
+  if (mobileClose) {
+    mobileClose.addEventListener('click', closeMobileNav);
+  }
 
   // Close on link click
   mobileLinks.forEach(link => {
@@ -58,6 +68,7 @@ function initNav() {
     mobileNav.classList.remove('open');
     document.body.style.overflow = '';
     hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.focus(); // return focus to trigger
   }
 }
 
@@ -183,6 +194,10 @@ function initEmailSignup() {
 function handleEmailSignup(e) {
   e.preventDefault();
   const form = e.currentTarget;
+
+  // Honeypot check — silent fail if bot filled the hidden field
+  if ((form.querySelector('input[name="website"]')?.value || '') !== '') return;
+
   const input = form.querySelector('input[type="email"]');
   const btn = form.querySelector('button[type="submit"]');
   if (!input) return;
@@ -306,6 +321,10 @@ function initContactForm() {
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // Honeypot check — silent fail if bot filled the hidden field
+    if ((contactForm.querySelector('input[name="website"]')?.value || '') !== '') return;
+
     const btn = contactForm.querySelector('button[type="submit"]');
     if (btn) {
       btn.disabled = true;
@@ -330,6 +349,49 @@ function initContactForm() {
   });
 }
 
+/* ── Tribe Story Form ── */
+function initStoryForm() {
+  const form = document.querySelector('[data-story-form]');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Honeypot check — silent fail
+    if ((form.querySelector('input[name="website"]')?.value || '') !== '') return;
+
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = '…'; }
+
+    setTimeout(() => {
+      showFormMessage(form, "Thanks! We'll review your story and may feature it soon.", 'success');
+      form.reset();
+      if (btn) { btn.disabled = false; btn.textContent = 'Share My Story'; }
+    }, 1200);
+  });
+}
+
+/* ── Announcement Bar ── */
+function initAnnouncementBar() {
+  const bar = document.getElementById('announce-bar');
+  if (!bar) return;
+
+  // Already dismissed this session — remove silently
+  if (sessionStorage.getItem('tv_announce_closed')) {
+    bar.remove();
+    return;
+  }
+
+  bar.querySelector('.announce-bar__close')?.addEventListener('click', () => {
+    bar.style.transition = 'opacity 0.3s ease';
+    bar.style.opacity = '0';
+    setTimeout(() => {
+      bar.remove();
+      sessionStorage.setItem('tv_announce_closed', '1');
+    }, 300);
+  });
+}
+
 /* ── Cookie Consent Banner ── */
 function initCookieBanner() {
   const banner = document.getElementById('cookie-banner');
@@ -338,7 +400,7 @@ function initCookieBanner() {
     banner.remove();
     return;
   }
-  banner.style.display = 'flex';
+  banner.classList.remove('hidden');
   banner.querySelector('.cookie-accept')?.addEventListener('click', () => {
     localStorage.setItem('tv_cookie_consent', 'accepted');
     banner.style.transition = 'opacity 0.3s ease';
@@ -350,5 +412,14 @@ function initCookieBanner() {
     banner.style.transition = 'opacity 0.3s ease';
     banner.style.opacity = '0';
     setTimeout(() => banner.remove(), 300);
+  });
+}
+
+/* ── Service Worker Registration ── */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch((err) => {
+      console.warn('[SW] Registration failed:', err);
+    });
   });
 }

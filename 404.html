@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://trailvolt.com; connect-src 'self' https://api.trailvolt.com https://js.stripe.com; frame-src 'self' https://js.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lost on the Trail — TrailVolt</title>
   <meta name="description" content="Page not found. Let's get you back on trail." />
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:url"          content="https://trailvolt.com/" />
+  <meta property="og:title"        content="Lost on the Trail — TrailVolt" />
+  <meta property="og:description"  content="Page not found. Let's get you back on trail." />
+  <meta property="og:image"        content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"       content="en_IE" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Lost on the Trail — TrailVolt" />
+  <meta name="twitter:description" content="Page not found. Let's get you back on trail." />
+  <meta name="twitter:image"       content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <link rel="canonical" href="https://trailvolt.com/" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700">
   </noscript>
+  <link rel="preload" href="assets/css/main.css" as="style" />
+  <link rel="preload" href="assets/js/main.js" as="script" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
@@ -45,7 +69,7 @@
         <a href="cart.html" class="nav__cart-btn" aria-label="View cart">
           <svg class="nav__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
           Cart
-          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+          <span class="nav__cart-count hidden" role="status" aria-live="polite">0</span>
         </a>
       </div>
     </div>
@@ -60,12 +84,19 @@
         <a href="index.html" class="btn btn--primary btn--lg" data-i18n="404.home">Back to Base Camp</a>
         <a href="shop.html" class="btn btn--ghost" data-i18n="404.shop">Shop the System</a>
       </div>
-      <img src="https://placehold.co/400x280/0B1626/3FFFAB?text=Lost+on+the+Trail" alt="404 — TrailVolt pack lost on trail" loading="lazy" style="margin-top:var(--space-12);border-radius:var(--radius-xl);max-width:400px;width:100%;opacity:0.6;">
+      <picture>
+        <source srcset="assets/images/404-trail.webp" type="image/webp">
+        <img src="assets/images/404-trail.svg"
+             alt="404 — TrailVolt pack lost on trail"
+             width="400" height="280"
+             loading="lazy" decoding="async"
+             style="margin-top:var(--space-12);border-radius:var(--radius-xl);max-width:400px;width:100%;opacity:0.6;">
+      </picture>
     </div>
   </main>
 
   <!-- Cookie Banner -->
-  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" class="hidden">
     <p>We use cookies to improve your experience. <a href="terms.html#cookies">Cookie Policy</a></p>
     <div class="cookie-actions">
       <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>

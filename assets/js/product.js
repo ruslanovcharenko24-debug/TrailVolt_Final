@@ -363,9 +363,9 @@ function selectLine(lineId) {
 
   // Update product image on line selection
   const lineImages = {
-    everyday: 'https://placehold.co/500x560/0B1626/3FFFAB?text=Everyday+22L',
-    travel:   'https://placehold.co/500x560/1a3a2a/3FFFAB?text=Travel+30L',
-    trail:    'https://placehold.co/500x560/374754/3FFFAB?text=Trail+28L',
+    everyday: 'assets/images/product-everyday.svg',
+    travel:   'assets/images/product-travel.svg',
+    trail:    'assets/images/product-trail.svg',
   };
   const photo = document.getElementById('product-main-photo');
   if (photo && lineImages[lineId]) photo.src = lineImages[lineId];

@@ -80,9 +80,18 @@
       if (!isNaN(eur)) el.textContent = formatPrice(eur, lang);
     });
 
-    /* Switcher active state */
-    document.querySelectorAll('.lang-option').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    /* Desktop listbox options — aria-selected */
+    document.querySelectorAll('#lang-dropdown .lang-option').forEach(function (btn) {
+      var isActive = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    /* Mobile group buttons — aria-pressed */
+    document.querySelectorAll('.lang-switcher--mobile .lang-option').forEach(function (btn) {
+      var isActive = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 
     /* Update current lang label in toggle */

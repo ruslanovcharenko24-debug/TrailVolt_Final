@@ -2,23 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://trailvolt.com; connect-src 'self' https://api.trailvolt.com https://js.stripe.com; frame-src 'self' https://js.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrailVolt — One Pack. Every Horizon.</title>
   <meta name="description" content="TrailVolt builds premium modular backpacks for ambitious professionals — one adaptable system from weekday commute to weekend trail." />
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:url"          content="https://trailvolt.com/" />
+  <meta property="og:title"        content="TrailVolt — One Pack. Every Horizon." />
+  <meta property="og:description"  content="TrailVolt builds premium modular backpacks for ambitious professionals — one adaptable system from weekday commute to weekend trail." />
+  <meta property="og:image"        content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"       content="en_IE" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="TrailVolt — One Pack. Every Horizon." />
+  <meta name="twitter:description" content="TrailVolt builds premium modular backpacks for ambitious professionals — one adaptable system from weekday commute to weekend trail." />
+  <meta name="twitter:image"       content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <link rel="canonical" href="https://trailvolt.com/" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700">
   </noscript>
+  <link rel="preload" href="assets/css/main.css" as="style" />
+  <link rel="preload" href="assets/js/main.js" as="script" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TrailVolt",
+    "url": "https://trailvolt.com",
+    "logo": "https://trailvolt.com/assets/images/og-cover.jpg",
+    "description": "Premium modular backpacks for ambitious professionals — one adaptable system from weekday commute to weekend trail.",
+    "foundingDate": "2026",
+    "foundingLocation": { "@type": "Place", "addressLocality": "Dublin", "addressCountry": "IE" },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@trailvolt.com",
+      "contactType": "customer support",
+      "areaServed": ["IE","GB","EU"],
+      "availableLanguage": ["English","French","German","Spanish","Chinese","Japanese"]
+    },
+    "sameAs": [
+      "https://instagram.com/trailvolt",
+      "https://tiktok.com/@trailvolt",
+      "https://youtube.com/@trailvolt"
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- ── Announcement Bar ── -->
   <div class="announce-bar" id="announce-bar">
     <span data-i18n="announce.text">Free EU &amp; UK shipping on all orders.</span> <a href="shop.html" data-i18n="announce.link">Shop the system →</a>
-    <button class="announce-bar__close" aria-label="Close announcement" onclick="document.getElementById('announce-bar').style.display='none'">×</button>
+    <button class="announce-bar__close" aria-label="Close announcement">×</button>
   </div>
 
   <!-- ── Navigation ── -->
@@ -41,7 +89,7 @@
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
           </svg>
           Cart
-          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+          <span class="nav__cart-count hidden" role="status" aria-live="polite">0</span>
         </a>
         <!-- Language Switcher -->
         <div class="lang-switcher">
@@ -49,13 +97,13 @@
             <span id="lang-current">EN</span>
             <svg class="lang-switcher__chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
           </button>
-          <div class="lang-dropdown" id="lang-dropdown" role="listbox">
-            <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
-            <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
-            <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
-            <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
-            <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
-            <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox" aria-labelledby="lang-switcher-toggle">
+            <button class="lang-option" role="option" aria-selected="true"  data-lang="en">&#127468;&#127463; EN</button>
+            <button class="lang-option" role="option" aria-selected="false" data-lang="fr">&#127467;&#127479; FR</button>
+            <button class="lang-option" role="option" aria-selected="false" data-lang="de">&#127465;&#127466; DE</button>
+            <button class="lang-option" role="option" aria-selected="false" data-lang="es">&#127466;&#127480; ES</button>
+            <button class="lang-option" role="option" aria-selected="false" data-lang="zh">&#127464;&#127475; ZH</button>
+            <button class="lang-option" role="option" aria-selected="false" data-lang="ja">&#127471;&#127477; JA</button>
           </div>
         </div>
         <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -66,7 +114,8 @@
   </nav>
 
   <!-- ── Mobile Nav ── -->
-  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="nav__mobile-close" aria-label="Close menu">×</button>
     <a href="shop.html"           class="nav__mobile-link" data-i18n="nav.shop">Shop</a>
     <a href="product.html"        class="nav__mobile-link" data-i18n="nav.m.configure">Configure Your Pack</a>
     <a href="modules.html"        class="nav__mobile-link" data-i18n="nav.modules">Modules</a>
@@ -80,13 +129,13 @@
       <a href="product.html" class="btn btn--primary btn--full" data-i18n="nav.m.build">Build Your Pack</a>
       <a href="cart.html"    class="btn btn--ghost btn--full" data-i18n="nav.m.cart">View Cart</a>
     <!-- Mobile Language Switcher -->
-    <div class="lang-switcher--mobile">
-      <button class="lang-option" data-lang="en">&#127468;&#127463; EN</button>
-      <button class="lang-option" data-lang="fr">&#127467;&#127479; FR</button>
-      <button class="lang-option" data-lang="de">&#127465;&#127466; DE</button>
-      <button class="lang-option" data-lang="es">&#127466;&#127480; ES</button>
-      <button class="lang-option" data-lang="zh">&#127464;&#127475; ZH</button>
-      <button class="lang-option" data-lang="ja">&#127471;&#127477; JA</button>
+    <div class="lang-switcher--mobile" id="lang-switcher-mobile" role="group" aria-label="Select language">
+      <button class="lang-option" data-lang="en" aria-pressed="true">&#127468;&#127463; EN</button>
+      <button class="lang-option" data-lang="fr" aria-pressed="false">&#127467;&#127479; FR</button>
+      <button class="lang-option" data-lang="de" aria-pressed="false">&#127465;&#127466; DE</button>
+      <button class="lang-option" data-lang="es" aria-pressed="false">&#127466;&#127480; ES</button>
+      <button class="lang-option" data-lang="zh" aria-pressed="false">&#127464;&#127475; ZH</button>
+      <button class="lang-option" data-lang="ja" aria-pressed="false">&#127471;&#127477; JA</button>
     </div>
     </div>
   </div>
@@ -150,7 +199,14 @@
       <div class="hero-split__right">
         <div class="hero-split__img-wrap">
           <div class="hero-split__product-img">
-            <img src="https://placehold.co/600x700/0B1626/3FFFAB?text=TrailVolt+Core+Pack" alt="TrailVolt Core Pack modular backpack" loading="eager" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);">
+            <picture>
+              <source srcset="assets/images/hero-pack.webp" type="image/webp">
+              <img src="assets/images/hero-pack.svg"
+                   alt="TrailVolt Core Pack modular backpack"
+                   width="600" height="700"
+                   loading="eager" decoding="async"
+                   class="hero-pack-img">
+            </picture>
             <div class="hero-product-label" data-i18n="hero.product.label">Core Pack — 2026</div>
             <div class="hero-product-name"></div>
           </div>
@@ -178,7 +234,7 @@
     <!-- ════════════════════════════════════════
          STATS BAR
     ════════════════════════════════════════ -->
-    <section style="background:var(--color-navy);" aria-label="Product statistics">
+    <section class="stats-section" aria-label="Product statistics">
       <div class="container">
         <div class="stats-bar">
           <div class="stat-item">
@@ -225,8 +281,8 @@
     <section class="lines-section-v2" aria-labelledby="lines-heading">
       <div class="container">
 
-        <div class="text-center" style="margin-bottom:var(--space-14);">
-          <div class="section-label mx-auto" style="justify-content:center;" data-i18n="lines.label">The System</div>
+        <div class="text-center mb-14">
+          <div class="section-label mx-auto" data-i18n="lines.label">The System</div>
           <h2 class="section-title" id="lines-heading" data-i18n="lines.title">Choose Your Line</h2>
           <p class="section-subtitle mx-auto text-center" data-i18n="lines.subtitle">
             Three purpose-built configurations. One modular ecosystem. Every module is cross-compatible — build once, adapt forever.
@@ -338,7 +394,7 @@
 
           <!-- Text + Steps -->
           <div class="fade-in">
-            <div class="section-label" style="color:var(--color-mint);" data-i18n="modular.label">The Module System</div>
+            <div class="section-label text-mint" data-i18n="modular.label">The Module System</div>
             <h2 class="modular-section__heading" id="modular-heading" data-i18n="modular.title">
               One Pack.<br>Infinite Configurations.
             </h2>
@@ -388,7 +444,7 @@
               </div>
             </div>
 
-            <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-10);">
+            <div class="btn-row mt-10">
               <a href="modules.html"  class="btn btn--primary" data-i18n="modular.cta.browse">Browse All Modules</a>
               <a href="product.html"  class="btn btn--ghost" data-i18n="modular.cta.configure">Configure Yours</a>
             </div>
@@ -429,7 +485,7 @@
           <!-- Feature list -->
           <div class="fade-in">
             <div class="section-label" data-i18n="features.label">Built Different</div>
-            <h2 class="section-title" id="features-heading" data-i18n="features.title" style="margin-bottom:var(--space-10);">Engineered for the Life You Actually Live</h2>
+            <h2 class="section-title mb-10" id="features-heading" data-i18n="features.title">Engineered for the Life You Actually Live</h2>
 
             <div class="feature-list-v2">
 
@@ -506,8 +562,8 @@
     <section class="modules-section-v2" aria-labelledby="modules-heading">
       <div class="container">
 
-        <div class="text-center" style="margin-bottom:var(--space-12);">
-          <div class="section-label mx-auto" style="justify-content:center;" data-i18n="modules.label">Add-On Modules</div>
+        <div class="text-center mb-12">
+          <div class="section-label mx-auto" data-i18n="modules.label">Add-On Modules</div>
           <h2 class="section-title" id="modules-heading" data-i18n="modules.title">Eight Ways to Expand Your System</h2>
           <p class="section-subtitle mx-auto text-center" data-i18n="modules.subtitle">
             Each module is designed, tested, and priced independently. Buy what you need. Nothing more.
@@ -630,7 +686,7 @@
 
         </div>
 
-        <div class="text-center" style="margin-top:var(--space-10);">
+        <div class="text-center mt-10">
           <a href="modules.html" class="btn btn--secondary btn--lg" data-i18n="modules.cta">See All Modules &amp; Compatibility</a>
         </div>
 
@@ -651,9 +707,9 @@
           </div>
 
           <div class="fade-in">
-            <div class="section-label" style="color:var(--color-mint);" data-i18n="sustain.label">Built Responsibly</div>
+            <div class="section-label text-mint" data-i18n="sustain.label">Built Responsibly</div>
             <h2 class="section-title section-title--white" id="sustain-heading" data-i18n="sustain.title">Less. Better. Longer.</h2>
-            <p class="section-subtitle section-subtitle--white" style="margin-bottom:0;" data-i18n="sustain.subtitle">
+            <p class="section-subtitle section-subtitle--white mb-0" data-i18n="sustain.subtitle">
               We believe the most sustainable pack is the one you never need to replace. TrailVolt is designed for decades — modular by design, repaired not discarded.
             </p>
 
@@ -706,7 +762,7 @@
             <div class="founder-attribution" data-i18n="founder.attr">
               <strong>Ruslan Ovcharenko</strong> · Founder, TrailVolt
             </div>
-            <div style="margin-top:var(--space-8);">
+            <div class="mt-8">
               <a href="about.html" class="btn btn--secondary" data-i18n="about.story.cta">Read the Full Story</a>
             </div>
           </div>
@@ -727,8 +783,8 @@
     <section class="tribe-section" aria-labelledby="tribe-heading">
       <div class="container">
 
-        <div class="text-center" style="margin-bottom:var(--space-10);">
-          <div class="section-label mx-auto" style="justify-content:center;" data-i18n="tribe.label">Community</div>
+        <div class="text-center mb-10">
+          <div class="section-label mx-auto" data-i18n="tribe.label">Community</div>
           <h2 class="section-title" id="tribe-heading" data-i18n="tribe.title">The TrailVolt Tribe</h2>
           <p class="section-subtitle mx-auto text-center" data-i18n="tribe.subtitle">
             From morning commuters to weekend trailblazers — 12,000+ members who believe one great pack changes how you experience the world.
@@ -747,12 +803,12 @@
             </div>
           </div>
           <div class="tribe-photo">
-            <div class="tribe-photo__inner" style="background:linear-gradient(140deg,#162614 0%,#0e1c10 100%);">
+            <div class="tribe-photo__inner tribe-photo__inner--green">
               <div class="tribe-photo__label">Community Photo — Trail hike, Trail 28L Forest Green</div>
             </div>
           </div>
           <div class="tribe-photo">
-            <div class="tribe-photo__inner" style="background:linear-gradient(140deg,#1a2535 0%,#0f1a28 100%);">
+            <div class="tribe-photo__inner tribe-photo__inner--slate">
               <div class="tribe-photo__label">Community Photo — Work from anywhere</div>
             </div>
           </div>
@@ -763,7 +819,7 @@
           </div>
         </div>
 
-        <div class="text-center" style="margin-top:var(--space-8);">
+        <div class="text-center mt-8">
           <a href="tribe.html" class="btn btn--secondary btn--lg" data-i18n="tribe.cta">Explore the Tribe</a>
         </div>
 
@@ -776,7 +832,7 @@
     <section class="signup-section-v2" aria-labelledby="signup-heading">
       <div class="container">
         <div class="signup-content">
-          <div class="section-label mx-auto" style="justify-content:center;color:var(--color-mint);margin-bottom:var(--space-5);">Early Access</div>
+          <div class="section-label mx-auto text-mint mb-5">Early Access</div>
           <h2 class="signup-headline" id="signup-heading">
             Get <span>10% Off</span><br>Your First Build
           </h2>
@@ -784,6 +840,11 @@
             Join the TrailVolt community. Get 10% off your first configuration, plus early access to new modules, limited-run colours, and founder stories — direct to your inbox.
           </p>
           <form class="newsletter-form-v2" data-email-form novalidate>
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+            <input type="hidden" name="csrf_token" value="" data-csrf />
             <input type="email" placeholder="Your email address" data-i18n-placeholder="newsletter.placeholder" aria-label="Email address" required />
             <button type="submit" class="btn btn--primary" data-i18n="newsletter.cta">Get 10% Off</button>
           </form>
@@ -805,6 +866,11 @@
           <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
         </div>
         <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <input type="hidden" name="csrf_token" value="" data-csrf />
           <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
           <button type="submit" class="btn btn--primary">Get 10% Off</button>
         </form>
@@ -856,9 +922,9 @@
             <a href="contact.html" class="footer__link">Contact</a>
             <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
           </nav>
-          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
-            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
-            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          <div class="promo-box">
+            <p class="promo-box__code">Use code BASECAMP10</p>
+            <p class="promo-box__note">10% off your first order</p>
           </div>
         </div>
       </div>
@@ -874,7 +940,7 @@
   </footer>
 
   <!-- ── Cookie Consent Banner ── -->
-  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" class="hidden">
     <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
     <div class="cookie-actions">
       <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>

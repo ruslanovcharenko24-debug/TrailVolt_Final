@@ -2,16 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://trailvolt.com; connect-src 'self' https://api.trailvolt.com https://js.stripe.com; frame-src 'self' https://js.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop — TrailVolt</title>
   <meta name="description" content="Shop the full TrailVolt system. Three pack lines and eight modular accessories for every journey." />
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:url"          content="https://trailvolt.com/shop.html" />
+  <meta property="og:title"        content="Shop — TrailVolt" />
+  <meta property="og:description"  content="Shop the full TrailVolt system. Three pack lines and eight modular accessories for every journey." />
+  <meta property="og:image"        content="https://trailvolt.com/assets/images/og-shop.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"       content="en_IE" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Shop — TrailVolt" />
+  <meta name="twitter:description" content="Shop the full TrailVolt system. Three pack lines and eight modular accessories for every journey." />
+  <meta name="twitter:image"       content="https://trailvolt.com/assets/images/og-shop.jpg" />
+  <link rel="canonical" href="https://trailvolt.com/shop.html" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700">
   </noscript>
+  <link rel="preload" href="assets/css/main.css" as="style" />
+  <link rel="preload" href="assets/js/main.js" as="script" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://trailvolt.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Shop",  "item": "https://trailvolt.com/shop.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -35,7 +69,7 @@
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
           </svg>
           Cart
-          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+          <span class="nav__cart-count hidden" role="status" aria-live="polite">0</span>
         </a>
         <!-- Language Switcher -->
         <div class="lang-switcher">
@@ -109,15 +143,15 @@
 
         <!-- ── Everyday ── -->
         <div id="section-everyday" class="shop-section">
-          <div style="margin-bottom:var(--space-8);">
+          <div class="mb-8">
             <div class="section-label" data-i18n="shop.everyday.label">22L — Urban Carry</div>
-            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.everyday.title">Everyday Line</h2>
-            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.everyday.sub">Your daily companion. Structure and freedom in one pack — the city commuter's choice for laptop, gym kit, and organised essentials.</p>
+            <h2 class="section-title section-title--shop" data-i18n="shop.everyday.title">Everyday Line</h2>
+            <p class="section-sub" data-i18n="shop.everyday.sub">Your daily companion. Structure and freedom in one pack — the city commuter's choice for laptop, gym kit, and organised essentials.</p>
           </div>
-          <div class="product-grid" style="margin-bottom:var(--space-12);">
+          <div class="product-grid mb-12">
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Everyday+Core+Black" alt="TrailVolt Everyday 22L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-everyday-black.webp" type="image/webp"><img src="assets/images/pack-everyday-black.svg" alt="TrailVolt Everyday 22L Core Black" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.bestseller">Best Seller</span>
@@ -129,7 +163,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/374754/ffffff?text=Everyday+Slate+Grey" alt="TrailVolt Everyday 22L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-everyday-slate.webp" type="image/webp"><img src="assets/images/pack-everyday-slate.svg" alt="TrailVolt Everyday 22L Slate Grey" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.new_colour">New Colour</span>
@@ -141,7 +175,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/1a3a2a/ffffff?text=Everyday+Forest+Green" alt="TrailVolt Everyday 22L Forest Green" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-everyday-forest.webp" type="image/webp"><img src="assets/images/pack-everyday-forest.svg" alt="TrailVolt Everyday 22L Forest Green" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.limited">Limited</span>
@@ -156,15 +190,15 @@
 
         <!-- ── Travel ── -->
         <div id="section-travel" class="shop-section">
-          <div style="margin-bottom:var(--space-8);">
+          <div class="mb-8">
             <div class="section-label" data-i18n="shop.travel.label">30L — Cabin Carry</div>
-            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.travel.title">Travel Line</h2>
-            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.travel.sub">IATA cabin-compliant. Clamshell flat-open design. Detachable 8L day bag. This is the only luggage you need for most trips.</p>
+            <h2 class="section-title section-title--shop" data-i18n="shop.travel.title">Travel Line</h2>
+            <p class="section-sub" data-i18n="shop.travel.sub">IATA cabin-compliant. Clamshell flat-open design. Detachable 8L day bag. This is the only luggage you need for most trips.</p>
           </div>
-          <div class="product-grid" style="margin-bottom:var(--space-12);">
+          <div class="product-grid mb-12">
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Travel+Core+Black" alt="TrailVolt Travel 30L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-travel-black.webp" type="image/webp"><img src="assets/images/pack-travel-black.svg" alt="TrailVolt Travel 30L Core Black" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.cabin_ready">Cabin Ready</span>
@@ -176,7 +210,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/374754/ffffff?text=Travel+Slate+Grey" alt="TrailVolt Travel 30L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-travel-slate.webp" type="image/webp"><img src="assets/images/pack-travel-slate.svg" alt="TrailVolt Travel 30L Slate Grey" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.most_popular">Most Popular</span>
@@ -188,7 +222,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/0B1626/3FFFAB?text=Travel+Custom+Build" alt="TrailVolt Travel 30L Custom Build" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-travel-custom.webp" type="image/webp"><img src="assets/images/pack-travel-custom.svg" alt="TrailVolt Travel 30L Custom Build" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.custom">Custom</span>
@@ -203,15 +237,15 @@
 
         <!-- ── Trail ── -->
         <div id="section-trail" class="shop-section">
-          <div style="margin-bottom:var(--space-8);">
+          <div class="mb-8">
             <div class="section-label" data-i18n="shop.trail.label">28L — Outdoor</div>
-            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="shop.trail.title">Trail Line</h2>
-            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.trail.sub">500D Cordura, DWR weather-resistant coating, load-distribution harness. Built for terrain — compatible with every module for post-trail versatility.</p>
+            <h2 class="section-title section-title--shop" data-i18n="shop.trail.title">Trail Line</h2>
+            <p class="section-sub" data-i18n="shop.trail.sub">500D Cordura, DWR weather-resistant coating, load-distribution harness. Built for terrain — compatible with every module for post-trail versatility.</p>
           </div>
-          <div class="product-grid" style="margin-bottom:var(--space-12);">
+          <div class="product-grid mb-12">
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/1a3a2a/ffffff?text=Trail+Forest+Green" alt="TrailVolt Trail 28L Forest Green" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-trail-forest.webp" type="image/webp"><img src="assets/images/pack-trail-forest.svg" alt="TrailVolt Trail 28L Forest Green" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.trail_fav">Trail Favourite</span>
@@ -223,7 +257,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/0B1626/ffffff?text=Trail+Core+Black" alt="TrailVolt Trail 28L Core Black" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-trail-black.webp" type="image/webp"><img src="assets/images/pack-trail-black.svg" alt="TrailVolt Trail 28L Core Black" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.label.versatile">Versatile</span>
@@ -235,7 +269,7 @@
             </article>
             <article class="card fade-in">
               <div class="card__image">
-                <img src="https://placehold.co/400x300/374754/ffffff?text=Trail+Slate+Grey" alt="TrailVolt Trail 28L Slate Grey" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <picture><source srcset="assets/images/pack-trail-slate.webp" type="image/webp"><img src="assets/images/pack-trail-slate.svg" alt="TrailVolt Trail 28L Slate Grey" width="400" height="300" loading="lazy" decoding="async"></picture>
               </div>
               <div class="card__body">
                 <span class="card__label" data-i18n="shop.new">New</span>
@@ -250,17 +284,17 @@
 
         <!-- ── Modules ── -->
         <div id="section-modules" class="shop-section">
-          <div style="margin-bottom:var(--space-8);">
+          <div class="mb-8">
             <div class="section-label" data-i18n="mp.label">The Add-ons</div>
-            <h2 class="section-title" style="font-size:var(--text-3xl);" data-i18n="mp.title">Modules</h2>
-            <p style="color:var(--color-grey-500);max-width:600px;margin-top:var(--space-3);" data-i18n="shop.modules.sub">Eight modular accessories. All compatible with every TrailVolt pack. Snap on, snap off — in seconds, without tools.</p>
+            <h2 class="section-title section-title--shop" data-i18n="mp.title">Modules</h2>
+            <p class="section-sub" data-i18n="shop.modules.sub">Eight modular accessories. All compatible with every TrailVolt pack. Snap on, snap off — in seconds, without tools.</p>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--space-6);margin-bottom:var(--space-12);">
+          <div class="module-grid">
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Chest+Phone+Module" alt="Chest Phone Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-phone.webp" type="image/webp"><img src="assets/images/module-phone.svg" alt="Chest Phone Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.phone.name">Chest Phone Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.phone.name">Chest Phone Module</h3>
                 <p class="card__text" data-i18n="modules.phone.desc">Magnetic chest-mount for instant phone access. No fumbling. No opening the bag.</p>
                 <div class="card__price"><span data-price="29">€29</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -268,9 +302,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Tech+Organizer+Module" alt="Tech Organizer Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-tech.webp" type="image/webp"><img src="assets/images/module-tech.svg" alt="Tech Organizer Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.tech.name">Tech Organizer Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.tech.name">Tech Organizer Module</h3>
                 <p class="card__text" data-i18n="modules.tech.desc">Cables, adapters, SD cards, pen loop. Never untangle your bag again.</p>
                 <div class="card__price"><span data-price="35">€35</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -278,9 +312,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Power+Bank+Module" alt="Power Bank Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-power.webp" type="image/webp"><img src="assets/images/module-power.svg" alt="Power Bank Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.power.name">Power Bank Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.power.name">Power Bank Module</h3>
                 <p class="card__text" data-i18n="modules.power.desc">10,000mAh integrated power bank with USB-A and USB-C passthrough.</p>
                 <div class="card__price"><span data-price="39">€39</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -288,9 +322,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Shoe+Module" alt="Shoe Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-shoe.webp" type="image/webp"><img src="assets/images/module-shoe.svg" alt="Shoe Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.shoe.name">Shoe Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.shoe.name">Shoe Module</h3>
                 <p class="card__text" data-i18n="modules.shoe.desc">Ventilated isolated compartment for gym shoes or post-trail sandals.</p>
                 <div class="card__price"><span data-price="32">€32</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -298,9 +332,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Clothing+Organizer+Cube" alt="Clothing Organizer Cube" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-clothing.webp" type="image/webp"><img src="assets/images/module-clothing.svg" alt="Clothing Organizer Cube" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.clothing.name">Clothing Organizer Cube</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.clothing.name">Clothing Organizer Cube</h3>
                 <p class="card__text" data-i18n="modules.clothing.desc">Compression cube for a clean change. Collapses flat when empty.</p>
                 <div class="card__price"><span data-price="25">€25</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -308,9 +342,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Hidden+Document+Sleeve" alt="Hidden Document Sleeve" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-document.webp" type="image/webp"><img src="assets/images/module-document.svg" alt="Hidden Document Sleeve" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.doc.name">Hidden Document Sleeve</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.doc.name">Hidden Document Sleeve</h3>
                 <p class="card__text" data-i18n="modules.doc.desc">RFID-blocking slim sleeve flush against the back panel. Invisible to thieves.</p>
                 <div class="card__price"><span data-price="19">€19</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -318,9 +352,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Bottle+Holder+Module" alt="Bottle Holder Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-bottle.webp" type="image/webp"><img src="assets/images/module-bottle.svg" alt="Bottle Holder Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.bottle.name">Bottle Holder Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.bottle.name">Bottle Holder Module</h3>
                 <p class="card__text" data-i18n="modules.bottle.desc">Side-swing holder for 1L water bottles. Retracts flush when not in use.</p>
                 <div class="card__price"><span data-price="18">€18</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -328,9 +362,9 @@
             </article>
 
             <article class="card fade-in">
-              <div class="card__image"><img src="https://placehold.co/400x300/374754/ffffff?text=Rain+Cover+Module" alt="Rain Cover Module" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="card__image"><picture><source srcset="assets/images/module-rain.webp" type="image/webp"><img src="assets/images/module-rain.svg" alt="Rain Cover Module" width="400" height="300" loading="lazy" decoding="async"></picture></div>
               <div class="card__body">
-                <h3 class="card__title" style="font-size:var(--text-base);" data-i18n="modules.rain.name">Rain Cover Module</h3>
+                <h3 class="card__title card__title--sm" data-i18n="modules.rain.name">Rain Cover Module</h3>
                 <p class="card__text" data-i18n="modules.rain.desc">Tucked in its own base pocket. Full-pack coverage in under 10 seconds.</p>
                 <div class="card__price"><span data-price="22">€22</span></div>
                 <a href="modules.html" class="btn btn--ghost-dark btn--sm btn--full" data-i18n="shop.view">View Details</a>
@@ -341,41 +375,48 @@
         </div>
 
         <!-- ── Upsell / Bundles ── -->
-        <section style="background:var(--color-navy);border-radius:var(--radius-2xl);padding:var(--space-12);margin-top:var(--space-16);" aria-labelledby="bundle-heading">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;">
+        <section class="bundle-section" aria-labelledby="bundle-heading">
+          <div class="bundle-section__grid">
             <div>
               <div class="section-label" data-i18n="shop.bundle.label">Curated Configurations</div>
               <h2 class="section-title section-title--white" id="bundle-heading" data-i18n="shop.bundle.title">Not Sure Where to Start?</h2>
               <p class="section-subtitle section-subtitle--white" data-i18n="shop.bundle.sub">Try one of our three pre-configured starter builds — handpicked module combinations that cover 90% of journeys right out of the box. Customise from there.</p>
-              <div style="display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-8);">
-                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+              <div class="bundle-list">
+                <div class="bundle-row">
                   <div>
-                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.kit.title">The Office Kit</p>
-                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.kit.sub">Everyday + Tech Organizer + Chest Phone Module</p>
+                    <p class="bundle-row__title" data-i18n="shop.bundle.kit.title">The Office Kit</p>
+                    <p class="bundle-row__sub" data-i18n="shop.bundle.kit.sub">Everyday + Tech Organizer + Chest Phone Module</p>
                   </div>
-                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="223">€223</span>
+                  <span class="bundle-row__price" data-price="223">€223</span>
                 </div>
-                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+                <div class="bundle-row">
                   <div>
-                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.traveller.title">The Traveller</p>
-                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.traveller.sub">Travel + Hidden Document Sleeve + Power Bank Module</p>
+                    <p class="bundle-row__title" data-i18n="shop.bundle.traveller.title">The Traveller</p>
+                    <p class="bundle-row__sub" data-i18n="shop.bundle.traveller.sub">Travel + Hidden Document Sleeve + Power Bank Module</p>
                   </div>
-                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="217">€217</span>
+                  <span class="bundle-row__price" data-price="217">€217</span>
                 </div>
-                <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);">
+                <div class="bundle-row">
                   <div>
-                    <p style="font-weight:700;color:var(--color-white);font-size:var(--text-sm);" data-i18n="shop.bundle.runner.title">The Trail Runner</p>
-                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);" data-i18n="shop.bundle.runner.sub">Trail + Rain Cover Module + Bottle Holder Module</p>
+                    <p class="bundle-row__title" data-i18n="shop.bundle.runner.title">The Trail Runner</p>
+                    <p class="bundle-row__sub" data-i18n="shop.bundle.runner.sub">Trail + Rain Cover Module + Bottle Holder Module</p>
                   </div>
-                  <span style="font-family:var(--font-accent);font-weight:700;color:var(--color-mint);" data-price="199">€199</span>
+                  <span class="bundle-row__price" data-price="199">€199</span>
                 </div>
               </div>
             </div>
             <div>
-              <img src="https://placehold.co/500x400/0B1626/3FFFAB?text=TrailVolt+Starter+Bundles" alt="Three TrailVolt starter configurations side by side" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);min-height:280px;">
+              <picture>
+                <source srcset="assets/images/shop-bundles.webp" type="image/webp">
+                <img src="assets/images/shop-bundles.svg"
+                     alt="Three TrailVolt starter configurations side by side"
+                     width="500" height="400"
+                     loading="lazy" decoding="async"
+                     class="bundle-img">
+              </picture>
             </div>
           </div>
-          <div style="text-align:center;margin-top:var(--space-8);">
+          <div class="text-center mt-8">
             <a href="product.html" class="btn btn--primary btn--lg" data-i18n="shop.bundle.cta">Start Your Custom Build</a>
           </div>
         </section>
@@ -386,33 +427,33 @@
   </main>
 
   <!-- ── Trust Bar ── -->
-  <section style="background:var(--color-glacier);padding:var(--space-8) 0;border-top:1px solid var(--color-grey-200);" aria-label="Trust badges">
+  <section class="trust-strip" aria-label="Trust badges">
     <div class="container">
-      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-4);text-align:center;">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+      <div class="trust-grid">
+        <div class="trust-badge">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.shipping">Free EU Shipping</p>
-          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.on_all">On all orders</p>
+          <p class="trust-badge__title" data-i18n="hero.trust.shipping">Free EU Shipping</p>
+          <p class="trust-badge__sub" data-i18n="shop.trust.on_all">On all orders</p>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="trust-badge">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.checkout">Secure Checkout</p>
-          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.ssl_sub">SSL encrypted</p>
+          <p class="trust-badge__title" data-i18n="hero.trust.checkout">Secure Checkout</p>
+          <p class="trust-badge__sub" data-i18n="shop.trust.ssl_sub">SSL encrypted</p>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="trust-badge">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
-          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.returns">60-Day Returns</p>
-          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.no_q">No questions asked</p>
+          <p class="trust-badge__title" data-i18n="hero.trust.returns">60-Day Returns</p>
+          <p class="trust-badge__sub" data-i18n="shop.trust.no_q">No questions asked</p>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="trust-badge">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="hero.trust.warranty">2-Year Warranty</p>
-          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.on_products">On all products</p>
+          <p class="trust-badge__title" data-i18n="hero.trust.warranty">2-Year Warranty</p>
+          <p class="trust-badge__sub" data-i18n="shop.trust.on_products">On all products</p>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="trust-badge">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M5 17H3v-4M2 5h11l3 9"/><path d="M9 17H13"/><path d="M13 6V3"/></svg>
-          <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-navy);" data-i18n="shop.trust.materials">Recycled Nylon</p>
-          <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="shop.trust.certified">Bluesign certified</p>
+          <p class="trust-badge__title" data-i18n="shop.trust.materials">Recycled Nylon</p>
+          <p class="trust-badge__sub" data-i18n="shop.trust.certified">Bluesign certified</p>
         </div>
       </div>
     </div>
@@ -427,6 +468,11 @@
           <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
         </div>
         <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <input type="hidden" name="csrf_token" value="" data-csrf />
           <input class="newsletter-input" type="email" name="email" placeholder="Your email address" data-i18n-placeholder="newsletter.placeholder" required aria-label="Email address" autocomplete="email" />
           <button type="submit" class="btn btn--primary" data-i18n="newsletter.cta">Get 10% Off</button>
         </form>
@@ -478,9 +524,9 @@
             <a href="contact.html" class="footer__link" data-i18n="footer.contact">Contact</a>
             <a href="terms.html" class="footer__link" data-i18n="footer.terms">Terms &amp; Privacy</a>
           </nav>
-          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
-            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);" data-i18n="footer.promo.code">Use code BASECAMP10</p>
-            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);" data-i18n="footer.promo.sub">10% off your first order</p>
+          <div class="promo-box">
+            <p class="promo-box__code" data-i18n="footer.promo.code">Use code BASECAMP10</p>
+            <p class="promo-box__note" data-i18n="footer.promo.sub">10% off your first order</p>
           </div>
         </div>
       </div>
@@ -496,7 +542,7 @@
   </footer>
 
   <!-- ── Cookie Consent Banner ── -->
-  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" class="hidden">
     <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
     <div class="cookie-actions">
       <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>

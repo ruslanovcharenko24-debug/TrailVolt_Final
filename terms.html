@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://trailvolt.com; connect-src 'self' https://api.trailvolt.com https://js.stripe.com; frame-src 'self' https://js.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms &amp; Privacy — TrailVolt</title>
   <meta name="description" content="TrailVolt Privacy Policy, Terms of Service, Cookie Policy, and Returns Policy." />
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:url"          content="https://trailvolt.com/terms.html" />
+  <meta property="og:title"        content="Terms &amp; Privacy — TrailVolt" />
+  <meta property="og:description"  content="TrailVolt Privacy Policy, Terms of Service, Cookie Policy, and Returns Policy." />
+  <meta property="og:image"        content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"       content="en_IE" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Terms &amp; Privacy — TrailVolt" />
+  <meta name="twitter:description" content="TrailVolt Privacy Policy, Terms of Service, Cookie Policy, and Returns Policy." />
+  <meta name="twitter:image"       content="https://trailvolt.com/assets/images/og-cover.jpg" />
+  <link rel="canonical" href="https://trailvolt.com/terms.html" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700">
   </noscript>
+  <link rel="preload" href="assets/css/main.css" as="style" />
+  <link rel="preload" href="assets/js/main.js" as="script" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
@@ -40,7 +64,7 @@
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
           </svg>
           Cart
-          <span class="nav__cart-count hidden" aria-live="polite">0</span>
+          <span class="nav__cart-count hidden" role="status" aria-live="polite">0</span>
         </a>
         <!-- Language Switcher -->
         <div class="lang-switcher">
@@ -95,7 +119,7 @@
     <section style="background:var(--color-glacier);padding:var(--space-16) 0;" aria-labelledby="terms-hero-heading">
       <div class="container">
         <div class="section-label" data-i18n="terms.label">Legal</div>
-        <h1 id="terms-hero-heading" data-i18n="terms.title" style="font-family:var(--font-heading);font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));font-weight:900;letter-spacing:-0.03em;color:var(--color-navy);margin-bottom:var(--space-4);">Terms &amp; Policies</h1>
+        <h1 id="terms-hero-heading" data-i18n="terms.title" class="page-title" style="font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));color:var(--color-navy);margin-bottom:var(--space-4);">Terms &amp; Policies</h1>
         <p style="font-size:var(--text-base);color:var(--color-grey-500);"><span data-i18n="terms.updated">Last updated: 17 March 2026</span>. Questions? <a href="contact.html" style="color:var(--color-navy);font-weight:600;text-decoration:underline;">Contact us.</a></p>
       </div>
     </section>
@@ -282,6 +306,11 @@
           <p data-i18n="newsletter.sub">New drops, Tribe stories, and exclusive member offers — straight to your inbox.</p>
         </div>
         <form class="newsletter-form" data-email-form aria-label="Newsletter signup">
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <input type="hidden" name="csrf_token" value="" data-csrf />
           <input class="newsletter-input" type="email" name="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email" />
           <button type="submit" class="btn btn--primary">Get 10% Off</button>
         </form>
@@ -327,9 +356,9 @@
             <a href="contact.html" class="footer__link">Contact</a>
             <a href="terms.html" class="footer__link">Terms &amp; Privacy</a>
           </nav>
-          <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(63,255,171,0.06);border-radius:var(--radius-md);border:1px solid rgba(63,255,171,0.12);">
-            <p style="font-family:var(--font-accent);font-size:var(--text-xs);font-weight:700;color:var(--color-mint);margin-bottom:var(--space-1);">Use code BASECAMP10</p>
-            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">10% off your first order</p>
+          <div class="promo-box">
+            <p class="promo-box__code">Use code BASECAMP10</p>
+            <p class="promo-box__note">10% off your first order</p>
           </div>
         </div>
       </div>
@@ -387,7 +416,7 @@
   </script>
 
   <!-- ── Cookie Consent Banner ── -->
-  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" style="display:none;">
+  <div id="cookie-banner" role="alertdialog" aria-label="Cookie consent" aria-live="polite" class="hidden">
     <p>We use cookies to improve your experience, remember your cart, and measure site performance. <a href="terms.html#cookies">Cookie Policy</a></p>
     <div class="cookie-actions">
       <button class="cookie-decline" data-i18n="cookie.decline">Decline</button>
