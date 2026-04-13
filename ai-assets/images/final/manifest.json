@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "hero-pack-main.webp",
+    "source_file": "ai-assets/images/regenerated/hero-pack-main.webp",
+    "approved_from": "regeneration-wave-1",
+    "page": "index.html",
+    "section": "Hero — primary product image",
+    "approved_at": "2026-04-12T12:57:22.444Z",
+    "commercial_role": "Drives the click to Build Your Pack. Above-the-fold brand statement and conversion anchor.",
+    "emotional_role": "Immediate desire and trust — the viewer must feel this is serious, beautiful, expensive gear."
+  },
+  {
+    "filename": "modular-system-diagram.webp",
+    "source_file": "ai-assets/images/regenerated/modular-system-diagram.webp",
+    "approved_from": "regeneration-wave-1",
+    "page": "index.html",
+    "section": "Modular System Explainer",
+    "approved_at": "2026-04-12T12:57:22.449Z",
+    "commercial_role": "Communicates the product differentiator (modular system) visually without requiring copy.",
+    "emotional_role": "Clarity and excitement — the viewer understands the system immediately and wants to explore it."
+  },
+  {
+    "filename": "about-founder.webp",
+    "source_file": "ai-assets/images/regenerated/about-founder.webp",
+    "approved_from": "regeneration-wave-1",
+    "page": "about.html",
+    "section": "Founder Story",
+    "approved_at": "2026-04-12T12:57:22.449Z",
+    "commercial_role": "Converts sceptical buyers via founder credibility. Essential for press and first-time buyer trust.",
+    "emotional_role": "Trust and authenticity — this was built by someone who actually had this problem and cares."
+  },
+  {
+    "filename": "pack-everyday-black.webp",
+    "source_file": "ai-assets/images/regenerated/pack-everyday-black.webp",
+    "approved_from": "regeneration-wave-1",
+    "page": "shop.html",
+    "section": "Everyday Line — Core Black product card (Best Seller)",
+    "approved_at": "2026-04-12T12:57:22.449Z",
+    "commercial_role": "Best seller card — drives highest revenue volume. Last image before add-to-cart.",
+    "emotional_role": "Immediate desirability — this is the one everyone wants."
+  }
+]

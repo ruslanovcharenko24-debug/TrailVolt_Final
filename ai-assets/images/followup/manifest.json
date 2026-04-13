@@ -1,0 +1,98 @@
+[
+  {
+    "filename": "pack-detail-material.webp",
+    "page": "index.html",
+    "section": "Feature showcase — material proof",
+    "prompt_used": "Extreme close-up macro product photograph of the front panel of a Core Black modular backpack. The image is a pure material study — no text, no labels, no markings of any kind anywhere in the frame. Compositional elements from top to bottom of the frame: the horizontal module attachment rail occupying the upper third — a row of five to six precisely machined rectangular slots in matte gunmetal, each slot approximately 15mm wide with crisp recessed edges and visible mounting depth. The fabric filling the rest of the frame: 600D ballistic nylon in Core Black, the crosshatch weave pattern clearly resolved — approximately 2mm thread spacing, subtle light/dark alternation between warp and weft. The nylon surface is dense, flat, slightly tactile-looking. In the lower third: a YKK zipper pull in matte black — the slider body shows precision tolerances, the pull tab is a small rectangular loop. The zipper teeth are #10 YKK — slightly oversized, purposeful. Lighting: single low-angle raking key light from the left at 12-15 degrees from the surface to extract maximum texture from the nylon weave. Soft fill from the right prevents shadow crush. Background fades to near-black at frame edges. Everything within the frame is in sharp focus. The photograph communicates premium construction through material specificity — the viewer understands this is not a generic bag. No text. No labels. No brand marks. No floating elements. Pure material documentation.",
+    "generated_at": "2026-04-13T07:53:15.672Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-travel.webp",
+    "page": "product.html",
+    "section": "Product configurator — Travel 30L selected",
+    "prompt_used": "Square-format ultra-premium studio product photography of the TrailVolt Travel 30L Core Pack in Core Black. Camera angle: near-frontal with a 10-15 degree tilt to the left — matching the exact framing of the Everyday 22L configurator image for visual family consistency. The Travel 30L is visibly taller than the Everyday — its larger volume is apparent in the silhouette. Key features visible in this configurator view: the module attachment rail system across the front face — same horizontal row of rectangular matte gunmetal connection slots as the Everyday, clearly in focus and prominent. The rapid-access front organiser zip across the upper face. The clamshell side zip: visible as a continuous zip running partway up the left side panel edge, confirming the flat-open capability — a subtle but important Travel-specific detail. Integrated branding: the same small brushed anodised aluminium nameplate as in the Everyday configurator image — positioned just above the module rail, approximately 38mm wide, debossed TrailVolt inverted triangle and wordmark, satin finish, 1mm proud of the fabric. Background: dark navy (#0B1626). Subtle electric mint glow from directly behind and below the pack — catching the base edge and the module rail slot depths. 85mm equivalent focal length. Front face hyper-sharp. No hands, no people, no other text anywhere in the image.",
+    "generated_at": "2026-04-13T07:53:50.859Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-trail.webp",
+    "page": "product.html",
+    "section": "Product configurator — Trail 28L selected",
+    "prompt_used": "Square-format ultra-premium studio product photography of the TrailVolt Trail 28L Core Pack in Forest Green (#2D5016). Camera angle: near-frontal with a 10-15 degree tilt to the left — same framing family as the Everyday and Travel configurator images. The Trail 28L has a slightly taller profile and more pronounced shoulder harness than the Everyday. Forest Green colourway: a deep natural green, not olive, not khaki, not military — the specific tone of mature Irish hedgerow. Shell: 500D Cordura, slightly more textured surface than the Everyday's 600D nylon — the weave reads as more rugged under the studio lights. Key features visible: the module attachment rail across the front face — matte gunmetal slots contrasting clearly against the green fabric. The load-distribution shoulder harness visible at the top. Integrated branding: a small woven fabric badge on the upper-left front panel — approximately 45mm wide, dark green ground with the TrailVolt inverted triangle and wordmark rendered in slightly lighter sage-green thread. This is a textile element: visible stitching perimeter, woven construction — consistent with the outdoor heritage aesthetic. Background: dark navy (#0B1626). A subtle electric mint glow from behind the pack catches only the base edge and the module rail slot depths — the 'technology in nature' signal. Front face hyper-sharp. No hands, no people, no floating text, no other brand marks anywhere.",
+    "generated_at": "2026-04-13T07:54:26.437Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-everyday-forest.webp",
+    "page": "shop.html",
+    "section": "Everyday Line — Forest Green product card",
+    "prompt_used": "Premium studio product photography of the TrailVolt Everyday 22L backpack in Forest Green (#2D5016). Shot at the same 3/4 angle as the Core Black and Slate Grey Everyday product cards — collection visual consistency is critical. Background: dark navy (#0B1626) seamless. Same three-point lighting. Forest Green colourway: deep, natural green — not olive, not khaki, not military. The same green as mature Irish hedgerow. Shell: 600D ballistic nylon, crosshatch weave visible — appears slightly different on green versus black, with more visible surface texture contrast. Module attachment rail: matte gunmetal horizontal connection slots across the mid front face — they contrast cleanly against the green. YKK zipper pulls: matte black. Integrated branding: a small woven fabric badge on the upper-left front panel — dark green ground, TrailVolt inverted triangle above wordmark in lighter sage-green thread, rectangular, approximately 40mm wide, stitched flat. This woven construction matches the Forest Green colour heritage feel — consistent with how outdoor brands like Patagonia or Arc'teryx badge their green products. No text anywhere else. Clean studio quality.",
+    "generated_at": "2026-04-13T07:55:10.892Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-travel-slate.webp",
+    "page": "shop.html",
+    "section": "Travel Line — Slate Grey product card",
+    "prompt_used": "Premium studio product photography of the TrailVolt Travel 30L in Slate Grey (#6B7280). Shot at the same 3/4 angle as pack-travel-black.webp — the collection must look consistent. Background: dark navy (#0B1626) seamless. Same three-point lighting. Slate Grey colourway: a deliberate cool grey-blue, lighter than the navy background, clearly distinct from Core Black. The Travel 30L is the largest pack in the range: visibly taller and wider than the Everyday, structured for carry-on travel. Key features: the clamshell side zip visible in the side profile — it wraps from the bottom, up the side, confirming flat-open access capability. Module attachment rail across the front face: matte gunmetal connection slots, contrasting more visibly against grey than against black. Lockable zip pulls: a slightly different profile from standard YKK, with the small security-lock loop. Shell: 420D Ripstop Nylon, the ripstop diamond grid faintly visible in the surface. Integrated branding: a gunmetal embossed rubber badge on the upper-right front panel — slightly darker than the slate fabric, same tonal approach as pack-everyday-slate.webp. Approximately 40mm wide, flush to the panel, the badge is a moulded rubber element. No text anywhere else. Studio quality.",
+    "generated_at": "2026-04-13T07:56:02.551Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-travel-custom.webp",
+    "page": "shop.html",
+    "section": "Travel Line — Custom Build product card (modules attached)",
+    "prompt_used": "Premium studio product photography of the TrailVolt Travel 30L Core Black in a fully configured 'custom build' — showing the modular system in use. The pack is photographed at the same 3/4 angle as the standard Travel Black product card. Two modules are attached to the front module rail system: on the left rail slot position, a compact Power Bank Module (matte black rectangular brick with USB ports visible); on the right rail slot position, a Phone Module (slim matte black pouch with magnetic snap flap). The modules are precisely mounted — they sit flush and intentional against the front face, not hanging awkwardly. The stainless steel attachment clips are visible where the modules meet the rail. The electric mint connection lines are subtly visible as very thin geometric traces between the module attachment points and the rail — as if the system is powered. Background: dark navy (#0B1626). Three-point lighting. The overall composition communicates: this is a fully loaded, personalised travel system. Integrated branding: the same small matte black rubber badge on the upper area of the front panel, above the modules. No text anywhere else. Studio commercial photography quality.",
+    "generated_at": "2026-04-13T07:56:50.794Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-trail-black.webp",
+    "page": "shop.html",
+    "section": "Trail Line — Core Black product card",
+    "prompt_used": "Premium studio product photography of the TrailVolt Trail 28L in Core Black. Shot at the same 3/4 angle as pack-trail-forest.webp — same collection standard. Background: dark navy (#0B1626) seamless. Same three-point lighting, key from upper-right. Core Black colourway: deep matte black throughout. The Trail 28L reads as slightly taller and more technical than the Everyday: more pronounced load-distribution shoulder harness, reinforced top haul handle, slightly more structured form. Shell: 500D Cordura, slightly rougher texture than the 600D nylon Everyday — the weave is more open and reads as genuinely technical outdoor material. Module attachment rail across the front face: matte gunmetal slots — they may be harder to see on black but the form is clear. YKK zipper pulls matte black. Integrated branding: a small matte black embossed rubber badge on the upper-left front panel — approximately 40mm wide, tonal against the black fabric, visible from the light catching its slight relief. The same badge construction as pack-everyday-black.webp. No text anywhere else. No AI text baked onto the pack surface.",
+    "generated_at": "2026-04-13T07:57:41.385Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-trail-slate.webp",
+    "page": "shop.html",
+    "section": "Trail Line — Slate Grey product card",
+    "prompt_used": "Premium studio product photography of the TrailVolt Trail 28L in Slate Grey (#6B7280). Shot at the same 3/4 angle as pack-trail-forest.webp and pack-trail-black.webp — collection consistency. Background: dark navy (#0B1626) seamless. Three-point lighting. Slate Grey colourway: a cool grey-blue tone, clearly distinct from Core Black and from Forest Green. The Trail 28L profile: slightly taller than Everyday, more technical harness system, reinforced haul handle. Shell: 500D Cordura in Slate Grey — the rougher Cordura texture reads as outdoor-technical while the grey tone keeps it clean and versatile. Module attachment rail: matte gunmetal slots contrast visibly against the grey fabric. YKK zipper pulls: matte gunmetal matching the colourway. Integrated branding: a gunmetal rubber badge on the upper-left front panel — slightly darker than the slate fabric, tonal but visible. Approximately 40mm wide, flush to the panel surface, moulded rubber element. No text anywhere else. Studio quality product card photography.",
+    "generated_at": "2026-04-13T07:58:28.861Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-shoe.webp",
+    "page": "shop.html + modules.html",
+    "section": "Shoe Module product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Shoe Module. The module is a structured ventilated pouch designed to store a pair of shoes or trainers in complete isolation from the main pack contents. Dimensions: approximately 35cm × 28cm × 12cm when packed — large enough for a size 10/11 trainer. Materials: the primary shell is the same matte black 600D nylon as the main pack. The top face has a large ventilation panel — a precise diamond-weave mesh in matte black, slightly different texture from the surrounding nylon, allowing air circulation. A main compartment zipper runs three sides (U-shaped zip, matte YKK hardware). On the back panel: the module rail attachment mechanism — a stainless steel clip system matching the pack's rail slots. The module is shown at a 20-25 degree 3/4 angle, sitting upright, showing both the mesh ventilation face and the body. Background: dark navy (#0B1626). Three-point studio lighting, key from upper-right. Very subtle electric mint reflection catching the stainless clip hardware. No people, no hands, no shoes inside, no text, no logos floating.",
+    "generated_at": "2026-04-13T07:59:28.659Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-clothing.webp",
+    "page": "shop.html + modules.html",
+    "section": "Clothing Organizer Cube product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Clothing Organizer Cube — a compression packing cube that attaches to the module rail. The module is a structured rectangular cube: matte black 600D nylon shell. Dimensions approximately 30cm × 20cm × 10cm in standard configuration, compressible to approximately 5cm depth via a secondary compression zip. Two zips are visible: a main compartment zip running the three non-attachment-face sides (U-shaped, matte YKK hardware), and a compression zip on one flat face that cinches the cube thinner. The module rail attachment system is on the back face — a matte stainless rail clip. The cube is shown in its standard configuration (not compressed) at a 20-25 degree 3/4 angle, showing both the main face and one side panel. The compression zip is visible on the visible side face. Background: dark navy (#0B1626). Three-point studio lighting. Subtle mint reflection on the stainless attachment clip. No people, no hands, no contents visible, no text, no floating logos.",
+    "generated_at": "2026-04-13T08:00:08.416Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-document.webp",
+    "page": "shop.html + modules.html",
+    "section": "Hidden Document Sleeve product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Hidden Document Sleeve module. The module is an ultra-slim flat sleeve designed for passports, boarding passes, and travel documents, with RFID-blocking inner lining. Dimensions: approximately 25cm × 18cm × 1.5cm — passport-width and letter-height. Construction: the exterior shell is the same matte black 600D nylon as the pack. The interior lining (visible when slightly opened) has a subtle metallic grey sheen — the RFID-blocking foil layer visible as a slightly reflective silver-grey interior. The module opens via a single zip running the top and one short side (L-shaped). On the back face: a flat MOLLE-compatible or rail clip attachment — slim profile, stainless. The module is shown at a 25-degree angle with the zip open approximately 30-40mm, revealing the metallic RFID interior without spilling any contents. Background: dark navy (#0B1626). Three-point lighting — the metallic RFID interior catches a slight silver highlight. No people, no hands, no documents inside, no text visible, no floating logos.",
+    "generated_at": "2026-04-13T08:01:05.949Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-rain.webp",
+    "page": "shop.html + modules.html",
+    "section": "Rain Cover Module product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Rain Cover Module. The module is a packable full-coverage rain cover that stores in a compact base pouch and attaches to the pack via the module rail. Shown in a partially deployed state — the rain cover is pulled approximately halfway out of its compact storage pouch, revealing both the storage form and the cover material. Storage pouch: a small rectangular matte black nylon pouch (approximately 12cm × 8cm), with the module rail attachment clip on the back. The rain cover emerging from the pouch: a lightweight ripstop nylon in deep charcoal/anthracite, with two thin electric mint (#3FFFAB) reflective seam-taping stripes running vertically — the only colour accent in the product, confirming TrailVolt brand identity within the outdoor category. The ripstop grid pattern is faintly visible in the emerging fabric. A small silicone pull tab in matte black allows one-handed deployment. Background: dark navy (#0B1626). Three-point studio lighting — the mint reflective stripes catch the light as the brightest element in the frame. No people, no hands, no text, no floating logos.",
+    "generated_at": "2026-04-13T08:02:01.262Z",
+    "model": "gpt-image-1"
+  }
+]

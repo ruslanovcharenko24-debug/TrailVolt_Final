@@ -1,0 +1,202 @@
+[
+  {
+    "filename": "pack-trail-slate.webp",
+    "page": "shop.html",
+    "section": "Trail Line — Slate Grey colourway card",
+    "prompt_used": "Ultra-premium studio product photography of the TrailVolt Trail 28L backpack in Slate Grey (#607D8B, cool grey-blue). Camera angle: 3/4 front-left angle, showing the front face and the left side panel. Background: seamless dark navy (#0B1626). Three-point studio lighting — key from front-left, soft fill from right, subtle rim light catching the pack shoulders. The Trail 28L has a slightly taller and more rugged silhouette than an everyday pack. CRITICAL REQUIREMENT: The module attachment system on the front face is a HORIZONTAL STRIP of precisely machined rectangular slots running across the mid-section of the front panel — flat, integrated into the fabric, approximately 6 rectangular openings in a row, each slot approximately 15mm wide with crisp recessed edges. This is NOT webbing. This is NOT MOLLE. This is NOT PALS. This is NOT straps. It is a clean machined rail with rectangular cut-outs. The slots are in matte gunmetal finish contrasting clearly against the Slate Grey fabric. Shell material: 500D Cordura, slightly textured weave visible under the lighting. Badge: a small woven fabric patch on the upper-left front panel — dark green or grey-green ground, the TrailVolt inverted triangle and wordmark in lighter sage-green thread, approximately 45mm wide, flat and stitched, textile construction visible. Zip hardware: YKK zippers in matte black — no copper, no orange, no bronze. The shoulder harness is visible at the top. Electric mint micro-glow catching the pack base edge from behind. No text anywhere except within the woven badge. No floating logo. No handles.",
+    "generated_at": "2026-04-13T08:49:09.065Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-clothing.webp",
+    "page": "shop.html and modules.html",
+    "section": "Modules section — Clothing Organizer Cube card",
+    "prompt_used": "Ultra-premium studio product photography of the TrailVolt Clothing Organizer Cube module. The module is a compact square packing cube in matte Core Black. Background: seamless dark navy (#0B1626). Three-point studio lighting. The cube is positioned at a 3/4 angle showing the front face and one side face. Front face: a compression zip runs across the width of the cube — the zip is slightly recessed and the fabric on either side shows subtle tension/fullness, suggesting packed clothing inside. The fabric has a light texture visible under the lighting. Side face or back face: a stainless steel rectangular rail attachment clip is clearly visible — this is a flat horizontal sliding mechanism, approximately 50mm wide and 15mm tall, precision-machined stainless steel, flush to the back face. CRITICAL: The clip is NOT a carry handle. It is NOT a loop. It is NOT a top strap. It is NOT webbing. It is a flat, horizontal bar-and-slot mechanism designed to slide onto the pack's attachment rail. No text on the cube fabric. No brand printing on the cube. No logo on the cube surface. Electric mint micro-glow at the base edge from behind. Clean and precise.",
+    "generated_at": "2026-04-13T08:49:55.251Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-everyday.webp",
+    "page": "product.html",
+    "section": "Product configurator — Everyday 22L default view",
+    "prompt_used": "Ultra-premium portrait-format studio product photography of the TrailVolt Everyday 22L Core Pack in Core Black. CRITICAL COMPOSITION REQUIREMENT: The FULL pack must be visible from the very top of the top handle down to the very base rubber feet, with at least 8% breathing room above the handle and 8% breathing room below the base. The pack must not be cropped by the frame at top or bottom. This is a tall portrait image and the pack should occupy approximately 80% of the vertical height with clear margins at top and bottom. Camera: near-frontal angle with a 10-15 degree tilt to the left. Focal length equivalent: 85mm. The Everyday 22L is a compact, sleek urban pack. Key visible features: the module attachment rail — a horizontal row of machined rectangular matte gunmetal slots across the mid front face. Top handle in matte black. The main zip access across the top. A small aluminium nameplate badge on the upper-right front panel — brushed anodised aluminium, approximately 38mm wide, debossed TrailVolt inverted triangle and wordmark, satin finish. Background: dark navy (#0B1626). Subtle electric mint glow from behind and below the pack — illuminating the base edge and the rail slot depths. Front face hyper-sharp. Pack occupies the full intended portrait frame with breathing room at top and base.",
+    "generated_at": "2026-04-13T08:50:42.554Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-travel.webp",
+    "page": "product.html",
+    "section": "Product configurator — Travel 30L selected",
+    "prompt_used": "Ultra-premium portrait-format studio product photography of the TrailVolt Travel 30L Core Pack in Core Black. CRITICAL COMPOSITION REQUIREMENT: The FULL pack visible from the very top of the top handle down to the very base, with at least 8% breathing room above the handle and 8% breathing room below the base. Full pack in frame — no cropping. Portrait format: the pack occupies approximately 80% of the vertical height with clear top and bottom margins. Camera: near-frontal angle with 10-15 degree tilt to the left. The Travel 30L is visibly TALLER and larger in volume than the Everyday 22L — a structured carry-on travel pack with a more rectangular silhouette. Key visible features: the module attachment rail — horizontal row of machined rectangular gunmetal slots across the front face. The clamshell side zip: a continuous zip running partway up the left side panel, confirming flat-open capability — a distinctive Travel-specific detail visible from this angle. Aluminium nameplate on upper-right panel — same as Everyday, brushed satin anodised finish. Background: dark navy (#0B1626). Subtle electric mint glow from behind. Front face sharp. The Travel 30L must read as clearly larger/taller than the Everyday form factor.",
+    "generated_at": "2026-04-13T08:51:31.783Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-trail.webp",
+    "page": "product.html",
+    "section": "Product configurator — Trail 28L selected",
+    "prompt_used": "Ultra-premium portrait-format studio product photography of the TrailVolt Trail 28L Core Pack in Forest Green (#2D5016). CRITICAL COMPOSITION REQUIREMENT: The FULL pack visible from the very top handle down to the very base, with at least 8% breathing room above and below. Full pack in portrait frame with margins — no cropping at top or bottom. Camera: near-frontal with 10-15 degree left tilt. The Trail 28L has a slightly more technical/rugged silhouette than the Everyday — the shoulder harness is slightly more substantial and visible at the top. Forest Green colourway: a deep natural green — not olive, not khaki, not military — the tone of mature Irish hedgerow. Shell: 500D Cordura, slightly more textured surface than everyday nylon. Key features: the module attachment rail — horizontal strip of machined rectangular matte gunmetal slots across the front face, contrasting cleanly against the green fabric. Woven fabric badge: on the upper-left front panel, small rectangular woven patch on dark-green ground with TrailVolt inverted triangle and wordmark in lighter sage-green thread — textile construction with visible stitching border. Background: dark navy (#0B1626). Subtle electric mint glow from behind. No text anywhere except the woven badge.",
+    "generated_at": "2026-04-13T08:52:19.836Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-detail-material.webp",
+    "page": "index.html",
+    "section": "Feature showcase — premium material proof",
+    "prompt_used": "Extreme close-up macro portrait photograph of premium pack material components. COMPOSITION: Portrait format (tall, not wide). Compose vertically so that all critical details are positioned in the middle 60% of the frame — no important elements flush to the top or bottom edges, with clear breathing room at top and bottom. The image tells a vertical story from top to bottom: Upper third: the module attachment rail — a row of four to five precisely machined rectangular slots in matte gunmetal, each slot showing crisp recessed depth and precision tolerances. Rail mounted on Core Black ballistic nylon. Middle section: the fabric surface itself — 600D ballistic nylon weave in Core Black, the crosshatch pattern sharply resolved under raking light. Thread spacing approximately 2mm, alternating light/dark texture in the warp-and-weft. Lower third: a YKK #10 zipper — the slider body in matte black, teeth slightly oversized and purposeful, the pull tab a small rectangular loop. Lighting: single low-angle raking key light from the left to extract maximum texture. Soft fill from right prevents shadow crush. Background fades to near-black at frame edges. Everything in sharp focus. No text. No brand marks. No floating elements. Pure premium material documentation.",
+    "generated_at": "2026-04-13T08:53:32.255Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "hero-pack-main.webp",
+    "page": "index.html",
+    "section": "Hero split — main product image",
+    "prompt_used": "Ultra-premium portrait-format hero studio product photography of the TrailVolt Everyday 22L Core Pack in Core Black. CRITICAL COMPOSITION: Full pack must be visible from top handle to base with generous breathing room — pack occupies approximately 75-80% of the vertical frame height. Portrait format essential. The pack is positioned center-frame, near-frontal with a slight left tilt for dimension. Strong hero presence — this is the first product image a website visitor sees. Premium three-point studio lighting with a defined key light from the upper-left catching the pack's shoulder straps and top handle. The module attachment rail across the front face glows subtly — the gunmetal slots reflect the key light. Electric mint gradient glow emanating from behind and below the pack, catching the base edge and the rail depths. Dark navy background (#0B1626). The pack must feel premium, minimal, and technically precise. All surfaces in sharp focus. The overall mood: a product that belongs in a premium brand environment. Top handle fully in frame. Base rubber feet fully in frame.",
+    "generated_at": "2026-04-13T08:54:23.356Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "line-card-everyday.webp",
+    "page": "index.html",
+    "section": "Choose Your Line — Everyday card",
+    "prompt_used": "Premium landscape-format lifestyle photography for the TrailVolt Everyday line card. COMPOSITION: Landscape orientation (wider than tall). Subject centered horizontally with safe margins on both sides — nothing critical within the outer 15% of the left or right edges. The scene shows an urban professional context: a person in their late 20s to mid-30s, professional but relaxed, wearing or carrying the TrailVolt Everyday 22L Core Black pack on their back. Setting: a clean, modern urban environment — a city street, a co-working space lobby, or a café exterior — with natural or soft ambient light. The Everyday 22L pack is clearly visible: compact, sleek, urban. The module attachment rail system visible on the front face of the pack. The person is in confident, purposeful motion or a deliberate pause — not posed awkwardly. Mood: premium urban-professional-outdoor hybrid. Tonal quality: slightly elevated exposure, slight natural colour grading — the brand palette of dark navy, slate grey, and the electric mint accent colour present subtly in the scene (perhaps in a small detail). No text in the image. No logo watermarks.",
+    "generated_at": "2026-04-13T08:55:21.880Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "modular-system-diagram.webp",
+    "page": "index.html",
+    "section": "The Module System — explainer diagram",
+    "prompt_used": "Clean premium product explainer visual of the TrailVolt modular attachment system. CRITICAL COMPOSITION: All important elements must be positioned at least 20% away from the left and right edges of the frame — centred composition with strong safe margins on all sides. The image should survive an 11% crop from the left and right without losing anything important. The diagram shows the TrailVolt Everyday 22L Core Black pack in a near-frontal studio view. The module attachment rail on the front face is clearly visible — a horizontal row of rectangular matte gunmetal slots. Floating around and adjacent to the pack are 2-3 module units (the Phone Module, the Power Bank, or the Tech Organizer) shown in the process of attaching or detached nearby, illustrating how modules connect to the rail system. The system logic is clear: modules clip onto the rail. Clean connection lines or subtle glow effects can indicate the attachment points if helpful. Background: dark navy (#0B1626) with subtle electric mint accent lighting showing the connection points. The overall image feels technical, premium, and explanatory — like a high-end product illustration. No text. No labels. No floating brand names. Pure visual communication of the modular concept.",
+    "generated_at": "2026-04-13T08:56:01.900Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "about-wicklow.webp",
+    "page": "about.html",
+    "section": "Photo grid — founder outdoor testing (portrait slot 1 of 3)",
+    "prompt_used": "Portrait-format documentary lifestyle photograph. A single founder-type figure — a dark-haired male in his early 30s, practical outdoor clothing (base layer, softshell jacket, hiking trousers) — is walking or pausing on a mountain trail in the Wicklow Mountains, Ireland. He is carrying an early-stage TrailVolt prototype pack on his back: the pack is matte black or dark navy canvas/nylon, a clearly hand-assembled prototype with visible seams — not a polished consumer product. The mountain terrain is distinctively Irish: dark purple heather, granite boulders, an overcast sky with diffused light, rolling green-and-brown highland. The person is photographed from a 3/4 back angle or side profile so the pack is visible. Documentary/candid tone — not a polished photoshoot pose but a natural testing moment. The figure is mid-stride or standing looking at the landscape. Portrait format: figure occupies middle 70% of frame height with sky above and foreground below. No text in image.",
+    "generated_at": "2026-04-13T08:56:57.141Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "about-workshop-early.webp",
+    "page": "about.html",
+    "section": "Photo grid — early prototype workshop (portrait slot 2 of 3)",
+    "prompt_used": "Portrait-format documentary photograph of an early-stage backpack design workshop table. The composition shows a flat-lay or slight overhead angle of a workshop surface covered in product development materials from the early prototype stage. Elements visible: deconstructed fabric panels in black and dark navy nylon — cut and marked pieces, not fully assembled. YKK zippers laid flat, some coiled, some stretched out. Hand-drawn or printed pattern papers with measurements and notes. A seam ripper, fabric scissors, or measuring tape partially visible. Rolled nylon fabric swatches. Optional: hands just entering the frame from one side, suggesting active work but keeping the workspace as the subject. The staging is slightly organised chaos — a creative production environment. Warm, directional tungsten/daylight mixed workshop lighting. Slightly warm colour temperature. No fully assembled finished pack visible — this is the early creative stage. Portrait format with the workspace filling most of the frame.",
+    "generated_at": "2026-04-13T08:58:08.912Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "about-airport.webp",
+    "page": "about.html",
+    "section": "Photo grid — origin moment, Dublin Airport (portrait slot 3 of 3)",
+    "prompt_used": "Portrait-format documentary lifestyle photograph in a modern airport terminal. The same founder-type figure as in the Wicklow Mountains image — dark-haired male, early 30s — is at an airport departure gate. He is standing, walking, or waiting. He wears or carries the TrailVolt Travel 30L Slate Grey pack either on his back or held at his side. The departure gate background is blurred (natural bokeh) — rows of airport seating, large windows, departure boards, gate signage. The person is looking forward or slightly to the side — a deliberate, calm, purposeful expression. Not a tourist pose — a person who travels with intention. The lighting is realistic airport terminal lighting (fluorescent with natural window light). The overall mood: purposeful travel, the moment the brand origin story was born. Portrait format: the figure occupies the middle 70% of the frame height. Tonal quality: slightly elevated and clean, not over-processed.",
+    "generated_at": "2026-04-13T08:59:21.122Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "about-workshop.webp",
+    "page": "about.html",
+    "section": "Process section — current workshop landscape slot",
+    "prompt_used": "Landscape-format environmental photograph of a premium small-batch production workshop interior. The scene shows a purposeful, well-organised production space. An industrial sewing machine is the prominent foreground element — a heavy-duty upholstery or canvas sewing machine, clearly used and functional. On shelves or surfaces behind: rolls of black and navy nylon fabric, organised zip pulls and hardware components, flat-cut fabric pattern pieces. The space feels like a premium small-batch atelier — clean enough to be intentional, working enough to be real. Optional: hands or partial figure (torso only, no face) working at the sewing machine, suggesting active production. Warm directional light — either a single window or a directional lamp illuminating the machine and immediate work area. The aesthetic is premium craft: not industrial factory, not amateur garage — a focused independent production environment. Landscape format with horizontal composition that emphasises the depth of the workspace.",
+    "generated_at": "2026-04-13T09:00:18.850Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-tomas.webp",
+    "page": "tribe.html",
+    "section": "Tribe member card — Tomas Rivera, Trail Runner, Pamplona",
+    "prompt_used": "Premium lifestyle portrait photograph for a tribe member card. Subject: Tomas Rivera — an active male in his late 20s to early 30s, clearly of Spanish appearance (dark features, athletic build). He is in trail running gear: lightweight technical jacket or running top, trail shorts or tights. The TrailVolt Trail 28L Forest Green pack is visible on his back or beside him — the Forest Green colour identifiable. The environment is a rocky mountain trail — Pyrenees or similar rugged terrain: granite rock faces, sparse vegetation, dramatic altitude. The image captures energy and motion — perhaps mid-stride on a trail, or pausing at a rocky viewpoint. The composition is landscape-oriented with the subject centred. The overall mood: adventure, performance, real use. Natural outdoor lighting — overcast or golden hour. No text in image.",
+    "generated_at": "2026-04-13T09:01:30.342Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-nadia.webp",
+    "page": "tribe.html",
+    "section": "Tribe member card — Nadia Voronova, Freelance Developer, Amsterdam",
+    "prompt_used": "Premium lifestyle portrait photograph for a tribe member card. Subject: Nadia Voronova — a female in her late 20s, Eastern European appearance (fair skin, light eyes, relaxed professional style). She is in a European café or co-working space — a warm, plant-filled environment with natural window light. The TrailVolt Everyday 22L Slate Grey pack is placed on a chair beside her or on the table nearby, clearly visible — the Slate Grey colour identifiable. A laptop and coffee cup are on the table. She is focused on her screen or looking thoughtfully out a window. Amsterdam or generic Northern European café visual language — wooden surfaces, large windows, warm ambient light. Landscape composition with subject centred. The mood: focused creative work, digital nomad lifestyle, premium but relaxed. Natural light dominates. No text in image.",
+    "generated_at": "2026-04-13T09:02:43.510Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-james.webp",
+    "page": "tribe.html",
+    "section": "Tribe member card — James Thornton, Architect, London",
+    "prompt_used": "Premium lifestyle portrait photograph for a tribe member card. Subject: James Thornton — a male in his early to mid-30s, classic British professional appearance (well-dressed but not formal, smart-casual: quality coat, clean trousers, minimal style). He is in a recognisably London urban setting: a street with Georgian architecture, a Tube station entrance, the South Bank, or a characterful city bridge — unmistakably urban and quality. The TrailVolt Travel or Everyday pack in Core Black is on his back or carried — the pack clearly visible. He is in motion — walking with purpose, not posed stiffly. The image has a premium city commuter energy: intentional, quality-conscious, urban. Natural urban daylight or slightly overcast London sky. Landscape composition, subject centred. The mood: urban professional who takes quality seriously. No text in image.",
+    "generated_at": "2026-04-13T09:03:54.476Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-aoife-cliffs.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — Aoife at Cliffs of Moher",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. A woman (Aoife — Irish female, 20s) at the Cliffs of Moher or dramatic Irish coastal cliffs. She is standing facing the cliffs or looking out over the Atlantic Ocean. The TrailVolt Trail 28L Forest Green pack is on her back or resting against the cliff wall nearby — clearly visible. The scene is dramatic: sheer basalt cliff faces, wild Atlantic sea below, overcast or partially cloudy sky. The photograph has a slightly candid, personal quality — not a polished commercial image but a real travel moment. Natural outdoor light. Square crop with subject and landscape filling the frame. No text in image.",
+    "generated_at": "2026-04-13T09:04:37.162Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-marco-airport.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — Marco at airport",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. A young man (Marco — Italian-looking male, late 20s) in a modern European airport terminal. He is at a departure gate, checking his boarding pass or phone, with the TrailVolt Travel 30L Slate Grey pack on his back or resting beside him — clearly visible. Airport context: bright terminal lighting, departure boards, gate seating in background. The image feels like a real traveler's moment — slightly candid, genuine travel energy. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:05:31.078Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-sarah-cycling.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — Sarah cycling in Dublin",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. A woman (Sarah — Korean-Irish appearance, late 20s) cycling in Dublin on a city bike — a canal towpath, city street with Georgian buildings, or bike lane. She wears the TrailVolt Everyday 22L on her back while cycling — the pack clearly visible. The setting is recognisably Dublin or general European city cycling: brick buildings, trees, morning or afternoon light. The image has a fresh, active commuter energy. Slightly candid, real lifestyle feel. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:06:16.937Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-tomas-trail.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — Tomas on trail",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. Tomas (Spanish male, late 20s, trail runner) running or power-hiking on a mountain trail. The TrailVolt Trail 28L Forest Green pack is on his back — clearly visible. Rocky mountain terrain, Pyrenees-style. Motion blur or freeze-frame of movement adds energy. Real outdoor trail running feel — not polished commercial. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:06:58.351Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-nadia-amsterdam.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — Nadia in Amsterdam",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. Nadia (Eastern European female, late 20s) at an Amsterdam café, canal-side, or creative workspace. The TrailVolt Everyday 22L Slate Grey pack is beside her on a chair or table — clearly visible. Laptop and coffee. Amsterdam visual language: canal houses, warm café interior with plants, or outdoor terrace with canal in background. Candid and personal. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:07:41.827Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-james-london.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — James in London",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. James (British male, early 30s, smart-casual) in a recognisably London urban setting — South Bank, a characterful street, or a modern city district. TrailVolt Core Black pack (Travel or Everyday) on his back — clearly visible. Urban commuter energy, quality aesthetic. Natural city light. Square crop, subject centred. No text in image.",
+    "generated_at": "2026-04-13T09:08:24.323Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-modules-flat.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — modules flat-lay",
+    "prompt_used": "Square-format UGC-style overhead flat-lay photograph. Multiple TrailVolt modules arranged on a clean, dark surface (dark navy or black). The modules visible: the Phone Module (slim rectangular black case), the Tech Organizer (flat organiser case), the Power Bank Module (compact rectangular unit), and one or two more modules. The modules are arranged in an organised, intentional flat-lay — not scattered randomly but composed with some white space between each unit. The rail attachment clips are visible on the back or bottom face of each module. The image feels like a genuine product organisation moment — someone unpacking or packing their modules. Natural or soft daylight from above. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:09:09.971Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-pack-mountain.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — pack at mountain",
+    "prompt_used": "Square-format UGC-style lifestyle photograph. The TrailVolt Trail 28L Forest Green pack is placed or leaning against a rock on a mountain trail or summit. Dramatic mountain landscape background: rocky terrain, possible distant peaks, dramatic sky. The pack is the primary subject in the foreground. No person needed — just the pack in a mountain context. The image has an adventurous, outdoor lifestyle quality — raw and real. Natural light, potentially golden hour or dramatic overcast. Square crop with pack prominent. No text in image.",
+    "generated_at": "2026-04-13T09:09:53.814Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "ugc-pack-overhead.webp",
+    "page": "tribe.html",
+    "section": "UGC grid — pack in airplane overhead bin",
+    "prompt_used": "Square-format UGC-style photograph. The TrailVolt Travel 30L Core Black pack is being placed into or is already sitting in an airplane overhead baggage compartment. The overhead bin door frame is visible at the edges. The pack fits perfectly — this is the travel utility proof shot. The image is taken from slightly below looking up, as a real traveler would photograph it. The pack's module attachment rail is subtly visible on the front face. Realistic cabin lighting — warm and slightly bright. The image communicates the core travel value proposition: one pack that fits overhead, always. Square crop. No text in image.",
+    "generated_at": "2026-04-13T09:10:34.997Z",
+    "model": "gpt-image-1"
+  }
+]

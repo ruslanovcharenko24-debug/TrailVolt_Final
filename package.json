@@ -1,0 +1,35 @@
+{
+  "name": "trailvolt",
+  "version": "1.0.0",
+  "description": "TrailVolt — premium modular backpack brand website and AI asset pipeline",
+  "type": "module",
+  "scripts": {
+    "generate:images": "node scripts/generate-images.js",
+    "generate:images:force": "node scripts/generate-images.js --force",
+    "generate:images:hero": "node scripts/generate-images.js --only hero-pack-main.webp,modular-system-diagram.webp,line-card-everyday.webp,line-card-travel.webp,line-card-trail.webp",
+    "generate:images:shop": "node scripts/generate-images.js --only pack-everyday-black.webp,pack-everyday-slate.webp,pack-everyday-forest.webp,pack-travel-black.webp,pack-travel-slate.webp,pack-travel-custom.webp,pack-trail-black.webp,pack-trail-forest.webp,pack-trail-slate.webp",
+    "generate:images:modules": "node scripts/generate-images.js --only module-phone.webp,module-tech.webp,module-power.webp,module-shoe.webp,module-clothing.webp,module-document.webp,module-bottle.webp,module-rain.webp",
+    "generate:images:product": "node scripts/generate-images.js --only product-everyday.webp,product-travel.webp,product-trail.webp",
+    "generate:images:about": "node scripts/generate-images.js --only about-founder.webp,about-wicklow.webp,about-workshop-early.webp,about-airport.webp,about-workshop.webp",
+    "generate:images:tribe": "node scripts/generate-images.js --only tribe-aoife.webp,tribe-marco.webp,tribe-sarah.webp,tribe-tomas.webp,tribe-nadia.webp,tribe-james.webp",
+    "generate:images:og": "node scripts/generate-images.js --only og-index.jpg,og-shop.jpg,og-about.jpg,og-tribe.jpg,og-product.jpg,og-sustainability.jpg",
+    "generate:images:regenerate": "node scripts/generate-images.js --regenerate",
+    "generate:images:master": "node scripts/generate-images.js --master",
+    "generate:images:master:force": "node scripts/generate-images.js --master --force",
+    "brand:images": "node scripts/apply-logo.js",
+    "generate:images:product-regen": "node scripts/generate-images.js --product-regen",
+    "generate:images:product-regen:force": "node scripts/generate-images.js --product-regen --force",
+    "generate:images:followup": "node scripts/generate-images.js --followup",
+    "generate:images:followup:force": "node scripts/generate-images.js --followup --force",
+    "generate:images:final-completion": "node scripts/generate-images.js --final-completion",
+    "generate:images:final-completion:force": "node scripts/generate-images.js --final-completion --force"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.52.7",
+    "sharp": "^0.33.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

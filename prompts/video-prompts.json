@@ -1,0 +1,111 @@
+{
+  "generation_target": "Runway Gen-3 Alpha / Runway API (image-to-video or text-to-video)",
+  "important_note": "These are FUTURE video opportunities only. No video is generated or embedded in the site at this stage. These prompts define the production plan for a later pipeline run.",
+  "brand_style_global": "TrailVolt — premium modular backpack brand. Dark navy (#0B1626) and electric mint (#3FFFAB) palette. Modern, cinematic, adventure-ready. Slow and elegant motion preferred. Aspirational but grounded. Think Arc'teryx or Aer brand video aesthetics.",
+  "video_slots": [
+    {
+      "filename": "hero-pack-reveal.mp4",
+      "page": "index.html",
+      "section": "Hero section — product visual",
+      "purpose": "Animated hero: Core Pack slowly rotating or zooming in with mint glow particles",
+      "recommended_duration": "8-12 seconds, looping",
+      "recommended_format": "MP4, 600x700, 30fps, no audio, loop-ready",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Premium modular backpack slowly rotating 360 degrees on dark navy background, electric mint particle glow, dramatic product reveal motion.",
+      "detailed_prompt": "Starting from the hero-pack-main.webp still image: a slow, cinematic 360-degree rotation of the TrailVolt Core Pack in core black. The pack rotates from front to 3/4 to side and back. Electric mint particles or light streaks drift slowly around the bag from behind. The dark navy background remains constant. Camera slowly pushes in (dolly zoom effect) by 5-10%. The motion is premium, slow, and deliberate — like a luxury watch commercial. Fabric texture comes alive in the rotation: Cordura weave, YKK zipper glints, module attachment point highlights. Duration: 10 seconds. No audio. Loop-ready.",
+      "motion_notes": "Slow rotation — approximately 15-20 degrees per second. Mint particle drift is subtle, not overwhelming. Camera push-in is gentle (not a zoom crash). The pack must never leave frame. No camera shake.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "hero-modular-snap.mp4",
+      "page": "index.html",
+      "section": "Modular system explainer — animated visual",
+      "purpose": "Animated demo of module snapping onto the Core Pack — explains the product proposition in motion",
+      "recommended_duration": "10-15 seconds",
+      "recommended_format": "MP4, 560x560, 30fps, no audio",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Modular accessories snap one by one onto a TrailVolt backpack in satisfying animated motion, dark background with mint highlights on connection points.",
+      "detailed_prompt": "Starting from the modular-system-diagram.webp still image: an animated sequence showing each of the 8 TrailVolt modules flying in from off-frame and snapping onto the Core Pack in sequence. Each snap has a brief electric mint flash at the connection point — the moment of magnetic attachment. The pack remains centred and static. Modules arrive from different directions, one at a time, with a satisfying clip motion. Tempo is deliberate — one module every 1.5 seconds. The final frame shows the fully-equipped pack with all modules attached, glowing softly. Duration: 12 seconds.",
+      "motion_notes": "Each module should travel in a clean arc — not straight lines. The snap at attachment point is the key satisfying moment — a brief mint flash. Avoid chaotic or rushed motion. This is explaining a product feature, not an action movie.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "lifestyle-commute-loop.mp4",
+      "page": "index.html",
+      "section": "Everyday line card — optional background loop",
+      "purpose": "Short lifestyle loop: person walking confidently through city morning with Everyday pack",
+      "recommended_duration": "6-8 seconds, looping",
+      "recommended_format": "MP4, 480x320, 30fps, no audio, seamless loop",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Person walking through a Dublin or London morning street with a black modular backpack, cinematic slow motion, golden hour light, loop-ready.",
+      "detailed_prompt": "Starting from the line-card-everyday.webp lifestyle image: a slow-motion cinematic clip of the subject walking forward through the city street. The motion is smooth and confident — a 15-20% slow motion effect on the walking stride. Background bokeh city details (bus, buildings, commuters) shift slightly in depth. The morning light holds steady. The pack moves naturally with the walking motion — slight sway, straps taut. The clip plays from mid-stride to full forward stride and loops back seamlessly. Duration: 7 seconds. No audio. Loop-ready.",
+      "motion_notes": "Slow motion (60-80% of real speed). Camera is locked — no camera movement, only subject movement. The subject walks toward the camera slightly. Loop point should be invisible — natural, not a jump cut.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "lifestyle-trail-hero.mp4",
+      "page": "index.html / tribe.html",
+      "section": "Trail line card — optional hero video or tribe feature",
+      "purpose": "Cinematic outdoor loop: hiker on Irish mountain trail, dramatic landscape, Trail pack",
+      "recommended_duration": "10-15 seconds, looping",
+      "recommended_format": "MP4, 480x320 or 1920x1080, 30fps, no audio, loop-ready",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Hiker moving along a misty Irish mountain trail at golden hour, TrailVolt trail pack on their back, dramatic green hills, cinematic landscape loop.",
+      "detailed_prompt": "Starting from the line-card-trail.webp lifestyle image: a slow cinematic tracking shot following a hiker on a mountain trail in the Irish or Scottish highlands. The camera moves slightly behind and to the side of the hiker — a gentle tracking motion that follows their stride without jerking. The mist drifts slowly across the distant hills. Golden hour light shifts subtly (sun moving slightly). The TrailVolt Trail 28L pack moves naturally with the walking stride. The clip conveys: adventure, freedom, the right gear for the terrain. Duration: 12 seconds. No audio. Loop-ready.",
+      "motion_notes": "Camera follows hiker at a consistent distance — a gentle tracking motion. Background mist should drift (subtle animation). The hiker should move at a natural hiking pace. No camera shake — smooth movement only.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "product-pack-360.mp4",
+      "page": "product.html",
+      "section": "Product configurator — optional 360 product view",
+      "purpose": "Interactive-style 360 product view for the product configurator page",
+      "recommended_duration": "12 seconds, seamless loop",
+      "recommended_format": "MP4, 600x700, 30fps, no audio, loop-ready",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Premium backpack rotating slowly 360 degrees, clean dark background, sharp fabric texture detail, all angles visible, product showcase loop.",
+      "detailed_prompt": "A premium product showcase video of the TrailVolt Core Pack in Core Black performing a slow, complete 360-degree rotation on a dark navy background. The rotation reveals: front face with all compartment zippers, side profile with compression straps, back panel with padded lumbar system and shoulder strap attachment points, and return to front. Lighting is cinematic studio quality — constant three-point setup that creates consistent shadows and highlights throughout the rotation. Duration: 12 seconds per full rotation. Seamless loop. No audio.",
+      "motion_notes": "Constant rotation speed — approximately 30 degrees per second (one full revolution in 12 seconds). Camera is static — only the pack rotates. Fabric texture must remain sharp throughout rotation. All details — zippers, buckles, straps — should be visible and sharp at their respective angles.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "about-workshop-process.mp4",
+      "page": "about.html",
+      "section": "Our Process section — optional cinematic background",
+      "purpose": "Short workshop process video loop: stitching in progress, craftsperson hands, quality materials",
+      "recommended_duration": "8-10 seconds, looping",
+      "recommended_format": "MP4, 560x480, 30fps, no audio, loop-ready",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Close-up of hands guiding Cordura nylon under an industrial sewing machine, warm workshop light, precision stitching in slow motion, quality craftsmanship loop.",
+      "detailed_prompt": "Starting from the about-workshop.webp still image: a close-up slow-motion video of craftsperson hands guiding dark Cordura nylon fabric through an industrial sewing machine. The stitch line is straight and precise. The needle pumps in smooth slow motion (50% speed). The fabric moves steadily under the presser foot. Warm workshop lighting catches the metallic sheen of the needle and thread. The background workshop environment is blurred but warm. Duration: 9 seconds. Seamless loop — the fabric should appear to feed continuously. No audio.",
+      "motion_notes": "Slow motion (50% real speed) for the sewing machine motion. Hands move steadily — not rushed. Needle motion should be clear and hypnotic. Fabric must move from right to left continuously for loop effect.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "tribe-ugc-collage-reel.mp4",
+      "page": "tribe.html",
+      "section": "UGC Gallery — optional animated gallery reel",
+      "purpose": "Short animated montage of tribe member lifestyle shots transitioning between locations",
+      "recommended_duration": "15-20 seconds",
+      "recommended_format": "MP4, 1:1 square or 9:16, 30fps, no audio",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Animated photo montage of diverse TrailVolt users in different global locations — Dublin, Barcelona, London, Pyrenees, Amsterdam — transitioning with smooth editorial cuts.",
+      "detailed_prompt": "A short editorial video montage of the tribe member lifestyle images. Each image holds for 2-3 seconds with a subtle parallax motion (Ken Burns effect — slow pan or zoom). Transitions are clean cuts or soft cross-fades. Sequence: Aoife at Cliffs of Moher → Marco in Barcelona → Sarah cycling Dublin → Tomás on Pyrenees trail → Nadia in Amsterdam → James on London Bridge → Modules flat-lay close-up → Pack against mountain. The overall effect is an Instagram-quality brand reel. Duration: 18 seconds. No audio.",
+      "motion_notes": "Ken Burns effect: each image has a slow zoom-in (2-3%) or gentle pan. Cross-fade transitions at 0.5 seconds. No hard cuts unless using match-cut transitions between locations. The overall pace is editorial and considered — not fast-paced.",
+      "whether_image_should_be_generated_first": true
+    },
+    {
+      "filename": "sustainability-longevity-visual.mp4",
+      "page": "sustainability.html",
+      "section": "Longevity by Design section — optional animated visual",
+      "purpose": "Short animated loop showing the repair kit / durability message",
+      "recommended_duration": "8-10 seconds, looping",
+      "recommended_format": "MP4, 560x480, 30fps, no audio, loop-ready",
+      "source_type": "image-to-video-later",
+      "short_prompt": "Close-up of spare parts being gently placed on a dark surface, mint accent lighting, premium spare kit flat-lay with slow motion assembly.",
+      "detailed_prompt": "Starting from the sustainability-repair.webp still image: a slow, deliberate animated sequence of spare parts being gently placed onto the dark surface one at a time. A YKK zipper pull slides in from the left. A Duraflex buckle is placed from above. A thread spool rolls in gently. The mint lighting pulsed subtly as each part arrives. The final arrangement is the complete repair kit. Duration: 10 seconds. The pace is meditative and premium. No audio. Loop-ready (the pieces settle, pause on the complete arrangement, then fade slightly before the next loop).",
+      "motion_notes": "Very slow, deliberate motion — each part takes 1-2 seconds to arrive and settle. No throwing or dropping. Gravity-aware placement. Mint glow on each piece as it touches the surface. The assembled kit should hold for 2 seconds before loop.",
+      "whether_image_should_be_generated_first": true
+    }
+  ]
+}

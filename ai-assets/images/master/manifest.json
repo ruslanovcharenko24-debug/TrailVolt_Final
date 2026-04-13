@@ -1,0 +1,130 @@
+[
+  {
+    "filename": "line-card-trail.webp",
+    "page": "index.html",
+    "section": "Three Lines — Trail line card",
+    "prompt_used": "A cinematic outdoor lifestyle photograph taken in the Wicklow Mountains or Wild Atlantic Way: rounded green ridgelines, overcast sky with a narrow band of warm golden light breaking at the distant horizon, wisps of mist in the valley below, rough boggy trail surface with visible heather and dark peat. A single hiker — gender-neutral to male, early 30s, lean and capable — is mid-stride moving away from the camera along the trail. They are not resting, not looking back, not posed. The TrailVolt Trail 28L backpack in Forest Green (#2D5016) is on their back. The green reads unmistakably as Forest Green — deep, natural, not olive-drab, not khaki, not black. The pack is visibly loaded: side compression straps drawn taut against the packed contents; the load-distribution harness is engaged across the hips. On the left side panel of the pack, the Bottle Holder Module holds a matte stainless steel water bottle — the top of the bottle extends just above the holder rim. The Cordura 500D shell has a faint sheen of moisture from the Irish weather — DWR-treated surface with micro water droplets visible under side light. The camera captures this as if from a tracking position beside or slightly behind and above the hiker — a filmmaker's observational shot, not a posed portrait. Focal length equivalent: 70mm. The landscape occupies the upper 50% of the frame. The pack and hiker fill the lower-centre. Golden-hour rim light from behind the hiker creates a faint silhouette-edge separation. The mood: earned, elemental, real. No studio. No flash. No text. No brand marks. No logos anywhere in the image — not on the pack, not on clothing, not on the environment.",
+    "generated_at": "2026-04-12T20:28:11.418Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "line-card-travel.webp",
+    "page": "index.html",
+    "section": "Three Lines — Travel line card",
+    "prompt_used": "A sharp editorial-style lifestyle photograph taken inside a modern international airport — the visual language is a European hub: Dublin, Lisbon, or Barcelona airport. Wide, high-ceilinged terminal with natural light flooding through large glass panels, departure gates visible in the mid-distance with flight information screens. The floors are polished concrete or light stone. A single traveller — male or female, late 20s to mid-30s, well-dressed and purposeful — is mid-stride through the terminal walking toward a departure gate. They are not rushing but they are clearly moving with intent. They are not looking at the camera. The TrailVolt Travel 30L in Slate Grey (#6B7280) is on their back. The pack is the IATA cabin-compliant size: it looks right for an overhead bin, not a hiking trip. The clamshell structure of the Travel pack is subtly visible — the wrap-around zip line shows the pack's full opening capability. The Slate Grey colourway reads clearly as a lighter, more professional shade than black — the business traveller's colour. The person is wearing smart casual: dark chinos or slim trousers, a clean shirt or light jacket. No branded clothing visible. The airport environment frames the journey without dominating the pack. Focal length equivalent: 50mm. The image has genuine depth — foreground, mid-ground (traveller and pack), background (terminal architecture). Natural terminal lighting — warm from above, cooler from the glass panels. The overall feeling: autonomy, efficiency, the confidence of someone who travels constantly and has figured out exactly what they need.",
+    "generated_at": "2026-04-12T20:29:13.008Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-detail-material.webp",
+    "page": "index.html",
+    "section": "Feature Showcase — material detail close-up",
+    "prompt_used": "An extreme close-up product photograph of the front face panel of a Core Black TrailVolt backpack — shot with a macro or medium telephoto lens at approximately 30-40cm working distance. The image is a study in material texture and hardware precision. In the centre of the frame: the horizontal module attachment rail — a row of matte stainless steel connection slots approximately 15mm wide each, separated by narrow matte nylon bridges. The slots are recessed into the pack face, with clean machined edges. The surrounding fabric: 600D ballistic nylon in Core Black, with the crosshatch weave clearly visible — approximately 2mm spacing in the weave pattern, slightly different light reflection between the warp and weft threads. The fabric surface is tightly woven, dense, slightly tactile-looking. Crossing into the lower portion of the frame: a YKK zipper pull — matte black metal, a small rectangular loop on a slider. The slider itself shows the YKK branding if clearly detailed, but the priority is the hardware quality: it looks weighty, precise, not plastic. Lighting: single raking key light from the left at a very low angle (approximately 15-20 degrees from the surface) to reveal maximum texture in the nylon weave. A soft fill from the right prevents shadow crushing. Dark navy background around the edges of the frame fades to near-black. Extreme depth of field — everything within the 20cm frame is sharp. No people, no hands, no props. The entire image is a single material moment — the proof that this is a premium product.",
+    "generated_at": "2026-04-12T20:29:54.559Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "sustainability-repair.webp",
+    "page": "sustainability.html",
+    "section": "Repair Programme section",
+    "prompt_used": "A meticulously arranged flat-lay photograph on a dark navy (#0B1626) surface — the TrailVolt lifetime repair programme communicated in a single frame. The items, each photographed with the precision of a product shot: (1) a YKK zipper pull — matte black metal, oval loop profile, slider precisely placed, (2) a Duraflex buckle — dark matte plastic, the geometric clip mechanism visible, showing its load-rated construction, (3) a small spool of dark navy thread — fabric thread for stitching repair, (4) a module attachment connector — a small stainless steel and nylon piece, approximately 3cm, showing the connection mechanism that links module to pack, (5) a small rectangle of 600D ballistic nylon fabric swatch — showing the material that can be used for panel repair, (6) a YKK zipper slider (different from the pull) — the main body of a zip mechanism. The items are arranged in a deliberate but not overly designed layout — each item has breathing room, each is identifiably itself. The arrangement suggests: these are real parts, organised by a person who cares about the system. A very subtle electric mint (#3FFFAB) accent light grazes across the module connector and the YKK zipper pull from one side — as if these pieces are being illuminated by the product they belong to. The light is a whisper, not a flood. Studio macro photography quality — each piece is photographed at high resolution. Extreme sharpness across all items. The dark navy background is seamless, vignetting very slightly at corners. No text, no labels, no stickers visible.",
+    "generated_at": "2026-04-12T20:30:44.452Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "shop-bundles.webp",
+    "page": "shop.html",
+    "section": "Bundle section — upsell visual",
+    "prompt_used": "A precise studio product photograph — a curated bundle composition. The TrailVolt Core Pack in Core Black is the central element, photographed front-facing at a slight 3/4 angle showing the module attachment rail prominently. The pack is elevated slightly to cast a clean shadow on the dark navy (#0B1626) seamless background. Arranged around the pack, positioned to suggest connection rather than random placement: (1) the Tech Organizer Module — a flat multi-pocket pouch, positioned to the upper-right of the pack, (2) the Power Bank Module — a brick-shaped unit, positioned to the lower-right, (3) the Bottle Holder Module — a cylindrical sleeve, positioned to the left, (4) a partial view of the Chest Phone Module positioned top-left. Each module is photographed product-quality: sharp, correct matte finish, YKK hardware visible. Very subtle electric mint (#3FFFAB) light traces connect from the pack's attachment rail outward toward each module — not graphic arrows, but hair-thin photographic light threads suggesting magnetic connection. The lighting: cinematic three-point with a very soft rim light creating silhouette separation from the background. The mint accent light comes from behind and below the central pack, barely visible at the rail. No text, no price tags, no labels. Pure product composition.",
+    "generated_at": "2026-04-12T20:31:37.577Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-trail-forest.webp",
+    "page": "shop.html",
+    "section": "Trail Line — Forest Green product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Trail 28L in Forest Green (#2D5016). The pack is photographed at a strong 3/4 angle showing both the front face and one side panel — the same angle as pack-everyday-black.webp for collection visual consistency. Background: dark navy (#0B1626) seamless paper. The pack form: 28L — slightly larger than the Everyday, with a taller top and more pronounced shoulder harness. The module attachment rail is visible across the front face as a horizontal row of matte stainless connection slots. The Forest Green colourway: deep, natural green — not olive, not khaki, not military. It reads as the colour of mature Irish hedgerow or Scottish Highland grass in overcast light. The shell material is 500D Cordura: slightly rougher than the 600D nylon of the Everyday, with a visible but more compact weave pattern. The load-distribution harness is visible at the top and sides — suggesting this pack is built for carrying actual weight. The top handle is reinforced-looking. YKK zipper pulls matte black throughout. No hydration hose ports (the hose sleeve is internal and not visible from outside). Lighting: same three-point setup as the Everyday product cards — key from upper-right, soft fill from left, very thin rim from behind. No electric mint in shop cards. Pure product commercial photography. No people, no hands, no text.",
+    "generated_at": "2026-04-12T20:32:28.315Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-travel-black.webp",
+    "page": "shop.html",
+    "section": "Travel Line — Core Black product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Travel 30L in Core Black. 3/4 angle showing front and side panel — same angle standard as all pack product cards. The Travel 30L is the largest of the three lines: visibly taller and wider than the Everyday 22L, but still structured and clearly designed for carry-on travel rather than expedition. The key visual feature of the Travel line: the clamshell opening — the side profile shows a continuous zip that wraps from the bottom, up the side, and across the top. This detail communicates the pack's flat-open capability for airport security and packing. The module attachment rail on the front face is visible: same matte stainless connection system as all other packs. The shell material: 420D Ripstop Nylon with DWR C6 coating — slightly lighter visual texture than the 600D of the Everyday, with the ripstop diamond pattern faintly visible in the surface. Matte Core Black colourway. Lockable zip pulls: slightly different profile from standard YKK pulls — these are lockable, showing a small loop for a security lock. Background: dark navy seamless. Three-point lighting, no mint accent. No people, no hands, no text.",
+    "generated_at": "2026-04-12T20:33:16.358Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "pack-everyday-slate.webp",
+    "page": "shop.html",
+    "section": "Everyday Line — Slate Grey product card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Everyday 22L in Slate Grey (#6B7280). Exact same camera angle, distance, and framing as pack-everyday-black.webp and pack-trail-forest.webp — the collection must look consistent. The Slate Grey colourway: a medium cool grey, lighter than the navy background, clearly distinct from Core Black. Not silver, not charcoal — a deliberate grey-blue tone that reads as professional and understated. The shell is the same 600D ballistic nylon as the Core Black version — the crosshatch weave is visible but appears in a lighter, slightly less textured way due to the grey colourway (grey fabric absorbs less contrast than black). The module attachment rail on the front face is the same matte stainless design — it pops more against the lighter grey fabric than it does on black. YKK zipper pulls: matte gunmetal grey, matching the colourway. Three-point studio lighting — same setup as all pack cards. No electric mint. No people. No text.",
+    "generated_at": "2026-04-12T20:34:13.457Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "product-everyday.webp",
+    "page": "product.html",
+    "section": "Configurator — Everyday 22L default view",
+    "prompt_used": "Square-format ultra-premium studio product photography of the TrailVolt Everyday 22L Core Pack in Core Black. This is a more frontal angle than the shop cards — the pack is almost face-on but with a 10-15 degree tilt to the left to create depth without losing front-face detail. This framing is specifically to maximise the visibility of the module attachment rail system across the front face — the buyer is actively considering which modules to add, so they need to see exactly where modules attach. The module attachment rail: a horizontal row of 6 rectangular stainless steel connection slots across the middle of the front face. Each slot approximately 15mm wide, with visible depth and edge machining. This is the most important detail in this image. Above the rail: the rapid-access front organiser zip — a horizontal zip across the upper front face with the same matte YKK hardware. The main compartment wrap-around zip runs the perimeter. The shoulder straps emerge from the top, partially visible at the frame edges. The shell: 600D ballistic nylon crosshatch, visible weave pattern. Background: dark navy (#0B1626) seamless. An extremely subtle electric mint glow originates from directly behind and below the pack, catching only the very bottom edge and the module rail slots — this is the 'technology is alive in this product' signal. Focal length: 85mm equivalent. Ultra-sharp across the entire front face. The buyer can zoom into this image and see every detail clearly. No hands, no people, no text, no props.",
+    "generated_at": "2026-04-12T20:34:53.215Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-phone.webp",
+    "page": "shop.html + modules.html",
+    "section": "Modules — Chest Phone Module card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Chest Phone Module. The module is a slim rectangular pouch designed to mount on a pack's chest strap or front attachment rail. It is matte black — same 600D nylon as the main pack. The front face shows: a magnetic snap closure running along the top edge (the flap folds down to reveal a phone-sized interior). The dimensions suggest it holds a phone up to 6.7 inches with a slim case. On the back: the attachment mechanism — the connection hardware that clips to the pack's chest strap or magnetic module rail. This hardware is precisely visible: stainless steel clip with a matte finish. The module is shown slightly angled — facing front with a 20-degree tilt to show the attachment mechanism on the back panel edge. Background: dark navy (#0B1626) seamless. Three-point studio lighting — key from upper-left, fill from right, thin rim from behind. Very subtle electric mint reflection on the attachment clip hardware. Ultra-sharp. No people, no hands, no text. The module looks like a small premium product in its own right — not a bag accessory.",
+    "generated_at": "2026-04-12T20:35:37.071Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-tech.webp",
+    "page": "shop.html + modules.html",
+    "section": "Modules — Tech Organizer Module card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Tech Organizer Module — shown slightly open or partially unfolded to reveal its internal organisation system. The module: a flat bifold-style pouch in matte black 600D nylon. The visible interior features: a row of 4 elastic cable loops (for USB-C, Lightning, and other cables), 4 SD card slots, a small mesh pocket, and a pen loop. The exterior: smooth with a YKK zip across the top. The back face shows the attachment hardware — same stainless clip system as all modules. The module is shown at a 30-degree tilt: one half showing the open interior, one half showing the clean exterior face. Background: dark navy. Three-point lighting. A subtle electric mint catch-light on the internal SD card slots — as if the technology of what these slots hold is alive. No people, no hands, no text. Sharp enough to count the individual cable loops.",
+    "generated_at": "2026-04-12T20:36:29.833Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-power.webp",
+    "page": "shop.html + modules.html",
+    "section": "Modules — Power Bank Module card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Power Bank Module. The module: a compact rectangular brick in matte black — approximately the size of a deck of cards, slightly thicker. On the front face: a USB-A port and a USB-C port, both visible and precisely detailed — the metallic connector geometry is sharp and weighty. A small LED indicator strip (2-3 LEDs) showing charge level. On the side: the stainless steel attachment clip for the module rail connection. The build quality visible in the photography: the USB port surrounds are machined aluminium or matte black ABS with no visible seam lines. The module is shown at a 15-degree tilt to show both the port face and the attachment clip side. Background: dark navy. On the LED strip: a very subtle electric mint (#3FFFAB) glow — as if the power bank is at full charge. This mint LED catch-light is the most explicit use of the brand colour in the module series. Three-point studio lighting. No people, no hands, no text. No cables inserted.",
+    "generated_at": "2026-04-12T20:37:10.163Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "module-bottle.webp",
+    "page": "shop.html + modules.html",
+    "section": "Modules — Bottle Holder Module card",
+    "prompt_used": "Clean studio product photography of the TrailVolt Bottle Holder Module. This module is unique in that it has a moving part: the retractable side-swing arm that folds flat when empty and swings out to hold a bottle. The module is shown in the extended position with an 750ml matte stainless steel water bottle seated in the nylon sleeve — the bottle top extends approximately 3cm above the holder rim. The arm mechanism is visible: a nylon-webbing and stainless steel bracket that swings from the attachment point on the pack to hold the bottle away from the body. The sleeve itself: a cylindrical sleeve in matte black nylon with an adjustable bungee cord at the bottom for bottle security. Background: dark navy. The stainless water bottle: no branding visible on the bottle itself. The combination of the matte black nylon module and the matte silver steel bottle creates a premium two-tone detail composition. Three-point lighting. A very subtle electric mint glow catches the stainless steel attachment arm mechanism. No people, no hands, no text.",
+    "generated_at": "2026-04-12T20:38:07.854Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-aoife.webp",
+    "page": "tribe.html",
+    "section": "Tribe Cards — Aoife Murphy, Adventure Hiker, Donegal",
+    "prompt_used": "A wide editorial landscape photograph — the format is 2:1, panoramic. The Wild Atlantic Way in County Donegal: dramatic coastal cliffs dropping to the Atlantic, green headlands, overcast maritime sky with a single strip of golden-orange light at the sea horizon. A woman, late 20s, athletic build, wearing outdoor clothing (dark waterproof jacket, trail leggings), is visible in the mid-ground walking a coastal path that runs along the cliff edge. She is not posed — she is walking with purpose, looking ahead along the path. She is not looking at camera. The TrailVolt Trail 28L in Forest Green is on her back — full and taut, compression straps engaged. The Forest Green pack reads clearly against the dark rocks and green headland. The scale: person and pack together fill roughly 20-30% of the frame width — the landscape dominates, establishing the epic scale of her journey. The wide 2:1 crop creates a cinematic scope. The light: a blend of overcast ambient and a warm strip of light at the horizon catching the top of the cliffs. The feeling: this is a real day on the Wild Atlantic Way — earned, elemental, authentic.",
+    "generated_at": "2026-04-12T20:39:03.337Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-marco.webp",
+    "page": "tribe.html",
+    "section": "Tribe Cards — Marco Lazzarini, Digital Nomad, Barcelona",
+    "prompt_used": "Wide editorial photograph in a modern Mediterranean airport terminal — Barcelona El Prat or similar: wide airy concourse, high ceilings with natural light, departure gate signs partially visible in background. A man, early 30s, Italian appearance, smart casual (dark blue shirt, chinos, leather trainers), mid-stride moving along the terminal floor. He is not looking at camera — his gaze is forward toward the gates. The TrailVolt Travel 30L in Slate Grey is on his back — clearly a carry-on, structured and appropriately sized. His movement is confident and purposeful — this is someone who does this every week. A small laptop sleeve or document sleeve partially visible in a side pocket. The wide 2:1 crop includes the terminal architecture — the human story is in context. Natural terminal ambient lighting. The Slate Grey pack is clearly distinguishable from black in the mixed lighting of the terminal.",
+    "generated_at": "2026-04-12T20:40:06.280Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "tribe-sarah.webp",
+    "page": "tribe.html",
+    "section": "Tribe Cards — Sarah Kim, Product Designer, Dublin",
+    "prompt_used": "Wide editorial photograph on Dublin's streets — Georgian red brick buildings lining the road, early morning light casting long shadows across the pavement. A woman, late 20s, Korean-Irish appearance, wearing smart casual (dark colours, not sportswear), is cycling through the city on a commuter bicycle. She is not looking at the camera — she is focused on the road ahead. The TrailVolt Everyday 22L in Core Black is on her back — visibly structured and well-fitted, not slouching. The cycling helmet (dark, minimal, premium-looking) is on her head. The Liffey or a Dublin canal is faintly visible in the background of the wide shot. The wide 2:1 crop shows the full Dublin context — the Georgian streetscape is the setting, Sarah and the pack are the subject within it. Early morning golden hour light.",
+    "generated_at": "2026-04-12T20:41:17.611Z",
+    "model": "gpt-image-1"
+  }
+]

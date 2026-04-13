@@ -1,0 +1,145 @@
+[
+  {
+    "filename": "shop-bundles.webp",
+    "source_image": "ai-assets/images/master/shop-bundles.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:13.147Z"
+  },
+  {
+    "filename": "pack-travel-black.webp",
+    "source_image": "ai-assets/images/master/pack-travel-black.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:13.402Z"
+  },
+  {
+    "filename": "pack-everyday-slate.webp",
+    "source_image": "ai-assets/images/master/pack-everyday-slate.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:13.691Z"
+  },
+  {
+    "filename": "product-everyday.webp",
+    "source_image": "ai-assets/images/master/product-everyday.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (205px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:13.900Z"
+  },
+  {
+    "filename": "module-phone.webp",
+    "source_image": "ai-assets/images/master/module-phone.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (300px)",
+    "opacity": "88%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:14.177Z"
+  },
+  {
+    "filename": "module-tech.webp",
+    "source_image": "ai-assets/images/master/module-tech.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "88%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:14.459Z"
+  },
+  {
+    "filename": "module-power.webp",
+    "source_image": "ai-assets/images/master/module-power.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (300px)",
+    "opacity": "88%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:14.706Z"
+  },
+  {
+    "filename": "module-bottle.webp",
+    "source_image": "ai-assets/images/master/module-bottle.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (300px)",
+    "opacity": "88%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:14.955Z"
+  },
+  {
+    "filename": "hero-pack-main.webp",
+    "source_image": "ai-assets/images/final/hero-pack-main.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (205px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:15.157Z"
+  },
+  {
+    "filename": "modular-system-diagram.webp",
+    "source_image": "ai-assets/images/final/modular-system-diagram.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "20% of image width (205px)",
+    "opacity": "88%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:15.359Z"
+  },
+  {
+    "filename": "pack-everyday-black.webp",
+    "source_image": "ai-assets/images/final/pack-everyday-black.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "90%",
+    "decision": "required",
+    "generated_at": "2026-04-12T21:09:15.633Z"
+  },
+  {
+    "filename": "sustainability-repair.webp",
+    "source_image": "ai-assets/images/master/sustainability-repair.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "white",
+    "placement": "bottom-right",
+    "size_rule": "17% of image width (261px)",
+    "opacity": "85%",
+    "decision": "optional",
+    "generated_at": "2026-04-12T21:09:15.953Z"
+  },
+  {
+    "filename": "tribe-marco.webp",
+    "source_image": "ai-assets/images/master/tribe-marco.webp",
+    "logo_file_used": "Brand /TrailVolt_logo_primary.png",
+    "logo_variant": "original-dark",
+    "placement": "bottom-right",
+    "size_rule": "14% of image width (215px)",
+    "opacity": "75%",
+    "decision": "optional",
+    "generated_at": "2026-04-12T21:09:16.263Z"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "hero-pack-main.webp",
+    "page": "index.html",
+    "section": "Hero — main product shot",
+    "prompt_used": "A high-end product photography shot of a premium modular backpack in core black with subtle electric mint accent stitching and hardware. The pack is positioned at a 30-degree 3/4 angle on a dark navy (#0B1626) seamless background. Cinematic rim lighting from the upper left creates sharp definition on the Cordura fabric texture. A soft electric mint glow (#3FFFAB) emanates from behind the pack as if from a distant light source. The pack features visible YKK zipper pulls, ballistic nylon weave, padded shoulder straps, multiple compartment zippers, and subtle magnetic module attachment points on the front face. Camera is at eye level. Depth of field is shallow, background is a smooth dark gradient. Studio quality, sharp, 8K, product photography, no text, no watermark.",
+    "generated_at": "2026-04-12T11:54:50.344Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "about-founder.webp",
+    "page": "about.html",
+    "section": "About Hero — founder portrait",
+    "prompt_used": "An authentic editorial portrait of a young male entrepreneur in his late 20s in a design studio environment. He is at a large worktable covered in fabric swatches (ballistic nylon, Cordura samples), partial backpack prototypes, CAD sketches on paper, and colour chips. His posture is engaged — leaning over the table, examining a zipper pull or stitching detail. Warm studio lighting (Edison bulbs or soft box warm) illuminates him from the side. Behind him on the wall: technical sketches pinned, a mood board with outdoor photography. The studio feels real and lived-in — not a set. The man is dressed in casual smart wear: dark jeans, a clean technical shirt. Cinematic, natural, authentic. No logos or brand text visible. 7:6 aspect ratio.",
+    "generated_at": "2026-04-12T11:55:43.078Z",
+    "model": "gpt-image-1"
+  },
+  {
+    "filename": "line-card-everyday.webp",
+    "page": "index.html",
+    "section": "Three Lines — Everyday line card",
+    "prompt_used": "A lifestyle photography shot of a young professional (man or woman, late 20s) walking confidently through a modern urban streetscape that evokes Dublin or London — Georgian brick buildings, clean pavements, morning light. The subject wears smart-casual work attire and carries a premium black modular backpack (22-litre). The shot is from a slight low angle, capturing the subject in motion. Warm early morning golden hour light from the side. Depth of field is medium — subject sharp, city background pleasantly blurred. The image conveys purpose, energy, and a premium daily carry lifestyle. No logos or text visible. Cinematic, editorial style. Aspect ratio 3:2.",
+    "generated_at": "2026-04-12T11:56:07.452Z",
+    "model": "gpt-image-1"
+  }
+]

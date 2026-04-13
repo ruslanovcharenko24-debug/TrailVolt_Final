@@ -1,0 +1,117 @@
+{
+  "generation_target": "OpenAI gpt-image-1",
+  "mode": "regeneration",
+  "description": "5 core brand assets — stronger, more specific prompts grounded in TrailVolt brand-visual-foundation.md",
+  "brand_palette": {
+    "navy": "#0B1626",
+    "mint": "#3FFFAB",
+    "white": "#FFFFFF",
+    "core_black": "#1a1a1a",
+    "slate_grey": "#6B7280",
+    "forest_green": "#2D5016"
+  },
+  "global_style_rules": [
+    "Every image must be visually indistinguishable from a premium editorial gear brand shoot — Arc'teryx, Aer, Peak Design quality",
+    "The module attachment rail on the front face of the pack must be visible in all product shots — it is the brand's primary visual differentiator",
+    "Cordura and ballistic nylon weave texture must be legible — not smooth, not plastic-looking, not rubber-like",
+    "YKK zipper pulls must appear as matte metal hardware — precise, weighty, not injection-moulded plastic",
+    "Electric mint (#3FFFAB) is a single directional accent light or edge glow — not a colour wash, not neon saturation",
+    "Studio backgrounds are always dark navy (#0B1626) — never black, grey, or white",
+    "People in lifestyle shots are always in motion or at work — never posed, never direct eye contact, never smiling for the camera",
+    "No text, watermarks, brand logos, or graphic overlays in any image",
+    "No AI artefact signatures: no melting zippers, no distorted hardware geometry, no impossible reflections, no phantom stitching lines"
+  ],
+  "prompts": [
+
+    {
+      "filename": "hero-pack-main.webp",
+      "page": "index.html",
+      "section": "Hero — primary product image",
+      "purpose": "Above-the-fold hero shot. The single most important image on the site — first impression, conversion anchor, brand statement.",
+      "emotional_role": "Immediate desire and trust. The viewer must feel in the first second: 'That is a serious, beautiful, expensive piece of gear. I want to know more.'",
+      "commercial_role": "Drives the click to 'Build Your Pack'. Without a compelling hero image this page has no commercial gravity. This one image must justify the price point before any copy is read.",
+      "recommended_dimensions": "600x700",
+      "aspect_ratio": "6:7",
+      "alt_text": "TrailVolt Core Pack modular backpack hero product shot — Core Black on dark navy background",
+      "short_prompt": "Ultra-premium studio product photography of a structured black modular backpack with visible attachment rail, cinematic rim lighting, dark navy background, electric mint edge glow.",
+      "detailed_prompt": "Ultra-high-end product photography of a structured backpack in matte Core Black, shot at a precise 30-degree 3/4 angle on a seamless dark navy (#0B1626) background. The pack is 22L — its volume is evident from its proportions: taller than it is wide, structured, not slouching. The front face of the pack prominently features a horizontal attachment rail system — a stainless steel and nylon channel running across the front panel, clearly designed for accessory modules to snap on. This rail is the hero detail of the shot: it should be sharp, precise, and distinguishable from the pack body. The shell material is 600D ballistic nylon: visible crosshatch weave pattern under lighting, matte black with slight surface variation, not shiny or smooth. YKK zipper pulls along the main compartment and front pocket are matte black metal, small and precise. The lighting setup: a single main key light from upper-left at 45 degrees creates sharp material texture on the nylon surface. A subtle rim light from the right edge creates body definition. A third low-powered light from behind and below emits a soft electric mint (#3FFFAB) glow — it catches the bottom edge of the pack and the module rail, creating a ghost of green-blue luminescence. This glow is not a halo, not saturated — it is a whisper of colour that suggests technology and craft. Camera focal length equivalent: 85-100mm. Ultra-shallow depth of field with the front face in perfect focus, background fading into pure navy darkness. No people, no hands, no props, no text, no watermarks. Every surface detail sharp enough to count stitches.",
+      "negative_prompt": "white background, grey background, hands, people, watermark, text overlay, logo, generic hiking bag shape, dome top, bright chrome or silver hardware, neon mint saturation, green colour wash, plastic-looking fabric, slouching pack form, flat unlit surfaces, blurry hardware, extra pockets in wrong positions, coloured zippers, generic urban backpack silhouette, stock photo composition",
+      "style_notes": "Reference: Peak Design Everyday Backpack studio shots, Arc'teryx product launch photography, Aer Travel Pack 3 reveal images. The quality bar is: if this image appeared in Gear Patrol or Monocle, would it look at home? If yes, it is correct.",
+      "why_this_image_fits_trailvolt": "This is the brand's opening statement. The site tagline is 'One Pack. Every Horizon.' — this image must make a viewer believe that in one frame. The module rail is the proof of modularity. The dark navy is the brand's universe. The mint edge is the electric charge that gives the brand its name.",
+      "what_must_be_improved_vs_test_version": "The test version was generated without knowledge of the module attachment rail as a required design element. The pack likely appeared as a generic black backpack without the modular front face. The mint glow, if it appeared, was likely too broad or saturated. The nylon texture was likely rendered as smooth or plastic-like. The 3/4 angle and shallow DOF combination needs precise specification. All of these are corrected in this prompt."
+    },
+
+    {
+      "filename": "modular-system-diagram.webp",
+      "page": "index.html",
+      "section": "Modular System Explainer — product concept diagram",
+      "purpose": "Communicates the entire TrailVolt product thesis in one image: one base pack + eight snap-on modules. This is the 'aha moment' image that makes the product concept instantly legible.",
+      "emotional_role": "Clarity and excitement. The viewer should understand the system immediately and feel 'I've never seen a backpack work like that — I want to understand more.'",
+      "commercial_role": "The modular system is TrailVolt's primary competitive differentiator. This image must remove cognitive friction about what the product actually is and how it works. Without this image, the modular concept lives only in text.",
+      "recommended_dimensions": "560x560",
+      "aspect_ratio": "1:1",
+      "alt_text": "TrailVolt modular system — Core Pack centre with all 8 snap-on modules arranged around it",
+      "short_prompt": "Premium product concept layout: black modular backpack centred on dark navy, eight distinct accessory modules orbiting it in a radial arrangement, electric mint connection lines from attachment points, Apple-launch-diagram quality.",
+      "detailed_prompt": "A meticulously composed product concept flat-lay photograph on a seamless dark navy (#0B1626) surface. The TrailVolt Core Pack in Core Black is centred in the frame — photographed front-facing with the module attachment rail clearly visible across the front face. The pack is elevated slightly or arranged to cast a clean shadow. Around the central pack, arranged in a radial pattern at equal distances, are all 8 snap-on modules — each physically separated from the pack by a deliberate gap of approximately 4-6cm in the composition, as if hovering just before attachment. The 8 modules, each distinct in shape and function: (1) a slim rectangular chest phone holder pouch with magnetic clasp, (2) a flat multi-pocket tech organizer with cable loops visible, (3) a brick-shaped power bank unit with USB ports visible on one edge, (4) a ventilated shoe bag — slightly taller with mesh panel, (5) a compression clothing cube — flatter and wider, (6) a slim document sleeve — flat and rectangular with RFID-blocking visible, (7) a side-swing bottle holder — cylindrical sleeve with retractable arm, (8) a folded rain cover in its storage pouch. Each module is premium product photography quality: sharp, matte black or dark grey finish, YKK zipper pulls where applicable. Thin electric mint (#3FFFAB) lines radiate from the central pack's attachment rail toward each module — these are light-traced connection paths, not graphic arrows or overlays. They look like light threads or photographic light painting, not digital annotations. Studio lighting on all objects simultaneously — no shadows that block module detail. Clean dark navy background throughout. No text, no labels, no arrows, no watermarks.",
+      "negative_prompt": "white background, text labels, numbered annotations, graphic arrows, flat digital illustration style, cluttered or uneven arrangement, generic accessories that don't match the described modules, bright or neon overall palette, visible table edges or surface texture, stock photo props, blurry accessories, missing modules, overcrowded frame",
+      "style_notes": "The closest reference is an Apple product ecosystem layout combined with a Gear Patrol 'everything in the bag' editorial flat-lay. The mint connection lines must look photographic (light painting, light trails) — not like a vector graphic overlay. This image should work without any text — pure visual communication of the product system.",
+      "why_this_image_fits_trailvolt": "The site's modular section headline is: 'Snap on what the day demands. Leave behind what it doesn't.' This image is the visual proof of that promise. It communicates: one pack, infinite configurations, no compromises. It is the diagram that makes the modular concept real.",
+      "what_must_be_improved_vs_test_version": "The test version was likely missing several modules or showed generic accessories instead of the specific 8 modules. The mint connection lines likely appeared as graphic arrows or were absent entirely. The central pack probably lacked the attachment rail. The composition may have been cluttered or asymmetric. The 8-module radial layout is complex — the prompt now explicitly names and describes each module so the model has the context to differentiate them."
+    },
+
+    {
+      "filename": "about-founder.webp",
+      "page": "about.html",
+      "section": "Founder Story — Ruslan portrait",
+      "purpose": "Humanises the brand with an authentic founder portrait. This image makes TrailVolt a real person's obsession, not an anonymous DTC brand.",
+      "emotional_role": "Trust and connection. Press readers (WIRED, Gear Patrol, Monocle traffic) and first-time buyers both need to see the person behind the product. The image must say: 'This was built by someone who actually had this problem, who actually cares.'",
+      "commercial_role": "Founder credibility converts sceptical buyers. The about page is a trust page — the founder portrait is its anchor. Without it, the brand's origin story ('Built Out of Frustration. Perfected by Obsession.') has no face.",
+      "recommended_dimensions": "480x640",
+      "aspect_ratio": "3:4",
+      "alt_text": "Ruslan, TrailVolt founder, working in his Dublin studio with a backpack prototype and material samples",
+      "short_prompt": "Candid editorial portrait of a focused man in his mid-30s working with a backpack prototype in a creative workshop, natural light, authentic craft environment, not posed.",
+      "detailed_prompt": "A candid editorial-style portrait of a man in his early-to-mid 30s of Eastern European appearance — slim build, dark hair, focused expression — working in a workshop-studio environment. He is not looking at the camera. He is mid-task: either examining a section of fabric on a backpack prototype, holding a hardware component (a buckle or zipper pull) up to the light, or marking fabric with chalk. The setting: a creative workshop or design studio in Dublin — raw concrete or exposed-brick wall behind him, a long workbench with materials laid out: a partially assembled backpack prototype in black, fabric swatches in Cordura and ripstop nylon, small hardware samples (Duraflex buckles, YKK zipper pulls), a MacBook open on one side showing what appears to be a technical CAD drawing or material spec sheet. The lighting is natural — a large window to one side casts soft directional daylight. The image feels like it was taken by a journalist who was in the room: slightly imperfect framing, authentic ambient environment, no studio setup. The man's clothing: smart casual — a quality navy or dark grey sweatshirt, no brand logos visible. His posture is engaged and intent — this is someone absorbed in a problem, not performing for a camera. The overall aesthetic: a Monocle magazine interview portrait meets a Gear Patrol behind-the-scenes visit.",
+      "negative_prompt": "smiling at camera, posed for photo, corporate headshot, white studio background, formal suit or business attire, generic startup office, WeWork aesthetic, ring light, perfect even lighting, stock photo hand gestures, obvious AI face artefacts (extra fingers, uncanny valley features), branded clothing or visible logos",
+      "style_notes": "Reference: Monocle magazine founder profiles. The Patagonia 'history of' documentary. Peak Design founder portraits. The image must feel earned — like the photographer spent a morning in the workshop before taking this shot.",
+      "why_this_image_fits_trailvolt": "The about page copy reads: 'Built Out of Frustration. Perfected by Obsession.' and describes a specific moment — watching a man at Dublin Airport unclip a module from his pack. This image is the person who had that moment and then spent years building the solution. It must communicate obsession, craft, and authenticity — not 'startup founder' clichés.",
+      "what_must_be_improved_vs_test_version": "The test version was generated with a generic founder prompt and likely produced a corporate headshot or smiling-at-camera portrait. The specific workshop setting (Dublin, raw materials, prototype props) was not in the original prompt. The candid non-camera-facing framing is critical and was likely missing. The specific appearance guidance (Eastern European, 30s, smart casual, focused) was not specified. All of these are now explicitly prompted."
+    },
+
+    {
+      "filename": "pack-everyday-black.webp",
+      "page": "shop.html",
+      "section": "Everyday Line — Core Black product card (Best Seller)",
+      "purpose": "The revenue-driving product card image for the site's best-selling configuration. This image is the last visual a buyer sees before adding to cart.",
+      "emotional_role": "Immediate desirability — this is the one everyone wants. The viewer must feel it looks like quality before they read the price.",
+      "commercial_role": "This is the highest-converting product card on the site. Best Seller status means this image directly drives more revenue than any other single product image. A weak photo here is a direct revenue cost.",
+      "recommended_dimensions": "400x300",
+      "aspect_ratio": "4:3",
+      "alt_text": "TrailVolt Everyday 22L Core Black modular backpack — best seller product shot",
+      "short_prompt": "Studio product photography of a structured 22L matte black modular backpack on dark navy background, visible module attachment rail, 600D nylon texture, YKK hardware, cinematic side lighting.",
+      "detailed_prompt": "Clean, precise studio product photography of the TrailVolt Everyday 22L pack in Core Black. The pack is photographed front-facing or at a slight 3/4 angle — enough to show both the front face and one side panel. Background: dark navy (#0B1626) to very dark charcoal gradient, shot on seamless paper. The pack form: structured 22L volume — not flat, not oversized. The top handle is visible and taut. The shoulder straps emerge from the top and are partially visible at the frame edges. The front face: the module attachment rail is the primary foreground detail — a horizontal system of connection points running across the front panel, matte stainless or dark metal. Above it, the rapid-access front organiser zip sits tight against the panel. The main compartment wrap-around zip runs the full body perimeter. The material: 600D ballistic nylon in matte Core Black — the weave is a visible crosshatch pattern, approximately 2mm spacing, slightly rough under the lighting. Not shiny, not smooth, not rubber-like. The YKK zipper pulls: matte gunmetal or matte black, small and precise, oval loop profile. Lighting: key light from upper-right at 40 degrees creates texture relief across the nylon surface; a subtle fill from the left prevents shadow crushing; a thin rim light from behind creates pack silhouette separation from the background. No electric mint in this shot — pure product commercial photography. No people, no hands, no props, no text. Ultra-sharp, 8K quality.",
+      "negative_prompt": "white or grey background, smooth or plastic-looking nylon, shiny fabric, cheap or bright-coloured zippers, oversized hiking bag shape, dome top, hydration hose ports, people, hands, text, watermark, mint glow (not in this shot), slouching or collapsed form, uneven lighting, blurry hardware details",
+      "style_notes": "Reference: Peak Design Everyday Backpack shop photography. Aer Travel Pack product cards. The quality bar is an e-commerce product image that could run in a print catalogue for a premium gear brand. Every detail must be sharp enough to zoom into — the buyer is looking closely before purchasing.",
+      "why_this_image_fits_trailvolt": "Site copy: 'The essential daily configuration. The one they always ask about.' This is the workhorse card — every person who buys without customising will have made that decision looking at this image.",
+      "what_must_be_improved_vs_test_version": "The test version likely lacked the module attachment rail entirely — appearing as a generic black backpack identical to hundreds of competitors. The nylon texture was probably rendered as smooth or plastic. The YKK hardware likely looked like plastic clips. This prompt explicitly demands: visible module rail, crosshatch nylon weave, matte metal zipper hardware, and structured 22L proportions. The background gradient specification prevents the grey-background failure mode."
+    },
+
+    {
+      "filename": "line-card-trail.webp",
+      "page": "index.html",
+      "section": "Three Lines section — Trail line card",
+      "purpose": "Lifestyle hero image for the Trail 28L line card on the homepage. Must make a trail-oriented buyer immediately feel 'that is my weekend pack.'",
+      "emotional_role": "The call of the outdoors. This image must trigger the feeling of a Saturday morning with kit ready, destination clear, and the right gear on your back. It speaks to people who hike, run trails, explore Irish and Scottish landscapes.",
+      "commercial_role": "Converts the outdoor-lifestyle segment. The Trail line is the highest-margin product. Without a compelling line card image, the Trail 28L is just a text description. This card drives configurations of the Trail line.",
+      "recommended_dimensions": "480x320",
+      "aspect_ratio": "3:2",
+      "alt_text": "Hiker on Irish mountain trail with TrailVolt Trail 28L Forest Green backpack — Wild Atlantic Way terrain",
+      "short_prompt": "Cinematic outdoor lifestyle photo of a hiker mid-stride on a misty Irish highland trail at golden hour, Forest Green modular trail pack loaded with visible bottle holder and compression straps, dramatic landscape.",
+      "detailed_prompt": "A cinematic outdoor lifestyle photograph shot in Irish highland terrain — specifically the Wicklow Mountains or Wild Atlantic Way coastal hills: rounded green ridgelines, overcast sky with breaks of golden-hour light at the horizon, misty valley below, rough boggy trail surface. A single hiker — gender-neutral to male, early 30s, capable and focused — is mid-stride on the trail moving away from or across the camera, not toward it. They are not posed, not resting, not looking back. The TrailVolt Trail 28L in Forest Green (#2D5016) is on their back. The pack's Forest Green colour is clearly legible — not black, not dark olive, but a deep natural green that reads as intentional outdoor colourway against the Irish terrain. The pack is loaded: compression side straps are pulled taut suggesting full contents, the shoulder harness is visibly engaged and distributing load. On the left or right side panel of the pack, a Bottle Holder Module holds a metal water bottle — the bottle's top is visible extending slightly above the holder. The Cordura 500D shell texture catches the side light — slightly wet surface suggesting Irish weather has been present, DWR-treated so water beads faintly visible. The camera angle: from behind or slightly to the side of the hiker — a tracking shot or observational frame. Focal length equivalent: 50-85mm. The landscape dominates the background — mist, green hills, dramatic sky — but the pack is the clear subject, filling approximately 25-35% of the frame. Golden-hour rim light from behind the hiker creates a subtle silhouette separation. The overall mood: earned, elemental, real. Not a photoshoot — a photograph taken on an actual hike.",
+      "negative_prompt": "posed summit shot, looking at camera, smiling, alpine peaks or Swiss/Austrian mountains, tropical or warm-weather terrain, studio environment, white background, sunny blue sky only, generic stock photo hiker composition, green colour appearing as olive or black, missing bottle holder module, dry-looking pack in wet climate, overcrowded frame, too-small pack in frame",
+      "style_notes": "Reference: Arc'teryx campaign photography. Fjällräven editorial. Patagonia product lifestyle imagery. The Irish terrain specificity is critical — this is not the Alps, not the Rockies. It is the Wild Atlantic Way — green, moody, maritime. The Forest Green pack colour should feel native to that environment.",
+      "why_this_image_fits_trailvolt": "Tribe member Aoife Murphy from Donegal hiked the Wild Atlantic Way for six days with her Trail 28L — 'I didn't miss a single thing I left behind.' This image is her story. Every person who has ever looked at a trail on a map on a Thursday afternoon and thought about the weekend — this image is for them.",
+      "what_must_be_improved_vs_test_version": "The test version likely produced a generic hiking stock photo: alpine terrain, wrong colourway (appearing black or generic green), no visible modules, hiker too small in frame. The Forest Green colourway specification must be explicit — the model needs the hex code and description to avoid defaulting to black or generic olive. The Irish terrain specificity (Wicklow Mountains, Wild Atlantic Way, boggy trail surface, overcast maritime sky) corrects the alpine-default failure mode. The Bottle Holder Module requirement gives the pack a functional, brand-specific detail that distinguishes it from generic hiking gear."
+    }
+
+  ]
+}
