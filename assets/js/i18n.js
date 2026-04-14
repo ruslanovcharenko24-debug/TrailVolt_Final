@@ -15,12 +15,12 @@
 
   /* ── Currency config (EUR base prices) ── */
   const CURRENCY = {
-    en: { symbol: '$',  rate: 1.08, before: true,  sep: ',' },
+    en: { symbol: '€',  rate: 1.00, before: true,  sep: ',' },
     fr: { symbol: '€',  rate: 1.00, before: false, sep: '\u202F' },
     de: { symbol: '€',  rate: 1.00, before: false, sep: '.' },
     es: { symbol: '€',  rate: 1.00, before: false, sep: '.' },
-    zh: { symbol: '¥',  rate: 7.80, before: true,  sep: ',' },
-    ja: { symbol: '¥',  rate: 162,  before: true,  sep: ',' },
+    zh: { symbol: '€',  rate: 1.00, before: true,  sep: ',' },
+    ja: { symbol: '€',  rate: 1.00, before: true,  sep: ',' },
   };
 
   /* ── Language detection ── */
