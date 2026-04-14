@@ -1916,6 +1916,27 @@ p {
   color: var(--color-mint);
 }
 
+/* Checkout order summary reassurance list */
+.checkout-summary-trust {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.checkout-summary-trust__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.checkout-summary-trust__item svg {
+  flex-shrink: 0;
+}
+.checkout-summary-trust__item span {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
 /* Success State */
 .checkout-success {
   text-align: center;
@@ -4872,6 +4893,42 @@ p {
 .tribe-card__role { font-size: var(--text-xs); color: var(--color-mint); font-family: var(--font-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-3); }
 .tribe-card__quote { font-size: var(--text-sm); color: var(--color-slate); line-height: 1.7; font-style: italic; }
 @media (max-width: 768px) { .tribe-grid { grid-template-columns: 1fr; } }
+
+/* Tribe community stats section */
+.tribe-stats {
+  background: var(--color-glacier);
+  padding: var(--space-10) 0;
+  border-bottom: 1px solid var(--color-grey-200);
+}
+.tribe-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  text-align: center;
+}
+.tribe-stats__value {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
+  font-weight: 900;
+  color: var(--color-navy);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.tribe-stats__label {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-slate);
+  margin-top: var(--space-2);
+}
+@media (max-width: 600px) {
+  .tribe-stats__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
 
 /* ── Loyalty page ── */
 .loyalty-tiers { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-6); }
