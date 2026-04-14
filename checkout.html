@@ -46,7 +46,7 @@
       <a href="index.html" class="nav__logo" aria-label="TrailVolt home">
         <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
       </a>
-      <div style="display:flex;align-items:center;gap:var(--space-6);">
+      <div class="nav__actions">
         <!-- Language Switcher -->
         <div class="lang-switcher">
           <button class="lang-switcher__toggle" id="lang-switcher-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
@@ -62,7 +62,7 @@
             <button class="lang-option" data-lang="ja">🇯🇵 JA</button>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:var(--space-2);font-family:var(--font-accent);font-size:var(--text-xs);color:rgba(255,255,255,0.5);">
+        <div class="checkout-secure-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span data-i18n="co.secure">Secure Checkout</span>
         </div>
@@ -75,31 +75,13 @@
     <section class="section-pad" aria-label="Checkout">
       <div class="container">
 
-        <h1 class="page-title" style="font-size:clamp(var(--text-3xl),4vw,var(--text-4xl));color:var(--color-navy);margin-bottom:var(--space-10);" data-i18n="co.title">Checkout</h1>
+        <h1 class="page-title checkout-page__title" data-i18n="co.title">Checkout</h1>
 
         <!-- Checkout Form Layout -->
         <div class="checkout-layout" id="checkout-form-wrapper">
 
           <!-- Left: Form -->
           <div>
-
-            <!-- Progress steps -->
-            <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-8);flex-wrap:wrap;" role="list" aria-label="Checkout steps">
-              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-navy);" role="listitem">
-                <span style="width:24px;height:24px;background:var(--color-mint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--color-navy);" aria-hidden="true">1</span>
-                <span data-i18n="co.step.contact">Contact</span>
-              </div>
-              <div style="width:24px;height:1px;background:var(--color-grey-300);" aria-hidden="true"></div>
-              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-grey-400);" role="listitem">
-                <span style="width:24px;height:24px;background:var(--color-grey-200);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--color-grey-500);" aria-hidden="true">2</span>
-                <span data-i18n="co.step.shipping">Shipping</span>
-              </div>
-              <div style="width:24px;height:1px;background:var(--color-grey-300);" aria-hidden="true"></div>
-              <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-family:var(--font-accent);font-weight:600;color:var(--color-grey-400);" role="listitem">
-                <span style="width:24px;height:24px;background:var(--color-grey-200);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--color-grey-500);" aria-hidden="true">3</span>
-                <span data-i18n="co.step.payment">Payment</span>
-              </div>
-            </div>
 
             <!-- Contact Info -->
             <div class="checkout-section">
