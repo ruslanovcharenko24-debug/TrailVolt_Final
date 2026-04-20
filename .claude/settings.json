@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fsck *)",
+      "Bash(git cherry-pick *)"
+    ]
+  }
+}
