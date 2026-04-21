@@ -3,7 +3,9 @@
     "allow": [
       "Bash(git fsck *)",
       "Bash(git cherry-pick *)",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(git branch *)",
+      "Bash(python create_presentation.py)"
     ]
   }
 }
