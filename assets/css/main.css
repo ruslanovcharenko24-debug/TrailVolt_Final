@@ -5777,3 +5777,57 @@ p {
   .checkout-express__methods { grid-template-columns: 1fr; }
   .checkout-express__method  { height: 48px; }
 }
+
+/* ── Footer social icons: visibility fix ─────────────────────────────────────
+   Root cause: the older .footer__social rule (line ~1990) was written for
+   individual link elements but the HTML uses .footer__social as the container
+   div. That rule's width:38px and height:38px constrain the container to a
+   single icon's width, clipping the rest. The rules below override those
+   conflicting values by appearing later in the cascade.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* 1. Fix the container — remove leftover size/bg from the old rule */
+.footer__social {
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  color: inherit;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 2. Individual icon links — brighter, crisper, clear on dark navy */
+.footer__social-link {
+  color: rgba(255,255,255,0.80);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 3. Slightly larger SVG — 18 px renders cleaner than 16 px at small sizes */
+.footer__social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* 4. Hover — mint accent, stronger background */
+.footer__social-link:hover {
+  background: rgba(63,255,171,0.15);
+  color: var(--color-mint);
+  border-color: rgba(63,255,171,0.22);
+}
+
+/* 5. Keyboard focus — visible ring for accessibility */
+.footer__social-link:focus-visible {
+  outline: 2px solid var(--color-mint);
+  outline-offset: 2px;
+  color: var(--color-mint);
+}
+
+/* 6. Neutralise the container-level hover (line ~2006) that turns the
+      entire social row into a solid mint rectangle. The per-link hover
+      on .footer__social-link is already correctly scoped above. */
+.footer__social:hover {
+  background: none;
+  color: inherit;
+}
