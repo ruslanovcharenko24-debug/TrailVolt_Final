@@ -195,15 +195,29 @@
               <div class="checkout-express">
                 <p class="checkout-express__title" data-i18n="co.express.title">Express checkout</p>
                 <div class="checkout-express__methods" role="group" aria-label="Express payment options">
+                  <!-- Shop Pay: purple brand button — text-only wordmark (no generic bag icon) -->
                   <button type="button" class="checkout-express__method checkout-express__method--shoppay" aria-label="Pay with Shop Pay">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="flex-shrink:0">
+                      <rect width="16" height="16" rx="3.5" fill="rgba(255,255,255,0.18)"/>
+                      <path d="M4.5 5.2C4.5 4 5.4 3 6.8 3c.8 0 1.5.3 2 .8L7.6 5c-.3-.4-.7-.6-1.1-.6-.6 0-1 .4-1 .9 0 .5.3.8.9 1.1l.7.4c1 .6 1.6 1.2 1.6 2.2C8.7 10.3 7.7 11 6.3 11c-.9 0-1.7-.4-2.2-1l1-1.1c.3.4.7.7 1.2.7.7 0 1.1-.4 1.1-.9 0-.6-.4-.9-1.1-1.3l-.6-.3C5 8.6 4.5 7.9 4.5 7V5.2z" fill="white"/>
+                    </svg>
                     <span>Shop Pay</span>
                   </button>
+                  <!-- PayPal: yellow brand button with PP lettermark -->
                   <button type="button" class="checkout-express__method checkout-express__method--paypal" aria-label="Pay with PayPal">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink:0">
+                      <!-- Stem -->
+                      <rect x="2" y="1" width="3" height="14" rx="1.2" fill="#003087" opacity="0.8"/>
+                      <!-- Bowl outer -->
+                      <path d="M5 1h5.5C13 1 15 2.8 15 5s-2 4-4.5 4H5V1z" fill="#003087" opacity="0.8"/>
+                      <!-- Bowl inner cutout -->
+                      <path d="M6 3h4C11.7 3 13 4 13 5s-1.3 2-3 2H6V3z" fill="#FFC439"/>
+                    </svg>
                     <span>PayPal</span>
                   </button>
+                  <!-- Apple Pay: black brand button with Apple logo -->
                   <button type="button" class="checkout-express__method checkout-express__method--applepay" aria-label="Pay with Apple Pay">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="flex-shrink:0"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     <span>Apple Pay</span>
                   </button>
                 </div>
@@ -227,7 +241,7 @@
 
                 <div style="display:flex;align-items:center;gap:var(--space-3);margin-top:var(--space-4);padding:var(--space-4);background:var(--color-glacier);border-radius:var(--radius-md);">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  <p style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="co.ssl.text">Your payment information is encrypted with SSL. We never store card details.</p>
+                  <p class="checkout-ssl-notice" style="font-size:var(--text-xs);color:var(--color-grey-500);" data-i18n="co.ssl.text">Your payment information is encrypted with SSL. We never store card details.</p>
                 </div>
               </div>
             </div>

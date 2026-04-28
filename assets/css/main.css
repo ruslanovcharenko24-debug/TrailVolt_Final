@@ -5725,3 +5725,55 @@ p {
   }
   .earn-card__img-wrap { aspect-ratio: 16 / 9; }
 }
+
+/* ── Polish: checkout & cart trust / payment UI ─────────────────────────────
+   hotfix/polish-checkout-cart-payment-ui
+   Fixes: icon alignment, express checkout buttons, secure badge, SSL notice
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* A) Cart trust list: prevent icon from shrinking on narrow viewports */
+.cart-trust-item svg { flex-shrink: 0; }
+.cart-trust-item { align-items: flex-start; }
+
+/* B) Checkout order summary trust: visual separator from totals */
+.checkout-summary-trust {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: var(--space-5);
+  margin-top: var(--space-4);
+}
+.checkout-summary-trust__item { align-items: flex-start; }
+.checkout-summary-trust__item svg { margin-top: 1px; flex-shrink: 0; }
+
+/* C) Checkout nav secure badge: readable contrast + separator */
+.checkout-secure-badge {
+  border-left: 1px solid rgba(255,255,255,0.12);
+  padding-left: var(--space-4);
+  white-space: nowrap;
+}
+.checkout-secure-badge span { color: rgba(255,255,255,0.75); }
+
+/* D) Express checkout methods: no text wrapping, clean height */
+.checkout-express__method { white-space: nowrap; min-width: 0; }
+
+/* PayPal: inset border keeps yellow button visible on white card bg */
+.checkout-express__method--paypal {
+  box-shadow: inset 0 0 0 1.5px rgba(0,48,135,0.18);
+}
+
+/* Shop Pay: tighter letter-spacing for wordmark feel */
+.checkout-express__method--shoppay { letter-spacing: -0.01em; }
+
+/* Apple Pay: ensure Apple SVG fills white on black */
+.checkout-express__method--applepay svg { fill: #fff; }
+
+/* E) SSL notice under card form: remove default p margin */
+.checkout-ssl-notice { margin: 0; line-height: 1.5; }
+
+/* F) Cart upsell "Complete Your System" module cards: polish */
+#cart-upsell h3 { border-bottom: 2px solid var(--color-grey-200); padding-bottom: var(--space-4); }
+
+/* Mobile: stack express methods 1-col at ≤ 420px */
+@media (max-width: 420px) {
+  .checkout-express__methods { grid-template-columns: 1fr; }
+  .checkout-express__method  { height: 48px; }
+}
