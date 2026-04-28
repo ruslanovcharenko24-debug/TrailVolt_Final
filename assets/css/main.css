@@ -5374,3 +5374,159 @@ p {
 .hero-pack-img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-xl); }
 .tribe-photo__inner--green { background: linear-gradient(140deg,#162614 0%,#0e1c10 100%); }
 .tribe-photo__inner--slate  { background: linear-gradient(140deg,#1a2535 0%,#0f1a28 100%); }
+
+/* ── Loyalty — Earn Points Section ─────────────────────────────────────────── */
+.earn-section {
+  background: var(--color-navy);
+  position: relative;
+  overflow: hidden;
+}
+.earn-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 55% at 50% -10%, rgba(63,255,171,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+.earn-section .section-label { color: var(--color-mint); }
+.earn-section .section-label::before { background: var(--color-mint); }
+.earn-section__title { color: var(--color-white); }
+.earn-section__sub {
+  font-size: var(--text-base);
+  color: rgba(255,255,255,0.54);
+  max-width: 540px;
+  margin: var(--space-3) auto 0;
+  line-height: 1.7;
+  text-align: center;
+}
+.earn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  max-width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.earn-card {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(63,255,171,0.14);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+.earn-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(63,255,171,0.45), transparent);
+}
+.earn-card:hover {
+  border-color: rgba(63,255,171,0.32);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35), 0 0 28px rgba(63,255,171,0.07);
+}
+/* ── Image zone ── */
+.earn-card__img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid rgba(63,255,171,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.earn-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.earn-card:hover .earn-card__img-wrap img { transform: scale(1.03); }
+/* SVG fallback icon shown when image fails / no src */
+.earn-card__icon-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  background: rgba(63,255,171,0.1);
+  border: 1px solid rgba(63,255,171,0.2);
+}
+.earn-card__icon-fallback svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--color-mint);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* ── Body ── */
+.earn-card__body {
+  padding: var(--space-6) var(--space-5) var(--space-7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  flex: 1;
+}
+.earn-card__points {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 3.5vw, 3.25rem);
+  font-weight: 900;
+  color: var(--color-mint);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-1);
+}
+.earn-card__unit {
+  font-family: var(--font-accent);
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(63,255,171,0.5);
+  margin-bottom: var(--space-3);
+}
+.earn-card__title {
+  font-family: var(--font-accent);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+.earn-card__desc {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.38);
+  line-height: 1.65;
+  margin: var(--space-2) 0 0;
+  max-width: 160px;
+}
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .earn-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .earn-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+  .earn-card__img-wrap { aspect-ratio: 16 / 9; }
+}
