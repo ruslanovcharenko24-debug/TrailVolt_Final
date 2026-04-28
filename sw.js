@@ -7,7 +7,7 @@
 
 'use strict';
 
-const CACHE_NAME  = 'tv-static-v2';
+const CACHE_NAME  = 'tv-static-v3';
 const OFFLINE_URL = '/offline.html';
 
 const PRECACHE_ASSETS = [
