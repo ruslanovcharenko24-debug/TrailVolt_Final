@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrailVolt on Instagram</title>
+  <meta name="description" content="Follow TrailVolt on Instagram — premium modular backpacks for ambitious people. Product drops, trail life, and the pack that never gives up." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    /* ── Social page scoped styles ── */
+    .social-page { background: var(--color-white); min-height: 100vh; }
+
+    /* Profile header */
+    .sp-header {
+      background: var(--color-navy);
+      padding: var(--space-8) 0 0;
+    }
+    .sp-header__inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+    .sp-profile-row {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-10);
+      padding-bottom: var(--space-8);
+    }
+    .sp-avatar-wrap { flex-shrink: 0; }
+    .sp-avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--color-mint);
+      object-fit: cover;
+      background: var(--color-navy);
+    }
+    .sp-avatar-ring {
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3FFFAB, #0B8C56);
+      padding: 3px;
+      display: inline-block;
+    }
+    .sp-avatar-ring img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--color-navy);
+      object-fit: cover;
+      display: block;
+    }
+    .sp-profile-info { flex: 1; }
+    .sp-username {
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      font-weight: 800;
+      color: var(--color-white);
+      margin-bottom: var(--space-2);
+    }
+    .sp-username span { color: var(--color-mint); }
+    .sp-handle {
+      font-family: var(--font-accent);
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.5);
+      margin-bottom: var(--space-5);
+    }
+    .sp-stats {
+      display: flex;
+      gap: var(--space-8);
+      margin-bottom: var(--space-5);
+    }
+    .sp-stat { text-align: center; }
+    .sp-stat__num {
+      font-family: var(--font-heading);
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--color-white);
+      display: block;
+    }
+    .sp-stat__label {
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      color: rgba(255,255,255,0.45);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .sp-bio {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      max-width: 440px;
+      margin-bottom: var(--space-5);
+    }
+    .sp-bio strong { color: var(--color-mint); font-weight: 700; }
+    .sp-cta-row { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+    /* Platform badge */
+    .sp-platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-full);
+      padding: var(--space-2) var(--space-4);
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: var(--space-6);
+    }
+    .sp-platform-badge svg { width: 14px; height: 14px; }
+
+    /* Tab bar */
+    .sp-tabs {
+      display: flex;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+    .sp-tab {
+      padding: var(--space-4) var(--space-6);
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.45);
+      border-top: 2px solid transparent;
+      cursor: pointer;
+    }
+    .sp-tab--active {
+      color: var(--color-white);
+      border-top-color: var(--color-white);
+    }
+
+    /* Posts grid */
+    .sp-body {
+      background: var(--color-glacier);
+      padding: var(--space-8) 0 var(--space-16);
+    }
+    .sp-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+    .sp-posts {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-8);
+    }
+
+    /* Post card */
+    .sp-post {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--color-grey-200);
+    }
+    .sp-post__header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-4) var(--space-5);
+      border-bottom: 1px solid var(--color-grey-100);
+    }
+    .sp-post__avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid var(--color-mint);
+      object-fit: cover;
+    }
+    .sp-post__meta { flex: 1; }
+    .sp-post__name {
+      font-family: var(--font-accent);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-navy);
+    }
+    .sp-post__time {
+      font-size: var(--text-xs);
+      color: var(--color-grey-400);
+    }
+    .sp-post__image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+    .sp-post__body { padding: var(--space-5) var(--space-5) var(--space-6); }
+    .sp-post__actions {
+      display: flex;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+    .sp-action-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-grey-500);
+      padding: 0;
+      transition: color 0.2s;
+    }
+    .sp-action-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .sp-action-btn:hover { color: var(--color-navy); }
+    .sp-action-btn--heart:hover { color: #E53E3E; }
+    .sp-post__likes {
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--color-navy);
+      margin-bottom: var(--space-3);
+    }
+    .sp-post__caption {
+      font-size: var(--text-sm);
+      color: var(--color-navy);
+      line-height: 1.6;
+      margin-bottom: var(--space-3);
+    }
+    .sp-post__caption strong { font-weight: 700; }
+    .sp-post__description {
+      font-size: var(--text-xs);
+      color: var(--color-grey-500);
+      line-height: 1.7;
+      margin-bottom: var(--space-4);
+    }
+    .sp-post__tags {
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      color: var(--color-mint);
+      font-weight: 600;
+    }
+    .sp-post__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+      font-family: var(--font-accent);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--color-navy);
+      text-decoration: none;
+      border: 1.5px solid var(--color-navy);
+      border-radius: var(--radius-full);
+      padding: var(--space-2) var(--space-4);
+      transition: background 0.2s, color 0.2s;
+    }
+    .sp-post__cta:hover { background: var(--color-navy); color: var(--color-white); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .sp-profile-row { flex-direction: column; gap: var(--space-5); }
+      .sp-stats { gap: var(--space-5); }
+      .sp-tab { padding: var(--space-3) var(--space-4); }
+    }
+  </style>
+</head>
+<body class="social-page">
+
+  <!-- ── Minimal Nav ── -->
+  <nav class="nav" role="navigation" aria-label="Site navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__actions">
+        <a href="../product.html" class="btn btn--primary btn--sm">Build Your Pack</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-offset social-page">
+
+    <!-- ── Profile Header ── -->
+    <div class="sp-header">
+      <div class="sp-header__inner">
+
+        <div class="sp-platform-badge" aria-label="Instagram profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram Profile
+        </div>
+
+        <div class="sp-profile-row">
+          <div class="sp-avatar-wrap">
+            <div class="sp-avatar-ring">
+              <img src="../assets/images/social/shared/avatar.png" alt="TrailVolt profile" onerror="this.style.background='#0B1626'" />
+            </div>
+          </div>
+          <div class="sp-profile-info">
+            <h1 class="sp-username">Trail<span>Volt</span></h1>
+            <p class="sp-handle">@trailvolt</p>
+            <div class="sp-stats">
+              <div class="sp-stat">
+                <span class="sp-stat__num">47</span>
+                <span class="sp-stat__label">Posts</span>
+              </div>
+              <div class="sp-stat">
+                <span class="sp-stat__num">12.4K</span>
+                <span class="sp-stat__label">Followers</span>
+              </div>
+              <div class="sp-stat">
+                <span class="sp-stat__num">214</span>
+                <span class="sp-stat__label">Following</span>
+              </div>
+            </div>
+            <p class="sp-bio">
+              Premium modular backpacks. <strong>One pack. Every horizon.</strong><br>
+              Built for ambitious people who move between worlds — office, trail, airport, repeat.<br>
+              🏔 Designed in Dublin · Ships EU &amp; worldwide
+            </p>
+            <div class="sp-cta-row">
+              <a href="../product.html" class="btn btn--primary btn--sm">Build Your Pack</a>
+              <a href="../loyalty.html" class="btn btn--ghost-dark btn--sm">Join Basecamp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-tabs">
+          <div class="sp-tab sp-tab--active">Posts</div>
+          <div class="sp-tab">Reels</div>
+          <div class="sp-tab">Tagged</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Posts ── -->
+    <div class="sp-body">
+      <div class="sp-grid">
+        <div class="sp-posts">
+
+          <!-- Post 1: Core Pack -->
+          <article class="sp-post">
+            <div class="sp-post__header">
+              <img class="sp-post__avatar" src="../assets/images/social/shared/avatar.png" alt="TrailVolt" />
+              <div class="sp-post__meta">
+                <p class="sp-post__name">trailvolt</p>
+                <p class="sp-post__time">2 days ago</p>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-grey-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+            </div>
+            <img class="sp-post__image"
+                 src="../assets/images/social/instagram/post-1-core-pack.png"
+                 alt="TrailVolt Core Pack on the Wicklow trail at dawn"
+                 loading="lazy" />
+            <div class="sp-post__body">
+              <div class="sp-post__actions">
+                <button class="sp-action-btn sp-action-btn--heart" aria-label="Like">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  2,341
+                </button>
+                <button class="sp-action-btn" aria-label="Comment">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  87
+                </button>
+                <button class="sp-action-btn" aria-label="Share">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+              <p class="sp-post__likes">2,341 likes</p>
+              <p class="sp-post__caption">
+                <strong>trailvolt</strong> Dawn on the Wicklow Mountains. Same pack. Three modules. Zero compromises. 🌿
+              </p>
+              <p class="sp-post__description">
+                The Core Pack Everyday 22L — photographed at first light on the Sally Gap ridge, Wicklow, Ireland.
+                Three snap-on modules configured for a full trail day: the Chest Phone Module for hands-free navigation,
+                Tech Organiser for power bank and cables, and the Shoe Module for a dry pair of trail shoes.
+                The stainless steel attachment rail stays on all three lines — Everyday, Travel, and Trail —
+                so the modules you buy today work with every pack you carry tomorrow.
+              </p>
+              <p class="sp-post__tags">#TrailVolt #ModularBackpack #OnePackEveryHorizon #WicklowMountains #OutdoorGear #EverydayCarry</p>
+              <a href="../product.html" class="sp-post__cta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                Configure yours from €159
+              </a>
+            </div>
+          </article>
+
+          <!-- Post 2: Module system -->
+          <article class="sp-post">
+            <div class="sp-post__header">
+              <img class="sp-post__avatar" src="../assets/images/social/shared/avatar.png" alt="TrailVolt" />
+              <div class="sp-post__meta">
+                <p class="sp-post__name">trailvolt</p>
+                <p class="sp-post__time">1 week ago</p>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-grey-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+            </div>
+            <img class="sp-post__image"
+                 src="../assets/images/social/instagram/post-2-modules.png"
+                 alt="TrailVolt modular ecosystem flat-lay"
+                 loading="lazy" />
+            <div class="sp-post__body">
+              <div class="sp-post__actions">
+                <button class="sp-action-btn sp-action-btn--heart" aria-label="Like">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  3,812
+                </button>
+                <button class="sp-action-btn" aria-label="Comment">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  143
+                </button>
+                <button class="sp-action-btn" aria-label="Share">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+              <p class="sp-post__likes">3,812 likes</p>
+              <p class="sp-post__caption">
+                <strong>trailvolt</strong> 8 snap-on modules. One stainless steel rail. You choose the loadout. 🔩
+              </p>
+              <p class="sp-post__description">
+                Meet the full TrailVolt module ecosystem. Every module is engineered to snap onto the same stainless
+                steel attachment rail — meaning the pack you choose today works with every accessory you add tomorrow.
+                From the Chest Phone Module (€29, instant access while moving) to the 10,000mAh Power Bank (€39,
+                USB-A + USB-C) and the RFID Document Sleeve (€19, passport + boarding pass) — this is your loadout,
+                your way. All modules are cross-compatible with all three TrailVolt lines: Everyday 22L, Travel 30L,
+                Trail 28L.
+              </p>
+              <p class="sp-post__tags">#TrailVolt #ModularSystem #PackYourLife #TechGear #EDC #TravelGear #ModuleLife</p>
+              <a href="../modules.html" class="sp-post__cta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                Explore all 8 modules
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);">
+        <a href="../index.html" class="footer__logo" style="font-size:var(--text-base);">Trail<span class="footer__logo-accent">Volt</span></a>
+        <nav style="display:flex;gap:var(--space-6);" aria-label="Social pages">
+          <a href="instagram.html" class="footer__link" style="color:var(--color-mint);">Instagram</a>
+          <a href="tiktok.html"    class="footer__link">TikTok</a>
+          <a href="youtube.html"   class="footer__link">YouTube</a>
+        </nav>
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);">© 2026 TrailVolt Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

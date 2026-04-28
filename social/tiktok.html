@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrailVolt on TikTok</title>
+  <meta name="description" content="Follow TrailVolt on TikTok — modular pack drops, trail life, and the gear that keeps up. @trailvolt" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0B1626" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .social-page { background: var(--color-navy); min-height: 100vh; }
+
+    /* Profile header */
+    .sp-header { background: var(--color-navy); padding: var(--space-10) 0 var(--space-8); }
+    .sp-header__inner { max-width: 760px; margin: 0 auto; padding: 0 var(--space-6); text-align: center; }
+    .sp-avatar-ring {
+      width: 96px; height: 96px; border-radius: 50%;
+      background: linear-gradient(135deg, #3FFFAB, #0B8C56);
+      padding: 3px; display: inline-block; margin-bottom: var(--space-4);
+    }
+    .sp-avatar-ring img {
+      width: 90px; height: 90px; border-radius: 50%;
+      border: 3px solid var(--color-navy);
+      object-fit: cover; display: block;
+    }
+    .sp-username {
+      font-family: var(--font-heading); font-size: var(--text-2xl);
+      font-weight: 900; color: var(--color-white); margin-bottom: var(--space-1);
+    }
+    .sp-username span { color: var(--color-mint); }
+    .sp-handle { font-family: var(--font-accent); font-size: var(--text-sm); color: rgba(255,255,255,0.45); margin-bottom: var(--space-6); }
+    .sp-stats { display: flex; gap: var(--space-10); justify-content: center; margin-bottom: var(--space-6); }
+    .sp-stat__num { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 900; color: var(--color-white); display: block; }
+    .sp-stat__label { font-family: var(--font-accent); font-size: var(--text-xs); color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.06em; }
+    .sp-bio { font-size: var(--text-sm); color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 480px; margin: 0 auto var(--space-6); }
+    .sp-bio strong { color: var(--color-mint); }
+    .sp-cta-row { display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+    .sp-platform-badge {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-full); padding: var(--space-2) var(--space-4);
+      font-family: var(--font-accent); font-size: var(--text-xs);
+      font-weight: 600; color: rgba(255,255,255,0.55); margin-bottom: var(--space-6);
+    }
+    .sp-platform-badge svg { width: 14px; height: 14px; }
+
+    /* Divider */
+    .sp-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 0; }
+
+    /* Video grid */
+    .sp-body { background: #0d1c2e; padding: var(--space-10) 0 var(--space-16); }
+    .sp-grid { max-width: 760px; margin: 0 auto; padding: 0 var(--space-6); }
+    .sp-grid-label {
+      font-family: var(--font-accent); font-size: var(--text-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.35);
+      margin-bottom: var(--space-6);
+    }
+    .sp-videos { display: flex; flex-direction: column; gap: var(--space-6); }
+
+    /* Video card — TikTok style: vertical thumbnail, text beside */
+    .sp-video {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    .sp-video__thumb-wrap {
+      position: relative;
+      aspect-ratio: 9/16;
+      overflow: hidden;
+      background: #0a1520;
+    }
+    .sp-video__thumb {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .sp-video__play {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.25);
+    }
+    .sp-video__play-btn {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(63,255,171,0.9);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 20px rgba(63,255,171,0.4);
+    }
+    .sp-video__play-btn svg { width: 22px; height: 22px; fill: var(--color-navy); margin-left: 3px; }
+    .sp-video__duration {
+      position: absolute; bottom: var(--space-3); right: var(--space-3);
+      background: rgba(0,0,0,0.6); border-radius: var(--radius-sm);
+      padding: 2px 6px; font-family: var(--font-accent);
+      font-size: 11px; font-weight: 700; color: #fff;
+    }
+    .sp-video__body { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
+    .sp-video__tag {
+      display: inline-block; background: rgba(63,255,171,0.1);
+      border: 1px solid rgba(63,255,171,0.2); border-radius: var(--radius-full);
+      padding: 3px 10px; font-family: var(--font-accent);
+      font-size: 11px; font-weight: 700; color: var(--color-mint); text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .sp-video__title {
+      font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800;
+      color: var(--color-white); line-height: 1.3;
+    }
+    .sp-video__caption { font-size: var(--text-sm); color: rgba(255,255,255,0.6); line-height: 1.6; }
+    .sp-video__desc { font-size: var(--text-xs); color: rgba(255,255,255,0.4); line-height: 1.7; }
+    .sp-video__stats {
+      display: flex; gap: var(--space-4); flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.06); padding-top: var(--space-3); margin-top: auto;
+    }
+    .sp-video__stat {
+      display: flex; align-items: center; gap: var(--space-1);
+      font-family: var(--font-accent); font-size: var(--text-xs);
+      font-weight: 600; color: rgba(255,255,255,0.4);
+    }
+    .sp-video__stat svg { width: 14px; height: 14px; }
+    .sp-video__tags { font-family: var(--font-accent); font-size: var(--text-xs); color: rgba(63,255,171,0.7); font-weight: 600; }
+    .sp-video__cta {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      font-family: var(--font-accent); font-size: var(--text-xs); font-weight: 700;
+      color: var(--color-mint); text-decoration: none;
+      border: 1.5px solid rgba(63,255,171,0.4); border-radius: var(--radius-full);
+      padding: var(--space-2) var(--space-4); transition: background 0.2s, color 0.2s;
+    }
+    .sp-video__cta:hover { background: var(--color-mint); color: var(--color-navy); }
+
+    @media (max-width: 580px) {
+      .sp-video { grid-template-columns: 1fr; }
+      .sp-video__thumb-wrap { aspect-ratio: 16/9; }
+    }
+  </style>
+</head>
+<body class="social-page">
+
+  <!-- ── Minimal Nav ── -->
+  <nav class="nav" role="navigation" aria-label="Site navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="TrailVolt home">
+        <span class="nav__logo-text">Trail<span class="nav__logo-accent">Volt</span></span>
+      </a>
+      <div class="nav__actions">
+        <a href="../product.html" class="btn btn--primary btn--sm">Build Your Pack</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-offset social-page">
+
+    <!-- ── Profile ── -->
+    <div class="sp-header">
+      <div class="sp-header__inner">
+
+        <div class="sp-platform-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          TikTok Profile
+        </div>
+
+        <div class="sp-avatar-ring">
+          <img src="../assets/images/social/shared/avatar.png" alt="TrailVolt profile" />
+        </div>
+        <h1 class="sp-username">Trail<span>Volt</span></h1>
+        <p class="sp-handle">@trailvolt</p>
+
+        <div class="sp-stats">
+          <div class="sp-stat">
+            <span class="sp-stat__num">38</span>
+            <span class="sp-stat__label">Videos</span>
+          </div>
+          <div class="sp-stat">
+            <span class="sp-stat__num">8.2K</span>
+            <span class="sp-stat__label">Followers</span>
+          </div>
+          <div class="sp-stat">
+            <span class="sp-stat__num">94.7K</span>
+            <span class="sp-stat__label">Likes</span>
+          </div>
+        </div>
+
+        <p class="sp-bio">
+          <strong>One pack. Every horizon.</strong> Modular gear drops, real trail footage, and the honest truth
+          about how we built the last backpack you'll ever need. 🏔⚡<br>
+          ↓ Build yours from €159
+        </p>
+
+        <div class="sp-cta-row">
+          <a href="../product.html" class="btn btn--primary btn--sm">Build Your Pack →</a>
+          <a href="../modules.html" class="btn btn--ghost btn--sm">See Modules</a>
+        </div>
+      </div>
+      <hr class="sp-divider" style="margin-top:var(--space-8)" />
+    </div>
+
+    <!-- ── Videos ── -->
+    <div class="sp-body">
+      <div class="sp-grid">
+        <p class="sp-grid-label">Latest Videos</p>
+        <div class="sp-videos">
+
+          <!-- Video 1 -->
+          <article class="sp-video">
+            <div class="sp-video__thumb-wrap">
+              <img class="sp-video__thumb"
+                   src="../assets/images/social/tiktok/thumb-1-snap.png"
+                   alt="Snap the module — 3 seconds to configure your pack"
+                   loading="lazy" />
+              <div class="sp-video__play" aria-hidden="true">
+                <div class="sp-video__play-btn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <span class="sp-video__duration">0:28</span>
+            </div>
+            <div class="sp-video__body">
+              <span class="sp-video__tag">Product Drop</span>
+              <h2 class="sp-video__title">Snap. Done. 3 seconds to change your loadout.</h2>
+              <p class="sp-video__caption">
+                The click you'll hear every morning. One stainless steel rail, unlimited module combinations. 🔩
+              </p>
+              <p class="sp-video__desc">
+                We timed it: 3 seconds from unattached to locked. The TrailVolt magnetic snap-rail
+                doesn't need tools, alignment tricks, or patience. Commuter mode to trail mode
+                in one motion. The Chest Phone Module, Tech Organiser, and Power Bank all
+                snap onto the same rail — the same rail on every pack we make.
+              </p>
+              <p class="sp-video__tags">#TrailVolt #ModularPack #GRWM #BackpackHack #EverydayCarry #GearDrop</p>
+              <div class="sp-video__stats">
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  14.3K
+                </div>
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  312
+                </div>
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  2.1K
+                </div>
+              </div>
+              <a href="../product.html" class="sp-video__cta">
+                Configure yours →
+              </a>
+            </div>
+          </article>
+
+          <!-- Video 2 -->
+          <article class="sp-video">
+            <div class="sp-video__thumb-wrap">
+              <img class="sp-video__thumb"
+                   src="../assets/images/social/tiktok/thumb-2-one-pack.png"
+                   alt="One pack — office to trail split screen"
+                   loading="lazy" />
+              <div class="sp-video__play" aria-hidden="true">
+                <div class="sp-video__play-btn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <span class="sp-video__duration">0:45</span>
+            </div>
+            <div class="sp-video__body">
+              <span class="sp-video__tag">Lifestyle</span>
+              <h2 class="sp-video__title">Monday commute. Saturday trail. Same bag.</h2>
+              <p class="sp-video__caption">
+                Stop buying bags. Start building a system. One rail, unlimited lives. 🗓🏔
+              </p>
+              <p class="sp-video__desc">
+                We followed one person for a full week: Monday office run with the Tech Organiser
+                and laptop sleeve. Thursday airport with the Travel 30L config. Saturday trail
+                in Wicklow with the Shoe Module and hydration sleeve. Same stainless rail.
+                Same 5-year warranty. Different world every day.
+                The TrailVolt Core Pack doesn't choose a context — you do.
+              </p>
+              <p class="sp-video__tags">#TrailVolt #OnePack #OfficeToTrail #TravelGear #ModularLifestyle #DublinLife</p>
+              <div class="sp-video__stats">
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  27.6K
+                </div>
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  581
+                </div>
+                <div class="sp-video__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  4.8K
+                </div>
+              </div>
+              <a href="../about.html" class="sp-video__cta">
+                Our story →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);">
+        <a href="../index.html" class="footer__logo" style="font-size:var(--text-base);">Trail<span class="footer__logo-accent">Volt</span></a>
+        <nav style="display:flex;gap:var(--space-6);" aria-label="Social pages">
+          <a href="instagram.html" class="footer__link">Instagram</a>
+          <a href="tiktok.html"    class="footer__link" style="color:var(--color-mint);">TikTok</a>
+          <a href="youtube.html"   class="footer__link">YouTube</a>
+        </nav>
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);">© 2026 TrailVolt Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
